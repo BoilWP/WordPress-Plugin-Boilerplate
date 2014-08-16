@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 .idea/
 
 # Less
-assets/less
+wordpress-plugin-boilerplate/assets/less
 
 # Screenshots
 screenshots/

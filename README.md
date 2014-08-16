@@ -62,7 +62,18 @@ All that info is in [the project](https://github.com/afragen/github-updater).
 
 ## Documentation
 
-> Documentation will be provided via the GitHub wiki pages.
+> Documentation will be provided via the GitHub wiki pages. -- Coming Soon --
+
+## Support
+This repository is not suitable for support. Please don't use our issue tracker for support requests, but for core WordPress Plugin Boilerplate issues only. Support can take place in the appropriate channel:
+
+* The [public support forum](http://www.sebastiendumont.com/support/forum/wordpress-plugin-boilerplate/) at SebastienDumont.com, where the community can help each other out.
+
+Support requests in issues on this repository will be closed on sight.
+
+## Contributing to WordPress Plugin Boilerplate
+
+If you have a patch, or stumbled upon an issue with WordPress Plugin Boilerplate core, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/seb86/WordPress-Plugin-Boilerplate/blob/dev/CONTRIBUTING.md) for more information how you can do this.
 
 ## License
 

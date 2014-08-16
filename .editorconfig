@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0076)https://raw.githubusercontent.com/woothemes/woocommerce/master/.editorconfig -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+tab_width = 4
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.txt]
+trim_trailing_whitespace = false
+
+[*.json]
+insert_final_newline = false
+indent_size = 2
+tab_width = 2
+</pre></body></html>
