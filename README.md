@@ -1,4 +1,4 @@
-# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate) https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev
+# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)  [![Build Status](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev)](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate)
 
 The best WordPress plugin boilerplate you will ever need. Start developing your plugins straight away. All the basics are already covered for you. Just change the example content using the documentation provided.
 
