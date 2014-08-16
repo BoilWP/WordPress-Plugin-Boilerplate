@@ -1,0 +1,16 @@
+{
+    "name": "seb86/WordPress-Plugin-Boilerplate",
+    "description": "WordPress Plugin Boilerplate",
+    "keywords": ["wordpress", "plugin", "boilerplate"],
+    "homepage": "http://www.sebastiendumont.com",
+    "authors": [
+        {
+            "name": "Sebastien Dumont",
+            "homepage": "http://www.sebastiendumont.com"
+        },
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
