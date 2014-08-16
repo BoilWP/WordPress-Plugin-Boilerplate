@@ -1,4 +1,4 @@
-# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)
+# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate) https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev
 
 The best WordPress plugin boilerplate you will ever need. Start developing your plugins straight away. All the basics are already covered for you. Just change the example content using the documentation provided.
 
@@ -48,7 +48,7 @@ This uses a new tag in the plugin header:
 Here's how to take advantage of this feature:
 
 1. Install the [GitHub Updater](https://github.com/afragen/github-updater)
-2. Replace the url of the repository of your plugin
+2. Replace the url of the repository for your plugin
 3. Push commits to the master branch
 4. Enjoy your plugin being updated in the WordPress dashboard
 
@@ -59,6 +59,10 @@ To specify a branch that you would like to use for updating, just add a `GitHub 
 The default state is either `GitHub Branch: master` or nothing at all. They are equivalent.
 
 All that info is in [the project](https://github.com/afragen/github-updater).
+
+## Documentation
+
+> Documentation will be provided via the GitHub wiki pages.
 
 ## License
 
