@@ -1,18 +1,45 @@
-# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)  [![Build Status](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev)](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate)
+# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)  [![Build Status](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev)](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate)  [![Coverage Status](https://coveralls.io/repos/seb86/WordPress-Plugin-Boilerplate/badge.png)](https://coveralls.io/r/seb86/WordPress-Plugin-Boilerplate)
 
-The best WordPress plugin boilerplate you will ever need. Start developing your plugins straight away. All the basics are already covered for you. Just change the example content using the documentation provided.
+The best WordPress plugin boilerplate you will ever need. Start developing your plugins straight away. All the basics are already covered for you. Just change the example content using the documentation provided and develop the rest.
 
-> Need a better description.
+## What is this boilerplate designed for?
+
+The boilerplate is designed for either free or premium plugins in mind. What I have done is set a developer friendly environment that allows you to get a head start with the ground work for any plugin. You don’t have to use all the features given to you so removing those parts is easy to do. With the boilerplate you also have actions and filter hooks in place that not only make it easy for you to create extensions for your plugin but for third-party developers as well.
+
+## What about support?
+
+If the documentation provided doesn’t help you then you can use the [forum topic](http://www.sebastiendumont.com/support/forum/wordpress-plugin-boilerplate/) to ask any questions about the boilerplate and either I or the community will respond.
 
 ## Features
 
-* Still to be listed.
+* Ready to build on and is third-party ready for other developers to build add-ons for your plugin.
+* Custom settings page seperated via tabs and sections.
+* Built-in System Status, giving a list of details about the site environment, plugins installed and current active theme ready for export when a user requests support for your plugin.
+* Help Tabs on all the plugin pages ready and prepared.
+* Tools prepared to help the user install pre-set pages required for the plugin, reset capabilities or simply start over from scratch.
+* A full exposed 'Welcome' page, showing you all the display options along with slideshow gallery using prettyPhoto, social share buttons, shortcuts to other areas of your plugin and additional tabed content like 'Changelog', 'Credits' and 'Translations'.
+* On the welcome dashboard, the 'Credits' page allows you to display the main creator/s of the plugin along with GitHub contributers and Translators from Transifex.
+* On the welcome dashboard, the 'Translations' page displays the stats of the plugin being translated via Transfiex with shortcuts to translate a language directly.
+
+### Features Coming Soon
+
+* Admin Pointers. – A simple class that also allows you to have more than one pointer per page.
+* Import/Export – Allows you to import and export the plugin settings in json format and can be filtered either way.
 
 ## Contents
 
 The WordPress Plugin Boilerplate includes the following files:
 
-* This README, a ChangeLog, and a `gitignore` file.
+* This README.md
+* CHANGELOG.md
+* CONTRIBUTING.md
+* `.editorconfig` file.
+* `.gitattributes` file.
+* `.gitignore` file.
+* `.travis.yml` file.
+* `.composer.json` file.
+* index.php file.
+* license.txt file
 * A subdirectory called `wordpress-plugin-boilerplate` that represents the core plugin file.
 
 ## Installation
