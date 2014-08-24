@@ -18,6 +18,9 @@ $RECYCLE.BIN/
 # PhpStorm
 .idea/
 
+# Bin
+bin/
+
 # Less
 wordpress-plugin-boilerplate/assets/less
 
@@ -26,3 +29,8 @@ screenshots/
 
 # Wiki
 wiki/
+
+# Other Directories
+build/
+tests/
+tmp/

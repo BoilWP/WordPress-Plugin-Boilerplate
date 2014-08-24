@@ -90,6 +90,7 @@ before_script:
 
 script: 
     phpunit
+    - bin/atoum --test-all
 
 # Run test script commands.
 # Default is specific to project language.
@@ -108,8 +109,8 @@ script:
     # --extensions: Only sniff PHP files.
     ##- $WP_DEVELOP_DIR/php-codesniffer/scripts/phpcs -p -s -v -n . --standard=./codesniffer.ruleset.xml --extensions=php
 
-#after_script:
-    #- php vendor/bin/coveralls --config tests/framework/.coveralls.yml -v --exclude-no-stmt
+after_script:
+    - php vendor/bin/coveralls --config tests/.coveralls.yml -v --exclude-no-stmt
 
 # Receive notifications for build results.
 # @link http://docs.travis-ci.com/user/notifications/#Email-notifications
