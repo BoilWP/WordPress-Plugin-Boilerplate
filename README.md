@@ -37,6 +37,7 @@ The WordPress Plugin Boilerplate includes the following files:
 * `.editorconfig` file.
 * `.gitattributes` file.
 * `.gitignore` file.
+* `.jshintrc` file.
 * `.travis.yml` file.
 * `.composer.json` file.
 * `Gruntfile.js` file.
@@ -101,7 +102,7 @@ Support requests in issues on this repository will be closed on sight.
 
 ## Contributing to WordPress Plugin Boilerplate
 
-If you have a patch, or stumbled upon an issue with WordPress Plugin Boilerplate core, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/seb86/WordPress-Plugin-Boilerplate/blob/dev/CONTRIBUTING.md) for more information how you can do this.
+If you have a patch, or stumbled upon an issue with WordPress Plugin Boilerplate core, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/seb86/WordPress-Plugin-Boilerplate/blob/master/CONTRIBUTING.md) for more information how you can do this.
 
 ## License
 
