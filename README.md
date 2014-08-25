@@ -1,4 +1,4 @@
-# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)  [![Build Status](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev)](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate)  [![Coverage Status](https://coveralls.io/repos/seb86/WordPress-Plugin-Boilerplate/badge.png)](https://coveralls.io/r/seb86/WordPress-Plugin-Boilerplate)
+# WordPress Plugin Boilerplate [![Gitter chat](https://badges.gitter.im/seb86/WordPress-Plugin-Boilerplate.png)](https://gitter.im/seb86/WordPress-Plugin-Boilerplate)  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![Build Status](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate.svg?branch=dev)](https://travis-ci.org/seb86/WordPress-Plugin-Boilerplate)  [![Coverage Status](https://coveralls.io/repos/seb86/WordPress-Plugin-Boilerplate/badge.png)](https://coveralls.io/r/seb86/WordPress-Plugin-Boilerplate)
 
 The best WordPress plugin boilerplate you will ever need. Start developing your plugins straight away. All the basics are already covered for you. Just change the example content using the documentation provided and develop the rest.
 
@@ -33,13 +33,14 @@ The WordPress Plugin Boilerplate includes the following files:
 * This README.md
 * CHANGELOG.md
 * CONTRIBUTING.md
+* license.txt file
 * `.editorconfig` file.
 * `.gitattributes` file.
 * `.gitignore` file.
 * `.travis.yml` file.
 * `.composer.json` file.
-* index.php file.
-* license.txt file
+* `Gruntfile.js` file.
+* `package.json` file
 * A subdirectory called `wordpress-plugin-boilerplate` that represents the core plugin file.
 
 ## Installation
