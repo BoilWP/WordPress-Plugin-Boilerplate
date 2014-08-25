@@ -12,16 +12,16 @@ grunt.initConfig({
         options: {
           domainPath: '/languages/',    // Where to save the POT file.
           exclude: ['build/.*'],
-          mainFile: 'plugin_name.php',    // Main project file.
-          potComments: 'Plugin Name Copyright (c) {{year}}',      // The copyright at the beginning of the POT file.
-          potFilename: 'plugin_name.pot',    // Name of the POT file.
+          mainFile: 'wordpress-plugin-boilerplate.php',    // Main project file.
+          potComments: 'WordPress Plugin Boilerplate Copyright (c) {{year}}',      // The copyright at the beginning of the POT file.
+          potFilename: 'wordpress-plugin-boilerplate.pot',    // Name of the POT file.
           type: 'wp-plugin',    // Type of project.
           updateTimestamp: true,    // Whether the POT-Creation-Date should be updated without other changes.
           processPot: function( pot, options ) {
-            pot.headers['report-msgid-bugs-to'] = 'http://example.com/issues\n';
+            pot.headers['report-msgid-bugs-to'] = 'https://github.com/seb86/WordPress-Plugin-Boilerplate/issues\n';
             pot.headers['plural-forms'] = 'nplurals=2; plural=n != 1;\n';
-            pot.headers['last-translator'] = 'Plugin Name <plugin_name@example.com>\n';
-            pot.headers['language-team'] = 'Plugin Name <plugin_name@example.com>\n';
+            pot.headers['last-translator'] = 'WordPress Plugin Boilerplate <<mailme@sebastiendumont.com>>\n';
+            pot.headers['language-team'] = 'WP-Translations (http://www.transifex.com/projects/p/wp-translations/>\n';
             pot.headers['x-poedit-basepath'] = '..\n';
             pot.headers['x-poedit-language'] = 'English\n';
             pot.headers['x-poedit-country'] = 'UNITED STATES\n';
@@ -84,10 +84,16 @@ grunt.initConfig({
           '!package.json',
           '!.gitignore',
           '!.gitmodules',
+          '!.gitattributes',
+          '!.editorconfig',
           '!.tx/**',
           '!**/Gruntfile.js',
           '!**/package.json',
           '!**/README.md',
+          '!**/CHANGELOG.md',
+          '!**/CONTRIBUTING.md',
+          '!**/travis.yml',
+          '!**/composer.json',
           '!**/*~'
         ],
         dest: 'build/<%= pkg.name %>/'
