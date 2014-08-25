@@ -1,0 +1,7 @@
+.clear{clear:both;}
+
+.nobr{white-space:nowrap;}
+
+#adminmenu #toplevel_page_plugin-name .menu-icon-generic div.wp-menu-image:before {
+	content: "\f159";
+}

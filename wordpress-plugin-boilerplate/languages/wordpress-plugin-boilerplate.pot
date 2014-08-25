@@ -1,0 +1,4969 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Plugin Boilerplate\n"
+"POT-Creation-Date: 2014-08-25 01:18+0100\n"
+"PO-Revision-Date: 2014-08-25 01:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: Sebastien Dumont <mailme@sebastiendumont.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.8\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-plugin-name-admin-help.php:38
+#: includes/admin/class-plugin-name-admin.php:122
+#: includes/admin/views/html-admin-page.php:12
+#: wordpress-plugin-boilerplate.php:365
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:41
+#, php-format
+msgid ""
+"Thank you for using %s :) Should you need help using or extending %s please "
+"read the documentation."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:43
+#, php-format
+msgid "%s Documentation"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:43
+msgid "Restart Tour"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:49
+msgid "Support"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:52
+#, php-format
+msgid ""
+"After <a href=\"%s\">reading the documentation</a>, for further assistance "
+"you can use the <a href=\"%s\">community forum</a>."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:52
+msgid "Company Name"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:54
+msgid ""
+"Before asking for help we recommend checking the status page to identify any "
+"problems with your configuration."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:56
+#: includes/admin/class-plugin-name-admin-help.php:67
+#: includes/admin/class-plugin-name-admin-menus.php:113
+#: includes/admin/views/html-admin-page-status.php:6
+#: wordpress-plugin-boilerplate.php:743
+msgid "System Status"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:56
+msgid "Community Support"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:62
+msgid "Found a bug?"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:65
+#, php-format
+msgid ""
+"If you find a bug within <strong>%s</strong> you can create a ticket via <a "
+"href=\"%s\">Github issues</a>. Ensure you read the <a href=\"%s"
+"\">contribution guide</a> prior to submitting your report. Be as descriptive "
+"as possible and please include your <a href=\"%s\">system status report</a>."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:67
+msgid "Report a bug"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:72
+msgid "For more information:"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:73
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:74
+msgid "Project on WordPress.org"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-help.php:75
+msgid "Project on Github"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:89
+#: includes/admin/class-plugin-name-admin-menus.php:93
+#: includes/admin/class-plugin-name-admin-menus.php:109
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:89
+#: includes/admin/class-plugin-name-admin-menus.php:93
+#: includes/admin/class-plugin-name-admin-welcome.php:215
+#: includes/admin/views/html-admin-page-status-report.php:273
+#: wordpress-plugin-boilerplate.php:339
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:98
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:25
+#: wordpress-plugin-boilerplate.php:741
+msgid "First Tab"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:102
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:25
+#: wordpress-plugin-boilerplate.php:742
+msgid "Second Tab"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:113
+#, php-format
+msgid "%s Status"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:115
+#, php-format
+msgid "%s Tools"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-menus.php:115
+#: includes/admin/views/html-admin-page-status-tools.php:10
+#: includes/admin/views/html-admin-page-status.php:7
+#: wordpress-plugin-boilerplate.php:744
+msgid "Tools"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:77
+msgid "Congratulations"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:80
+msgid "Start Tour"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:94
+msgid "Dashboard"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:95
+msgid ""
+"This is were the boilerplate is located in the admin side-menu. It is here "
+"you will find the backend of the plugins functions, settings and system "
+"status.<br><strong>About This Tour</strong>Clicking Next below takes you to "
+"the next page of the tour. If you want to stop this tour, click \"Close\"."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:107
+msgid "Shortcuts"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:108
+msgid ""
+"Can be useful for creating shortcuts, linking to other areas of the plugin "
+"or to an external site."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:121
+msgid "Sections"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:122
+msgid ""
+"These sub-links allow you to display different content in there own sections."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:124
+#: includes/admin/class-plugin-name-admin-pointers.php:155
+msgid "Next"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-pointers.php:156
+#: includes/admin/class-plugin-name-admin-pointers.php:258
+msgid "Close"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:48
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:56
+msgid "Your settings have been saved."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:109
+#: wordpress-plugin-boilerplate.php:737
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:474
+msgid "Hard Crop?"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:499
+msgid "Select a page&hellip;"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:523
+msgid "Choose a country&hellip;"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:549
+msgid "Choose countries&hellip;"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:557
+msgid "Select all"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-settings.php:557
+msgid "Select none"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:64
+#, php-format
+msgid "All missing %s pages was installed successfully."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:72
+msgid "Roles successfully reset"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:84
+msgid "All previous data has been removed and re-installed the defaults."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:95
+#, php-format
+msgid "There was an error calling %s::%s"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:98
+#, php-format
+msgid "There was an error calling %s"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:108
+msgid "Your changes have been saved."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:123
+#: includes/admin/views/html-notice-install.php:6
+#, php-format
+msgid "Install %s Pages"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:124
+msgid "Install pages"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:125
+#, php-format
+msgid ""
+"<strong class=\"red\">Note:</strong> This tool will install all the missing "
+"%s pages. Pages already defined and set up will not be replaced."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:129
+msgid "Capabilities"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:130
+msgid "Reset capabilities"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:131
+#, php-format
+msgid ""
+"This tool will reset the admin roles to default. Use this if your users "
+"cannot access all of the %s admin pages."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:135
+msgid "Start Over"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:136
+msgid "Restart"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-status.php:137
+#, php-format
+msgid ""
+"This tool will erase all settings, database tables (if any) and re-install "
+"\"<em>%s</em>\". Use this if you are really sure. All current data will be "
+"lost and will not be recoverable."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:48
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:51
+#: wordpress-plugin-boilerplate.php:363
+msgid "Getting Started"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:55
+#, php-format
+msgid "%s Changelog"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:58
+msgid "Changelog"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:62
+#, php-format
+msgid "%s Credits"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:65
+#: wordpress-plugin-boilerplate.php:364
+msgid "Credits"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:69
+#, php-format
+msgid "%s Translations"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:72
+msgid "Translations"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:76
+#, php-format
+msgid "%s Freedoms"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:79
+msgid "Freedoms"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:182
+msgid "Thanks, all done!"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:185
+msgid "Thank you for updating to the latest version!"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:188
+msgid "Thanks for installing!"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:191
+#, php-format
+msgid ""
+"%s %s %s is a powerful, stable, and secure plugin boilerplate. I hope you "
+"enjoy it."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:197
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:216
+msgid "Docs"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:217
+msgid "Your tweet message would be placed here."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:274
+msgid ""
+"Use this page to show what the plugin does or what features you have added "
+"since your first release. Replace the placeholder images with screenshots of "
+"your plugin. You can even make the screenshots linkable to show a larger "
+"screenshot with or without caption or play an embedded video. It's all up to "
+"you."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:277
+msgid "Three Columns with Screenshots"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:280
+msgid "Screenshot Title"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:281
+#: includes/admin/class-plugin-name-admin-welcome.php:286
+#: includes/admin/class-plugin-name-admin-welcome.php:291
+#: includes/admin/class-plugin-name-admin-welcome.php:302
+#: includes/admin/class-plugin-name-admin-welcome.php:307
+#: includes/admin/class-plugin-name-admin-welcome.php:318
+#: includes/admin/class-plugin-name-admin-welcome.php:322
+#: includes/admin/class-plugin-name-admin-welcome.php:373
+#: includes/admin/class-plugin-name-admin-welcome.php:378
+#: includes/admin/class-plugin-name-admin-welcome.php:383
+#: includes/admin/class-plugin-name-admin-welcome.php:391
+#: includes/admin/class-plugin-name-admin-welcome.php:396
+#: includes/admin/class-plugin-name-admin-welcome.php:401
+#: includes/admin/class-plugin-name-admin-welcome.php:409
+#: includes/admin/class-plugin-name-admin-welcome.php:414
+#: includes/admin/class-plugin-name-admin-welcome.php:419
+msgid "Title of Feature or New Changes"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:285
+msgid "You can add captions to your screenshots."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:290
+msgid "Or add captions on your videos."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:290
+msgid "Video Title"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:298
+msgid "Two Columns with Screenshots"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:314
+msgid "Two Columns with a Single Screenshot"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:329
+msgid "Callout Headline"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:334
+msgid "One Column centered with a Single Screenshot"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:343
+msgid "Two Columns, Content Left, Screenshot Right"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:345
+#: includes/admin/class-plugin-name-admin-welcome.php:362
+msgid "Sub-Title (H4)"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:360
+msgid "Two Columns, Content Right, Screenshot Left"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:369
+msgid "Three Columns with NO Screenshots"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:447
+msgid "Bulletpoint your changelog like so."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:450
+#: includes/admin/views/html-admin-page-status-report.php:256
+msgid "Version"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:477
+msgid "Project Lead &amp; Developer"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:484
+msgid "Translation Manager, CEO of WP-Translations.org"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:493
+msgid "Contributers"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:493
+msgid "These contributers are fetched from the GitHub repository."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:499
+msgid "Translators"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:510
+msgid "External Libraries"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:557
+msgid ""
+"WordPress Plugin Boilerplate is Free and open source software, built to help "
+"speed up plugin development and to be stable and secure for all WordPress "
+"versions. Below is a list explaining what you are allowed to do. Enjoy!"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:560
+msgid "You have the freedom to run the program, for any purpose."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:561
+msgid ""
+"You have access to the source code, the freedom to study how the program "
+"works, and the freedom to change it to make it do what you wish."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:562
+msgid ""
+"You have the freedom to redistribute copies of the original program so you "
+"can help your neighbor."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:563
+msgid ""
+"You have the freedom to distribute copies of your modified versions to "
+"others. By doing this you can give the whole community a chance to benefit "
+"from your changes."
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:591
+#, php-format
+msgid "View %s's GitHub Profile"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:597
+msgid "Name"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:600
+msgid "Username"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin-welcome.php:603
+msgid "View Website"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin.php:121
+#: includes/admin/views/html-admin-page.php:11
+msgid "Website"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin.php:157
+msgid "Contribute"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin.php:158
+msgid "Report Bugs"
+msgstr ""
+
+#: includes/admin/class-plugin-name-admin.php:167
+#: includes/admin/views/html-admin-page-status-report.php:25
+#, php-format
+msgid "%s Version"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:155
+msgid "example"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:156
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:96
+#: includes/admin/views/html-admin-page-status-report.php:299
+msgid "Example Page"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:157
+msgid ""
+"This page was created as an example to show you the ability to creating "
+"pages automatically when the plugin is installed. You may if you wish create "
+"a page just to insert a single shortcode. You should find this page already "
+"set in the plugin settings. This save the user time to setup the pages the "
+"plugin requires."
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:161
+msgid "shortcode"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:162
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:107
+#: includes/admin/views/html-admin-page-status-report.php:304
+msgid "Shortcode Example Page"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:163
+msgid ""
+"[caption align=\"alignright\" width=\"300\"]<img src=\"http://placekitten."
+"com/300/205\" alt=\"Cat\" title=\"Cute Cat\" width=\"300\" height=\"205\" /> "
+"Cute Cat[/caption] This page was created to show shortcode detection in the "
+"page."
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:227
+msgid "Custom Role"
+msgstr ""
+
+#: includes/admin/class-plugin-name-install.php:427
+msgid "What's new:"
+msgstr ""
+
+#: includes/admin/class-plugin-name-transifex-api.php:56
+msgid "No responses"
+msgstr ""
+
+#: includes/admin/class-plugin-name-transifex-stats.php:53
+#: wordpress-plugin-boilerplate.php:735
+msgid "No results"
+msgstr ""
+
+#: includes/admin/class-plugin-name-transifex-stats.php:167
+msgid "Translate"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:54
+msgid "Settings Title"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:61
+msgid "Subscriber Access"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:62
+msgid "Prevent users from accessing WordPress admin."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:69
+msgid "Secure Content"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:70
+msgid ""
+"Keep your site secure by forcing SSL (HTTPS) on site (an SSL Certificate is "
+"required)."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:77
+msgid "Select Country"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:78
+msgid "This gives you a list of countries. "
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:87
+msgid "Multi Select Countries"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:97
+msgid ""
+"You can set pages that the plugin requires by having them installed and "
+"selected automatically when the plugin is installed."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:108
+msgid "This page has a shortcode applied when created by the plugin."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:118
+msgid "Single Checkbox"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:119
+msgid "Can come in handy to display more options."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:126
+msgid "Single Input (Text) "
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:129
+msgid "This admin setting can be hidden via the checkbox above."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:136
+msgid "Single Textarea "
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-one.php:139
+msgid ""
+"You can allow the user to use this field to enter their own CSS or HTML code."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:41
+msgid "Section One"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:42
+#: includes/admin/views/html-admin-page.php:29
+msgid "Section Two"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:82
+msgid "Section Two Options"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:89
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:241
+msgid "Select Page"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:90
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:242
+msgid "You can set a description here also."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:96
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:248
+msgid "You can select or search for a page."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:100
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:252
+msgid "Select"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:101
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:253
+msgid "This example shows you options from an array()."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:108
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:123
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:145
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:260
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:275
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:297
+#: includes/admin/views/html-admin-page-status-report.php:49
+#: includes/admin/views/html-admin-page-status-report.php:106
+#: includes/admin/views/html-admin-page-status-report.php:131
+#: includes/admin/views/html-admin-page-status-report.php:280
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:109
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:124
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:146
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:261
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:276
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:298
+#: includes/admin/views/html-admin-page-status-report.php:52
+#: includes/admin/views/html-admin-page-status-report.php:106
+#: includes/admin/views/html-admin-page-status-report.php:131
+#: includes/admin/views/html-admin-page-status-report.php:280
+msgid "No"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:115
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:267
+msgid "MultiSelect"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:116
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:268
+msgid ""
+"This example shows you the ability to select multi options from an array()."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:130
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:282
+msgid "Checkbox"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:131
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:283
+msgid "Checkbox option"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:138
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:290
+msgid "Radio"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:139
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:291
+msgid "Radio option"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:151
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:303
+msgid "Number"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:152
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:304
+msgid "Use this field for numbered options."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:165
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:317
+msgid "Color"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:166
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:318
+msgid "Use this field for color picking."
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:175
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:327
+msgid "Group Checkboxes"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:176
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:328
+msgid "Checkbox One"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:185
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:337
+msgid "Checkbox Two"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:194
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:346
+msgid "Email"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:203
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:355
+msgid "Password"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:212
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:364
+msgid "Image Size"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:213
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:365
+msgid "Use this field option to save multiple settings for an image size"
+msgstr ""
+
+#: includes/admin/settings/class-plugin-name-settings-tab-two.php:234
+msgid "Section One Options"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-import-export.php:6
+msgid "Export Settings"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-import-export.php:8
+#: wordpress-plugin-boilerplate.php:746
+msgid "Export"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-import-export.php:12
+msgid "Import Settings"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-import-export.php:14
+#: wordpress-plugin-boilerplate.php:745
+msgid "Import"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-import-export.php:130
+msgid "Please upload a file to import"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:2
+msgid "Please include this information when requesting support:"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:3
+msgid "Get System Report"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:11
+msgid "Environment"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:17
+msgid "Home URL"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:21
+msgid "Site URL"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:29
+#, php-format
+msgid "%s Database Version"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:33
+msgid "WordPress Version"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:46
+msgid "WordPress Multisite Enabled"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:57
+msgid "Web Server Info"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:61
+msgid "PHP Version"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:76
+msgid "MySQL Version"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:91
+msgid "WordPress Memory Limit"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:97
+#, php-format
+msgid "%s - We recommend setting memory to at least "
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:105
+msgid "WordPress Debug Mode"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:109
+msgid "WordPress Language"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:110
+#: includes/admin/views/html-admin-page.php:28
+msgid "Default"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:113
+msgid "WordPress Max Upload Size"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:118
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:122
+msgid "PHP Time Limit"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:126
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:130
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:135
+#, php-format
+msgid "%s Logging"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:138
+msgid "Log directory is writable."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:140
+msgid ""
+"Log directory (<code>plugin-name/logs/</code>) is not writable. Logging will "
+"not be possible."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:144
+msgid "Default Timezone"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:148
+#, php-format
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:150
+#, php-format
+msgid "Default timezone is %s"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:158
+msgid "fsockopen/cURL"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:161
+msgid "Your server has fsockopen and cURL enabled."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:163
+msgid "Your server has fsockopen enabled, cURL is disabled."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:165
+msgid "Your server has cURL enabled, fsockopen is disabled."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:169
+msgid ""
+"Your server does not have fsockopen or cURL enabled - Various scripts which "
+"communicate with other servers will not work. Contact your hosting provider."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:174
+msgid "SOAP Client"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:176
+msgid "Your server has the SOAP Client class enabled."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:179
+#, php-format
+msgid ""
+"Your server does not have the <a href=\"%s\">SOAP Client</a> class enabled - "
+"some features of the plugin which use SOAP may not work as expected."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:202
+msgid "Plugins"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:208
+msgid "Installed Plugins"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:229
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:253
+#: includes/admin/views/html-admin-page-status-report.php:401
+msgid "is available"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:256
+msgid "by"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:279
+msgid "Force SSL"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:286
+#, php-format
+msgid "%s Pages"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:294
+msgid "Sample Page"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:325
+msgid "Page not set"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:334
+msgid "Page does not exist"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:338
+#, php-format
+msgid "Page does not contain the shortcode: %s"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:344
+msgid "Page ID"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:344
+msgid "Page Slug"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:355
+msgid "Theme"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:393
+msgid "Theme Name"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:397
+msgid "Theme Version"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-report.php:406
+msgid "Author URL"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-tools.php:26
+msgid "Remove all data on uninstall"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-tools.php:29
+msgid "Enabled"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-status-tools.php:32
+msgid "This tool will delete all data when uninstalling via Plugins > Delete."
+msgstr ""
+
+#: includes/admin/views/html-admin-page.php:30
+msgid "Section Three"
+msgstr ""
+
+#: includes/admin/views/html-admin-page.php:55
+msgid ""
+"You can use this page to place the main back feature of your plugin. Place "
+"links at the end of your header and set the page into sections."
+msgstr ""
+
+#: includes/admin/views/html-admin-page.php:56
+msgid ""
+"These sections can then display different content based on the section the "
+"user is viewing."
+msgstr ""
+
+#: includes/admin/views/html-admin-page.php:57
+msgid ""
+"There are many actions and filters in place to allow you to add and display "
+"anything you need."
+msgstr ""
+
+#: includes/admin/views/html-admin-settings.php:20
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin/views/html-notice-install.php:5
+#, php-format
+msgid ""
+"<strong>Welcome to %s</strong> &#8211; You're almost ready to start using "
+"this plugin :)"
+msgstr ""
+
+#: includes/admin/views/html-notice-install.php:6
+msgid "Skip setup"
+msgstr ""
+
+#: includes/admin/views/html-notice-theme-support.php:6
+msgid "Theme Integration Guide"
+msgstr ""
+
+#: includes/admin/views/html-notice-theme-support.php:6
+msgid "Hide this notice"
+msgstr ""
+
+#: includes/admin/views/html-notice-update.php:5
+#, php-format
+msgid ""
+"<strong>%s Data Update Required</strong> &#8211; We just need to update your "
+"install to the latest version"
+msgstr ""
+
+#: includes/admin/views/html-notice-update.php:6
+msgid "Run the updater"
+msgstr ""
+
+#: includes/admin/views/html-notice-update.php:10
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the updater now?"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:37
+msgid "Afghanistan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:38
+msgid "&#197;land Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:39
+msgid "Albania"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:40
+msgid "Algeria"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:41
+msgid "Andorra"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:42
+msgid "Angola"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:43
+msgid "Anguilla"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:44
+msgid "Antarctica"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:45
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:46
+msgid "Argentina"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:47
+msgid "Armenia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:48
+msgid "Aruba"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:49
+msgid "Australia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:50
+msgid "Austria"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:51
+msgid "Azerbaijan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:52
+msgid "Bahamas"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:53
+msgid "Bahrain"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:54
+msgid "Bangladesh"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:55
+msgid "Barbados"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:56
+msgid "Belarus"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:57
+msgid "Belgium"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:58
+msgid "Belau"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:59
+msgid "Belize"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:60
+msgid "Benin"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:61
+msgid "Bermuda"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:62
+msgid "Bhutan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:63
+msgid "Bolivia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:64
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:65
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:66
+msgid "Botswana"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:67
+msgid "Bouvet Island"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:68
+msgid "Brazil"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:69
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:70
+msgid "British Virgin Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:71
+msgid "Brunei"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:72
+msgid "Bulgaria"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:73
+msgid "Burkina Faso"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:74
+msgid "Burundi"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:75
+msgid "Cambodia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:76
+msgid "Cameroon"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:77
+msgid "Canada"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:78
+msgid "Cape Verde"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:79
+msgid "Cayman Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:80
+msgid "Central African Republic"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:81
+msgid "Chad"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:82
+msgid "Chile"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:83
+msgid "China"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:84
+msgid "Christmas Island"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:85
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:86
+msgid "Colombia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:87
+msgid "Comoros"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:88
+msgid "Congo (Brazzaville)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:89
+msgid "Congo (Kinshasa)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:90
+msgid "Cook Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:91
+msgid "Costa Rica"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:92
+msgid "Croatia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:93
+msgid "Cuba"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:94
+msgid "Cura&Ccedil;ao"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:95
+msgid "Cyprus"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:96
+msgid "Czech Republic"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:97
+msgid "Denmark"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:98
+msgid "Djibouti"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:99
+msgid "Dominica"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:100
+msgid "Dominican Republic"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:101
+msgid "Ecuador"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:102
+msgid "Egypt"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:103
+msgid "El Salvador"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:104
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:105
+msgid "Eritrea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:106
+msgid "Estonia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:107
+msgid "Ethiopia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:108
+msgid "Falkland Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:109
+msgid "Faroe Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:110
+msgid "Fiji"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:111
+msgid "Finland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:112
+msgid "France"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:113
+msgid "French Guiana"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:114
+msgid "French Polynesia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:115
+msgid "French Southern Territories"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:116
+msgid "Gabon"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:117
+msgid "Gambia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:118
+#: includes/states/US.php:26
+msgid "Georgia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:119
+msgid "Germany"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:120
+msgid "Ghana"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:121
+msgid "Gibraltar"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:122
+msgid "Greece"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:123
+msgid "Greenland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:124
+msgid "Grenada"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:125
+msgid "Guadeloupe"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:126
+msgid "Guatemala"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:127
+msgid "Guernsey"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:128
+msgid "Guinea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:129
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:130
+msgid "Guyana"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:131
+msgid "Haiti"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:132
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:133
+msgid "Honduras"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:134
+msgid "Hong Kong"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:135
+msgid "Hungary"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:136
+msgid "Iceland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:137
+msgid "India"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:138
+msgid "Indonesia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:139
+msgid "Iran"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:140
+msgid "Iraq"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:141
+msgid "Republic of Ireland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:142
+msgid "Isle of Man"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:143
+msgid "Israel"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:144
+msgid "Italy"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:145
+msgid "Ivory Coast"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:146
+msgid "Jamaica"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:147
+msgid "Japan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:148
+msgid "Jersey"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:149
+msgid "Jordan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:150
+msgid "Kazakhstan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:151
+msgid "Kenya"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:152
+msgid "Kiribati"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:153
+msgid "Kuwait"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:154
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:155
+msgid "Laos"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:156
+msgid "Latvia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:157
+msgid "Lebanon"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:158
+msgid "Lesotho"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:159
+msgid "Liberia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:160
+msgid "Libya"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:161
+msgid "Liechtenstein"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:162
+msgid "Lithuania"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:163
+msgid "Luxembourg"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:164
+msgid "Macao S.A.R., China"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:165
+msgid "Macedonia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:166
+msgid "Madagascar"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:167
+msgid "Malawi"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:168
+msgid "Malaysia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:169
+msgid "Maldives"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:170
+msgid "Mali"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:171
+msgid "Malta"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:172
+msgid "Marshall Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:173
+msgid "Martinique"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:174
+msgid "Mauritania"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:175
+msgid "Mauritius"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:176
+msgid "Mayotte"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:177
+msgid "Mexico"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:178
+msgid "Micronesia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:179
+msgid "Moldova"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:180
+msgid "Monaco"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:181
+msgid "Mongolia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:182
+msgid "Montenegro"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:183
+msgid "Montserrat"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:184
+msgid "Morocco"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:185
+msgid "Mozambique"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:186
+msgid "Myanmar"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:187
+msgid "Namibia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:188
+msgid "Nauru"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:189
+msgid "Nepal"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:190
+msgid "Netherlands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:191
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:192
+msgid "New Caledonia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:193
+msgid "New Zealand"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:194
+msgid "Nicaragua"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:195
+msgid "Niger"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:196
+msgid "Nigeria"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:197
+msgid "Niue"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:198
+msgid "Norfolk Island"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:199
+msgid "North Korea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:200
+msgid "Norway"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:201
+msgid "Oman"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:202
+msgid "Pakistan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:203
+msgid "Palestinian Territory"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:204
+msgid "Panama"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:205
+msgid "Papua New Guinea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:206
+msgid "Paraguay"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:207
+msgid "Peru"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:208
+msgid "Philippines"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:209
+msgid "Pitcairn"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:210
+msgid "Poland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:211
+msgid "Portugal"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:212
+msgid "Qatar"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:213
+msgid "Reunion"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:214
+msgid "Romania"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:215
+msgid "Russia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:216
+msgid "Rwanda"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:217
+msgid "Saint Barth&eacute;lemy"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:218
+msgid "Saint Helena"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:219
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:220
+msgid "Saint Lucia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:221
+msgid "Saint Martin (French part)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:222
+msgid "Saint Martin (Dutch part)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:223
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:224
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:225
+msgid "San Marino"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:226
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:227
+msgid "Saudi Arabia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:228
+msgid "Senegal"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:229
+msgid "Serbia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:230
+msgid "Seychelles"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:231
+msgid "Sierra Leone"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:232
+msgid "Singapore"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:233
+msgid "Slovakia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:234
+msgid "Slovenia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:235
+msgid "Solomon Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:236
+msgid "Somalia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:237
+msgid "South Africa"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:238
+msgid "South Georgia/Sandwich Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:239
+msgid "South Korea"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:240
+msgid "South Sudan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:241
+msgid "Spain"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:242
+msgid "Sri Lanka"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:243
+msgid "Sudan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:244
+msgid "Suriname"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:245
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:246
+msgid "Swaziland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:247
+msgid "Sweden"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:248
+msgid "Switzerland"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:249
+msgid "Syria"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:250
+msgid "Taiwan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:251
+msgid "Tajikistan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:252
+msgid "Tanzania"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:253
+msgid "Thailand"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:254
+msgid "Timor-Leste"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:255
+msgid "Togo"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:256
+msgid "Tokelau"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:257
+msgid "Tonga"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:258
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:259
+msgid "Tunisia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:260
+msgid "Turkey"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:261
+msgid "Turkmenistan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:262
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:263
+msgid "Tuvalu"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:264
+msgid "Uganda"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:265
+msgid "Ukraine"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:266
+msgid "United Arab Emirates"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:267
+msgid "United Kingdom (UK)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:268
+msgid "United States (US)"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:269
+msgid "Uruguay"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:270
+msgid "Uzbekistan"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:271
+msgid "Vanuatu"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:272
+msgid "Vatican"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:273
+msgid "Venezuela"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:274
+msgid "Vietnam"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:275
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:276
+msgid "Western Sahara"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:277
+msgid "Western Samoa"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:278
+msgid "Yemen"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:279
+msgid "Zambia"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:280
+msgid "Zimbabwe"
+msgstr ""
+
+#: includes/classes/class-plugin-name-countries.php:438
+msgid "the"
+msgstr ""
+
+#: includes/states/AU.php:16
+msgid "Australian Capital Territory"
+msgstr ""
+
+#: includes/states/AU.php:17
+msgid "New South Wales"
+msgstr ""
+
+#: includes/states/AU.php:18
+msgid "Northern Territory"
+msgstr ""
+
+#: includes/states/AU.php:19
+msgid "Queensland"
+msgstr ""
+
+#: includes/states/AU.php:20
+msgid "South Australia"
+msgstr ""
+
+#: includes/states/AU.php:21
+msgid "Tasmania"
+msgstr ""
+
+#: includes/states/AU.php:22
+msgid "Victoria"
+msgstr ""
+
+#: includes/states/AU.php:23
+msgid "Western Australia"
+msgstr ""
+
+#: includes/states/BG.php:16
+msgid "Blagoevgrad"
+msgstr ""
+
+#: includes/states/BG.php:17
+msgid "Burgas"
+msgstr ""
+
+#: includes/states/BG.php:18
+msgid "Dobrich"
+msgstr ""
+
+#: includes/states/BG.php:19
+msgid "Gabrovo"
+msgstr ""
+
+#: includes/states/BG.php:20
+msgid "Haskovo"
+msgstr ""
+
+#: includes/states/BG.php:21
+msgid "Kardzhali"
+msgstr ""
+
+#: includes/states/BG.php:22
+msgid "Kyustendil"
+msgstr ""
+
+#: includes/states/BG.php:23
+msgid "Lovech"
+msgstr ""
+
+#: includes/states/BG.php:24 includes/states/US.php:42
+msgid "Montana"
+msgstr ""
+
+#: includes/states/BG.php:25
+msgid "Pazardzhik"
+msgstr ""
+
+#: includes/states/BG.php:26
+msgid "Pernik"
+msgstr ""
+
+#: includes/states/BG.php:27
+msgid "Pleven"
+msgstr ""
+
+#: includes/states/BG.php:28
+msgid "Plovdiv"
+msgstr ""
+
+#: includes/states/BG.php:29
+msgid "Razgrad"
+msgstr ""
+
+#: includes/states/BG.php:30
+msgid "Ruse"
+msgstr ""
+
+#: includes/states/BG.php:31
+msgid "Shumen"
+msgstr ""
+
+#: includes/states/BG.php:32
+msgid "Silistra"
+msgstr ""
+
+#: includes/states/BG.php:33
+msgid "Sliven"
+msgstr ""
+
+#: includes/states/BG.php:34
+msgid "Smolyan"
+msgstr ""
+
+#: includes/states/BG.php:35
+msgid "Sofia"
+msgstr ""
+
+#: includes/states/BG.php:36
+msgid "Sofia-Grad"
+msgstr ""
+
+#: includes/states/BG.php:37
+msgid "Stara Zagora"
+msgstr ""
+
+#: includes/states/BG.php:38
+msgid "Targovishte"
+msgstr ""
+
+#: includes/states/BG.php:39
+msgid "Varna"
+msgstr ""
+
+#: includes/states/BG.php:40
+msgid "Veliko Tarnovo"
+msgstr ""
+
+#: includes/states/BG.php:41
+msgid "Vidin"
+msgstr ""
+
+#: includes/states/BG.php:42
+msgid "Vratsa"
+msgstr ""
+
+#: includes/states/BG.php:43
+msgid "Yambol"
+msgstr ""
+
+#: includes/states/BR.php:16
+msgid "Acre"
+msgstr ""
+
+#: includes/states/BR.php:17
+msgid "Alagoas"
+msgstr ""
+
+#: includes/states/BR.php:18
+msgid "Amap&aacute;"
+msgstr ""
+
+#: includes/states/BR.php:19 includes/states/PE.php:18
+msgid "Amazonas"
+msgstr ""
+
+#: includes/states/BR.php:20
+msgid "Bahia"
+msgstr ""
+
+#: includes/states/BR.php:21
+msgid "Cear&aacute;"
+msgstr ""
+
+#: includes/states/BR.php:22
+msgid "Distrito Federal"
+msgstr ""
+
+#: includes/states/BR.php:23
+msgid "Esp&iacute;rito Santo"
+msgstr ""
+
+#: includes/states/BR.php:24
+msgid "Goi&aacute;s"
+msgstr ""
+
+#: includes/states/BR.php:25
+msgid "Maranh&atilde;o"
+msgstr ""
+
+#: includes/states/BR.php:26
+msgid "Mato Grosso"
+msgstr ""
+
+#: includes/states/BR.php:27
+msgid "Mato Grosso do Sul"
+msgstr ""
+
+#: includes/states/BR.php:28
+msgid "Minas Gerais"
+msgstr ""
+
+#: includes/states/BR.php:29
+msgid "Par&aacute;"
+msgstr ""
+
+#: includes/states/BR.php:30
+msgid "Para&iacute;ba"
+msgstr ""
+
+#: includes/states/BR.php:31
+msgid "Paran&aacute;"
+msgstr ""
+
+#: includes/states/BR.php:32
+msgid "Pernambuco"
+msgstr ""
+
+#: includes/states/BR.php:33
+msgid "Piau&iacute;"
+msgstr ""
+
+#: includes/states/BR.php:34
+msgid "Rio de Janeiro"
+msgstr ""
+
+#: includes/states/BR.php:35
+msgid "Rio Grande do Norte"
+msgstr ""
+
+#: includes/states/BR.php:36
+msgid "Rio Grande do Sul"
+msgstr ""
+
+#: includes/states/BR.php:37
+msgid "Rond&ocirc;nia"
+msgstr ""
+
+#: includes/states/BR.php:38
+msgid "Roraima"
+msgstr ""
+
+#: includes/states/BR.php:39
+msgid "Santa Catarina"
+msgstr ""
+
+#: includes/states/BR.php:40
+msgid "S&atilde;o Paulo"
+msgstr ""
+
+#: includes/states/BR.php:41
+msgid "Sergipe"
+msgstr ""
+
+#: includes/states/BR.php:42
+msgid "Tocantins"
+msgstr ""
+
+#: includes/states/CA.php:16
+msgid "Alberta"
+msgstr ""
+
+#: includes/states/CA.php:17
+msgid "British Columbia"
+msgstr ""
+
+#: includes/states/CA.php:18
+msgid "Manitoba"
+msgstr ""
+
+#: includes/states/CA.php:19
+msgid "New Brunswick"
+msgstr ""
+
+#: includes/states/CA.php:20
+msgid "Newfoundland"
+msgstr ""
+
+#: includes/states/CA.php:21
+msgid "Northwest Territories"
+msgstr ""
+
+#: includes/states/CA.php:22
+msgid "Nova Scotia"
+msgstr ""
+
+#: includes/states/CA.php:23
+msgid "Nunavut"
+msgstr ""
+
+#: includes/states/CA.php:24
+msgid "Ontario"
+msgstr ""
+
+#: includes/states/CA.php:25
+msgid "Prince Edward Island"
+msgstr ""
+
+#: includes/states/CA.php:26
+msgid "Quebec"
+msgstr ""
+
+#: includes/states/CA.php:27
+msgid "Saskatchewan"
+msgstr ""
+
+#: includes/states/CA.php:28
+msgid "Yukon Territory"
+msgstr ""
+
+#: includes/states/CN.php:16
+msgid "Yunnan / &#20113;&#21335;"
+msgstr ""
+
+#: includes/states/CN.php:17
+msgid "Beijing / &#21271;&#20140;"
+msgstr ""
+
+#: includes/states/CN.php:18
+msgid "Tianjin / &#22825;&#27941;"
+msgstr ""
+
+#: includes/states/CN.php:19
+msgid "Hebei / &#27827;&#21271;"
+msgstr ""
+
+#: includes/states/CN.php:20
+msgid "Shanxi / &#23665;&#35199;"
+msgstr ""
+
+#: includes/states/CN.php:21
+msgid "Inner Mongolia / &#20839;&#33945;&#21476;"
+msgstr ""
+
+#: includes/states/CN.php:22
+msgid "Liaoning / &#36797;&#23425;"
+msgstr ""
+
+#: includes/states/CN.php:23
+msgid "Jilin / &#21513;&#26519;"
+msgstr ""
+
+#: includes/states/CN.php:24
+msgid "Heilongjiang / &#40657;&#40857;&#27743;"
+msgstr ""
+
+#: includes/states/CN.php:25
+msgid "Shanghai / &#19978;&#28023;"
+msgstr ""
+
+#: includes/states/CN.php:26
+msgid "Jiangsu / &#27743;&#33487;"
+msgstr ""
+
+#: includes/states/CN.php:27
+msgid "Zhejiang / &#27993;&#27743;"
+msgstr ""
+
+#: includes/states/CN.php:28
+msgid "Anhui / &#23433;&#24509;"
+msgstr ""
+
+#: includes/states/CN.php:29
+msgid "Fujian / &#31119;&#24314;"
+msgstr ""
+
+#: includes/states/CN.php:30
+msgid "Jiangxi / &#27743;&#35199;"
+msgstr ""
+
+#: includes/states/CN.php:31
+msgid "Shandong / &#23665;&#19996;"
+msgstr ""
+
+#: includes/states/CN.php:32
+msgid "Henan / &#27827;&#21335;"
+msgstr ""
+
+#: includes/states/CN.php:33
+msgid "Hubei / &#28246;&#21271;"
+msgstr ""
+
+#: includes/states/CN.php:34
+msgid "Hunan / &#28246;&#21335;"
+msgstr ""
+
+#: includes/states/CN.php:35
+msgid "Guangdong / &#24191;&#19996;"
+msgstr ""
+
+#: includes/states/CN.php:36
+msgid "Guangxi Zhuang / &#24191;&#35199;&#22766;&#26063;"
+msgstr ""
+
+#: includes/states/CN.php:37
+msgid "Hainan / &#28023;&#21335;"
+msgstr ""
+
+#: includes/states/CN.php:38
+msgid "Chongqing / &#37325;&#24198;"
+msgstr ""
+
+#: includes/states/CN.php:39
+msgid "Sichuan / &#22235;&#24029;"
+msgstr ""
+
+#: includes/states/CN.php:40
+msgid "Guizhou / &#36149;&#24030;"
+msgstr ""
+
+#: includes/states/CN.php:41
+msgid "Shaanxi / &#38485;&#35199;"
+msgstr ""
+
+#: includes/states/CN.php:42
+msgid "Gansu / &#29976;&#32899;"
+msgstr ""
+
+#: includes/states/CN.php:43
+msgid "Qinghai / &#38738;&#28023;"
+msgstr ""
+
+#: includes/states/CN.php:44
+msgid "Ningxia Hui / &#23425;&#22799;"
+msgstr ""
+
+#: includes/states/CN.php:45
+msgid "Macau / &#28595;&#38376;"
+msgstr ""
+
+#: includes/states/CN.php:46
+msgid "Tibet / &#35199;&#34255;"
+msgstr ""
+
+#: includes/states/CN.php:47
+msgid "Xinjiang / &#26032;&#30086;"
+msgstr ""
+
+#: includes/states/ES.php:16
+msgid "A Coru&ntilde;a"
+msgstr ""
+
+#: includes/states/ES.php:17
+msgid "&Aacute;lava"
+msgstr ""
+
+#: includes/states/ES.php:18
+msgid "Albacete"
+msgstr ""
+
+#: includes/states/ES.php:19
+msgid "Alicante"
+msgstr ""
+
+#: includes/states/ES.php:20
+msgid "Almer&iacute;a"
+msgstr ""
+
+#: includes/states/ES.php:21
+msgid "Asturias"
+msgstr ""
+
+#: includes/states/ES.php:22
+msgid "&Aacute;vila"
+msgstr ""
+
+#: includes/states/ES.php:23
+msgid "Badajoz"
+msgstr ""
+
+#: includes/states/ES.php:24
+msgid "Baleares"
+msgstr ""
+
+#: includes/states/ES.php:25
+msgid "Barcelona"
+msgstr ""
+
+#: includes/states/ES.php:26
+msgid "Burgos"
+msgstr ""
+
+#: includes/states/ES.php:27
+msgid "C&aacute;ceres"
+msgstr ""
+
+#: includes/states/ES.php:28
+msgid "C&aacute;diz"
+msgstr ""
+
+#: includes/states/ES.php:29
+msgid "Cantabria"
+msgstr ""
+
+#: includes/states/ES.php:30
+msgid "Castell&oacute;n"
+msgstr ""
+
+#: includes/states/ES.php:31
+msgid "Ceuta"
+msgstr ""
+
+#: includes/states/ES.php:32
+msgid "Ciudad Real"
+msgstr ""
+
+#: includes/states/ES.php:33
+msgid "C&oacute;rdoba"
+msgstr ""
+
+#: includes/states/ES.php:34
+msgid "Cuenca"
+msgstr ""
+
+#: includes/states/ES.php:35
+msgid "Girona"
+msgstr ""
+
+#: includes/states/ES.php:36
+msgid "Granada"
+msgstr ""
+
+#: includes/states/ES.php:37
+msgid "Guadalajara"
+msgstr ""
+
+#: includes/states/ES.php:38
+msgid "Guip&uacute;zcoa"
+msgstr ""
+
+#: includes/states/ES.php:39
+msgid "Huelva"
+msgstr ""
+
+#: includes/states/ES.php:40
+msgid "Huesca"
+msgstr ""
+
+#: includes/states/ES.php:41
+msgid "Ja&eacute;n"
+msgstr ""
+
+#: includes/states/ES.php:42
+msgid "La Rioja"
+msgstr ""
+
+#: includes/states/ES.php:43
+msgid "Las Palmas"
+msgstr ""
+
+#: includes/states/ES.php:44
+msgid "Le&oacute;n"
+msgstr ""
+
+#: includes/states/ES.php:45
+msgid "Lleida"
+msgstr ""
+
+#: includes/states/ES.php:46
+msgid "Lugo"
+msgstr ""
+
+#: includes/states/ES.php:47
+msgid "Madrid"
+msgstr ""
+
+#: includes/states/ES.php:48
+msgid "M&aacute;laga"
+msgstr ""
+
+#: includes/states/ES.php:49
+msgid "Melilla"
+msgstr ""
+
+#: includes/states/ES.php:50
+msgid "Murcia"
+msgstr ""
+
+#: includes/states/ES.php:51
+msgid "Navarra"
+msgstr ""
+
+#: includes/states/ES.php:52
+msgid "Ourense"
+msgstr ""
+
+#: includes/states/ES.php:53
+msgid "Palencia"
+msgstr ""
+
+#: includes/states/ES.php:54
+msgid "Pontevedra"
+msgstr ""
+
+#: includes/states/ES.php:55
+msgid "Salamanca"
+msgstr ""
+
+#: includes/states/ES.php:56
+msgid "Santa Cruz de Tenerife"
+msgstr ""
+
+#: includes/states/ES.php:57
+msgid "Segovia"
+msgstr ""
+
+#: includes/states/ES.php:58
+msgid "Sevilla"
+msgstr ""
+
+#: includes/states/ES.php:59
+msgid "Soria"
+msgstr ""
+
+#: includes/states/ES.php:60
+msgid "Tarragona"
+msgstr ""
+
+#: includes/states/ES.php:61
+msgid "Teruel"
+msgstr ""
+
+#: includes/states/ES.php:62
+msgid "Toledo"
+msgstr ""
+
+#: includes/states/ES.php:63
+msgid "Valencia"
+msgstr ""
+
+#: includes/states/ES.php:64
+msgid "Valladolid"
+msgstr ""
+
+#: includes/states/ES.php:65
+msgid "Vizcaya"
+msgstr ""
+
+#: includes/states/ES.php:66
+msgid "Zamora"
+msgstr ""
+
+#: includes/states/ES.php:67
+msgid "Zaragoza"
+msgstr ""
+
+#: includes/states/HK.php:16
+msgid "Hong Kong Island"
+msgstr ""
+
+#: includes/states/HK.php:17
+msgid "Kowloon"
+msgstr ""
+
+#: includes/states/HK.php:18
+msgid "New Territories"
+msgstr ""
+
+#: includes/states/HU.php:16
+msgid "Bács-Kiskun"
+msgstr ""
+
+#: includes/states/HU.php:17
+msgid "Békés"
+msgstr ""
+
+#: includes/states/HU.php:18
+msgid "Baranya"
+msgstr ""
+
+#: includes/states/HU.php:19
+msgid "Borsod-Abaúj-Zemplén"
+msgstr ""
+
+#: includes/states/HU.php:20
+msgid "Budapest"
+msgstr ""
+
+#: includes/states/HU.php:21
+msgid "Csongrád"
+msgstr ""
+
+#: includes/states/HU.php:22
+msgid "Fejér"
+msgstr ""
+
+#: includes/states/HU.php:23
+msgid "Győr-Moson-Sopron"
+msgstr ""
+
+#: includes/states/HU.php:24
+msgid "Hajdú-Bihar"
+msgstr ""
+
+#: includes/states/HU.php:25
+msgid "Heves"
+msgstr ""
+
+#: includes/states/HU.php:26
+msgid "Jász-Nagykun-Szolnok"
+msgstr ""
+
+#: includes/states/HU.php:27
+msgid "Komárom-Esztergom"
+msgstr ""
+
+#: includes/states/HU.php:28
+msgid "Nógrád"
+msgstr ""
+
+#: includes/states/HU.php:29
+msgid "Pest"
+msgstr ""
+
+#: includes/states/HU.php:30
+msgid "Somogy"
+msgstr ""
+
+#: includes/states/HU.php:31
+msgid "Szabolcs-Szatmár-Bereg"
+msgstr ""
+
+#: includes/states/HU.php:32
+msgid "Tolna"
+msgstr ""
+
+#: includes/states/HU.php:33
+msgid "Vas"
+msgstr ""
+
+#: includes/states/HU.php:34
+msgid "Veszprém"
+msgstr ""
+
+#: includes/states/HU.php:35
+msgid "Zala"
+msgstr ""
+
+#: includes/states/HZ.php:16 includes/states/NZ.php:17
+msgid "Auckland"
+msgstr ""
+
+#: includes/states/HZ.php:17 includes/states/NZ.php:19
+msgid "Bay of Plenty"
+msgstr ""
+
+#: includes/states/HZ.php:18 includes/states/NZ.php:28
+msgid "Canterbury"
+msgstr ""
+
+#: includes/states/HZ.php:19 includes/states/NZ.php:21
+msgid "Hawke&rsquo;s Bay"
+msgstr ""
+
+#: includes/states/HZ.php:20 includes/states/NZ.php:22
+msgid "Manawatu-Wanganui"
+msgstr ""
+
+#: includes/states/HZ.php:21 includes/states/NZ.php:25
+msgid "Marlborough"
+msgstr ""
+
+#: includes/states/HZ.php:22 includes/states/NZ.php:24
+msgid "Nelson"
+msgstr ""
+
+#: includes/states/HZ.php:23 includes/states/NZ.php:16
+msgid "Northland"
+msgstr ""
+
+#: includes/states/HZ.php:24 includes/states/NZ.php:29
+msgid "Otago"
+msgstr ""
+
+#: includes/states/HZ.php:25 includes/states/NZ.php:30
+msgid "Southland"
+msgstr ""
+
+#: includes/states/HZ.php:26 includes/states/NZ.php:20
+msgid "Taranaki"
+msgstr ""
+
+#: includes/states/HZ.php:27 includes/states/NZ.php:26
+msgid "Tasman"
+msgstr ""
+
+#: includes/states/HZ.php:28 includes/states/NZ.php:18
+msgid "Waikato"
+msgstr ""
+
+#: includes/states/HZ.php:29 includes/states/NZ.php:23
+msgid "Wellington"
+msgstr ""
+
+#: includes/states/HZ.php:30 includes/states/NZ.php:27
+msgid "West Coast"
+msgstr ""
+
+#: includes/states/ID.php:16
+msgid "Daerah Istimewa Aceh"
+msgstr ""
+
+#: includes/states/ID.php:17
+msgid "Sumatera Utara"
+msgstr ""
+
+#: includes/states/ID.php:18
+msgid "Sumatera Barat"
+msgstr ""
+
+#: includes/states/ID.php:19
+msgid "Riau"
+msgstr ""
+
+#: includes/states/ID.php:20
+msgid "Kepulauan Riau"
+msgstr ""
+
+#: includes/states/ID.php:21
+msgid "Jambi"
+msgstr ""
+
+#: includes/states/ID.php:22
+msgid "Sumatera Selatan"
+msgstr ""
+
+#: includes/states/ID.php:23
+msgid "Bangka Belitung"
+msgstr ""
+
+#: includes/states/ID.php:24
+msgid "Bengkulu"
+msgstr ""
+
+#: includes/states/ID.php:25
+msgid "Lampung"
+msgstr ""
+
+#: includes/states/ID.php:26
+msgid "DKI Jakarta"
+msgstr ""
+
+#: includes/states/ID.php:27
+msgid "Jawa Barat"
+msgstr ""
+
+#: includes/states/ID.php:28
+msgid "Banten"
+msgstr ""
+
+#: includes/states/ID.php:29
+msgid "Jawa Tengah"
+msgstr ""
+
+#: includes/states/ID.php:30
+msgid "Jawa Timur"
+msgstr ""
+
+#: includes/states/ID.php:31
+msgid "Daerah Istimewa Yogyakarta"
+msgstr ""
+
+#: includes/states/ID.php:32
+msgid "Bali"
+msgstr ""
+
+#: includes/states/ID.php:33
+msgid "Nusa Tenggara Barat"
+msgstr ""
+
+#: includes/states/ID.php:34
+msgid "Nusa Tenggara Timur"
+msgstr ""
+
+#: includes/states/ID.php:35
+msgid "Kalimantan Barat"
+msgstr ""
+
+#: includes/states/ID.php:36
+msgid "Kalimantan Tengah"
+msgstr ""
+
+#: includes/states/ID.php:37
+msgid "Kalimantan Timur"
+msgstr ""
+
+#: includes/states/ID.php:38
+msgid "Kalimantan Selatan"
+msgstr ""
+
+#: includes/states/ID.php:39
+msgid "Kalimantan Utara"
+msgstr ""
+
+#: includes/states/ID.php:40
+msgid "Sulawesi Utara"
+msgstr ""
+
+#: includes/states/ID.php:41
+msgid "Sulawesi Tengah"
+msgstr ""
+
+#: includes/states/ID.php:42
+msgid "Sulawesi Tenggara"
+msgstr ""
+
+#: includes/states/ID.php:43
+msgid "Sulawesi Barat"
+msgstr ""
+
+#: includes/states/ID.php:44
+msgid "Sulawesi Selatan"
+msgstr ""
+
+#: includes/states/ID.php:45
+msgid "Gorontalo"
+msgstr ""
+
+#: includes/states/ID.php:46
+msgid "Maluku"
+msgstr ""
+
+#: includes/states/ID.php:47
+msgid "Maluku Utara"
+msgstr ""
+
+#: includes/states/ID.php:48
+msgid "Papua"
+msgstr ""
+
+#: includes/states/ID.php:49
+msgid "Papua Barat"
+msgstr ""
+
+#: includes/states/IN.php:16
+msgid "Andra Pradesh"
+msgstr ""
+
+#: includes/states/IN.php:17
+msgid "Arunachal Pradesh"
+msgstr ""
+
+#: includes/states/IN.php:18
+msgid "Assam"
+msgstr ""
+
+#: includes/states/IN.php:19
+msgid "Bihar"
+msgstr ""
+
+#: includes/states/IN.php:20
+msgid "Chhattisgarh"
+msgstr ""
+
+#: includes/states/IN.php:21
+msgid "Goa"
+msgstr ""
+
+#: includes/states/IN.php:22
+msgid "Gujarat"
+msgstr ""
+
+#: includes/states/IN.php:23
+msgid "Haryana"
+msgstr ""
+
+#: includes/states/IN.php:24
+msgid "Himachal Pradesh"
+msgstr ""
+
+#: includes/states/IN.php:25
+msgid "Jammu and Kashmir"
+msgstr ""
+
+#: includes/states/IN.php:26
+msgid "Jharkhand"
+msgstr ""
+
+#: includes/states/IN.php:27
+msgid "Karnataka"
+msgstr ""
+
+#: includes/states/IN.php:28
+msgid "Kerala"
+msgstr ""
+
+#: includes/states/IN.php:29
+msgid "Madhya Pradesh"
+msgstr ""
+
+#: includes/states/IN.php:30
+msgid "Maharashtra"
+msgstr ""
+
+#: includes/states/IN.php:31
+msgid "Manipur"
+msgstr ""
+
+#: includes/states/IN.php:32
+msgid "Meghalaya"
+msgstr ""
+
+#: includes/states/IN.php:33
+msgid "Mizoram"
+msgstr ""
+
+#: includes/states/IN.php:34
+msgid "Nagaland"
+msgstr ""
+
+#: includes/states/IN.php:35
+msgid "Orissa"
+msgstr ""
+
+#: includes/states/IN.php:36
+msgid "Punjab"
+msgstr ""
+
+#: includes/states/IN.php:37
+msgid "Rajasthan"
+msgstr ""
+
+#: includes/states/IN.php:38
+msgid "Sikkim"
+msgstr ""
+
+#: includes/states/IN.php:39
+msgid "Tamil Nadu"
+msgstr ""
+
+#: includes/states/IN.php:40
+msgid "Tripura"
+msgstr ""
+
+#: includes/states/IN.php:41
+msgid "Uttaranchal"
+msgstr ""
+
+#: includes/states/IN.php:42
+msgid "Uttar Pradesh"
+msgstr ""
+
+#: includes/states/IN.php:43
+msgid "West Bengal"
+msgstr ""
+
+#: includes/states/IN.php:44
+msgid "Andaman and Nicobar Islands"
+msgstr ""
+
+#: includes/states/IN.php:45
+msgid "Chandigarh"
+msgstr ""
+
+#: includes/states/IN.php:46
+msgid "Dadar and Nagar Haveli"
+msgstr ""
+
+#: includes/states/IN.php:47
+msgid "Daman and Diu"
+msgstr ""
+
+#: includes/states/IN.php:48
+msgid "Delhi"
+msgstr ""
+
+#: includes/states/IN.php:49
+msgid "Lakshadeep"
+msgstr ""
+
+#: includes/states/IN.php:50
+msgid "Pondicherry (Puducherry)"
+msgstr ""
+
+#: includes/states/IT.php:16
+msgid "Agrigento"
+msgstr ""
+
+#: includes/states/IT.php:17
+msgid "Alessandria"
+msgstr ""
+
+#: includes/states/IT.php:18
+msgid "Ancona"
+msgstr ""
+
+#: includes/states/IT.php:19
+msgid "Aosta"
+msgstr ""
+
+#: includes/states/IT.php:20
+msgid "Arezzo"
+msgstr ""
+
+#: includes/states/IT.php:21
+msgid "Ascoli Piceno"
+msgstr ""
+
+#: includes/states/IT.php:22
+msgid "Asti"
+msgstr ""
+
+#: includes/states/IT.php:23
+msgid "Avellino"
+msgstr ""
+
+#: includes/states/IT.php:24
+msgid "Bari"
+msgstr ""
+
+#: includes/states/IT.php:25
+msgid "Barletta-Andria-Trani"
+msgstr ""
+
+#: includes/states/IT.php:26
+msgid "Belluno"
+msgstr ""
+
+#: includes/states/IT.php:27
+msgid "Benevento"
+msgstr ""
+
+#: includes/states/IT.php:28
+msgid "Bergamo"
+msgstr ""
+
+#: includes/states/IT.php:29
+msgid "Biella"
+msgstr ""
+
+#: includes/states/IT.php:30
+msgid "Bologna"
+msgstr ""
+
+#: includes/states/IT.php:31
+msgid "Bolzano"
+msgstr ""
+
+#: includes/states/IT.php:32
+msgid "Brescia"
+msgstr ""
+
+#: includes/states/IT.php:33
+msgid "Brindisi"
+msgstr ""
+
+#: includes/states/IT.php:34
+msgid "Cagliari"
+msgstr ""
+
+#: includes/states/IT.php:35
+msgid "Caltanissetta"
+msgstr ""
+
+#: includes/states/IT.php:36
+msgid "Campobasso"
+msgstr ""
+
+#: includes/states/IT.php:37
+msgid "Carbonia-Iglesias"
+msgstr ""
+
+#: includes/states/IT.php:38
+msgid "Caserta"
+msgstr ""
+
+#: includes/states/IT.php:39
+msgid "Catania"
+msgstr ""
+
+#: includes/states/IT.php:40
+msgid "Catanzaro"
+msgstr ""
+
+#: includes/states/IT.php:41
+msgid "Chieti"
+msgstr ""
+
+#: includes/states/IT.php:42
+msgid "Como"
+msgstr ""
+
+#: includes/states/IT.php:43
+msgid "Cosenza"
+msgstr ""
+
+#: includes/states/IT.php:44
+msgid "Cremona"
+msgstr ""
+
+#: includes/states/IT.php:45
+msgid "Crotone"
+msgstr ""
+
+#: includes/states/IT.php:46
+msgid "Cuneo"
+msgstr ""
+
+#: includes/states/IT.php:47
+msgid "Enna"
+msgstr ""
+
+#: includes/states/IT.php:48
+msgid "Fermo"
+msgstr ""
+
+#: includes/states/IT.php:49
+msgid "Ferrara"
+msgstr ""
+
+#: includes/states/IT.php:50
+msgid "Firenze"
+msgstr ""
+
+#: includes/states/IT.php:51
+msgid "Foggia"
+msgstr ""
+
+#: includes/states/IT.php:52
+msgid "Forlì-Cesena"
+msgstr ""
+
+#: includes/states/IT.php:53
+msgid "Frosinone"
+msgstr ""
+
+#: includes/states/IT.php:54
+msgid "Genova"
+msgstr ""
+
+#: includes/states/IT.php:55
+msgid "Gorizia"
+msgstr ""
+
+#: includes/states/IT.php:56
+msgid "Grosseto"
+msgstr ""
+
+#: includes/states/IT.php:57
+msgid "Imperia"
+msgstr ""
+
+#: includes/states/IT.php:58
+msgid "Isernia"
+msgstr ""
+
+#: includes/states/IT.php:59
+msgid "La Spezia"
+msgstr ""
+
+#: includes/states/IT.php:60
+msgid "L&apos;Aquila"
+msgstr ""
+
+#: includes/states/IT.php:61
+msgid "Latina"
+msgstr ""
+
+#: includes/states/IT.php:62
+msgid "Lecce"
+msgstr ""
+
+#: includes/states/IT.php:63
+msgid "Lecco"
+msgstr ""
+
+#: includes/states/IT.php:64
+msgid "Livorno"
+msgstr ""
+
+#: includes/states/IT.php:65
+msgid "Lodi"
+msgstr ""
+
+#: includes/states/IT.php:66
+msgid "Lucca"
+msgstr ""
+
+#: includes/states/IT.php:67
+msgid "Macerata"
+msgstr ""
+
+#: includes/states/IT.php:68
+msgid "Mantova"
+msgstr ""
+
+#: includes/states/IT.php:69
+msgid "Massa-Carrara"
+msgstr ""
+
+#: includes/states/IT.php:70
+msgid "Matera"
+msgstr ""
+
+#: includes/states/IT.php:71
+msgid "Messina"
+msgstr ""
+
+#: includes/states/IT.php:72
+msgid "Milano"
+msgstr ""
+
+#: includes/states/IT.php:73
+msgid "Modena"
+msgstr ""
+
+#: includes/states/IT.php:74
+msgid "Monza e della Brianza"
+msgstr ""
+
+#: includes/states/IT.php:75
+msgid "Napoli"
+msgstr ""
+
+#: includes/states/IT.php:76
+msgid "Novara"
+msgstr ""
+
+#: includes/states/IT.php:77
+msgid "Nuoro"
+msgstr ""
+
+#: includes/states/IT.php:78
+msgid "Olbia-Tempio"
+msgstr ""
+
+#: includes/states/IT.php:79
+msgid "Oristano"
+msgstr ""
+
+#: includes/states/IT.php:80
+msgid "Padova"
+msgstr ""
+
+#: includes/states/IT.php:81
+msgid "Palermo"
+msgstr ""
+
+#: includes/states/IT.php:82
+msgid "Parma"
+msgstr ""
+
+#: includes/states/IT.php:83
+msgid "Pavia"
+msgstr ""
+
+#: includes/states/IT.php:84
+msgid "Perugia"
+msgstr ""
+
+#: includes/states/IT.php:85
+msgid "Pesaro e Urbino"
+msgstr ""
+
+#: includes/states/IT.php:86
+msgid "Pescara"
+msgstr ""
+
+#: includes/states/IT.php:87
+msgid "Piacenza"
+msgstr ""
+
+#: includes/states/IT.php:88
+msgid "Pisa"
+msgstr ""
+
+#: includes/states/IT.php:89
+msgid "Pistoia"
+msgstr ""
+
+#: includes/states/IT.php:90
+msgid "Pordenone"
+msgstr ""
+
+#: includes/states/IT.php:91
+msgid "Potenza"
+msgstr ""
+
+#: includes/states/IT.php:92
+msgid "Prato"
+msgstr ""
+
+#: includes/states/IT.php:93
+msgid "Ragusa"
+msgstr ""
+
+#: includes/states/IT.php:94
+msgid "Ravenna"
+msgstr ""
+
+#: includes/states/IT.php:95
+msgid "Reggio Calabria"
+msgstr ""
+
+#: includes/states/IT.php:96
+msgid "Reggio Emilia"
+msgstr ""
+
+#: includes/states/IT.php:97
+msgid "Rieti"
+msgstr ""
+
+#: includes/states/IT.php:98
+msgid "Rimini"
+msgstr ""
+
+#: includes/states/IT.php:99
+msgid "Roma"
+msgstr ""
+
+#: includes/states/IT.php:100
+msgid "Rovigo"
+msgstr ""
+
+#: includes/states/IT.php:101
+msgid "Salerno"
+msgstr ""
+
+#: includes/states/IT.php:102
+msgid "Medio Campidano"
+msgstr ""
+
+#: includes/states/IT.php:103
+msgid "Sassari"
+msgstr ""
+
+#: includes/states/IT.php:104
+msgid "Savona"
+msgstr ""
+
+#: includes/states/IT.php:105
+msgid "Siena"
+msgstr ""
+
+#: includes/states/IT.php:106
+msgid "Siracusa"
+msgstr ""
+
+#: includes/states/IT.php:107
+msgid "Sondrio"
+msgstr ""
+
+#: includes/states/IT.php:108
+msgid "Taranto"
+msgstr ""
+
+#: includes/states/IT.php:109
+msgid "Teramo"
+msgstr ""
+
+#: includes/states/IT.php:110
+msgid "Terni"
+msgstr ""
+
+#: includes/states/IT.php:111
+msgid "Torino"
+msgstr ""
+
+#: includes/states/IT.php:112
+msgid "Ogliastra"
+msgstr ""
+
+#: includes/states/IT.php:113
+msgid "Trapani"
+msgstr ""
+
+#: includes/states/IT.php:114
+msgid "Trento"
+msgstr ""
+
+#: includes/states/IT.php:115
+msgid "Treviso"
+msgstr ""
+
+#: includes/states/IT.php:116
+msgid "Trieste"
+msgstr ""
+
+#: includes/states/IT.php:117
+msgid "Udine"
+msgstr ""
+
+#: includes/states/IT.php:118
+msgid "Varese"
+msgstr ""
+
+#: includes/states/IT.php:119
+msgid "Venezia"
+msgstr ""
+
+#: includes/states/IT.php:120
+msgid "Verbano-Cusio-Ossola"
+msgstr ""
+
+#: includes/states/IT.php:121
+msgid "Vercelli"
+msgstr ""
+
+#: includes/states/IT.php:122
+msgid "Verona"
+msgstr ""
+
+#: includes/states/IT.php:123
+msgid "Vibo Valentia"
+msgstr ""
+
+#: includes/states/IT.php:124
+msgid "Vicenza"
+msgstr ""
+
+#: includes/states/IT.php:125
+msgid "Viterbo"
+msgstr ""
+
+#: includes/states/JP.php:16
+msgid "Hokkaido"
+msgstr ""
+
+#: includes/states/JP.php:17
+msgid "Aomori"
+msgstr ""
+
+#: includes/states/JP.php:18
+msgid "Iwate"
+msgstr ""
+
+#: includes/states/JP.php:19
+msgid "Miyagi"
+msgstr ""
+
+#: includes/states/JP.php:20
+msgid "Akita"
+msgstr ""
+
+#: includes/states/JP.php:21
+msgid "Yamagata"
+msgstr ""
+
+#: includes/states/JP.php:22
+msgid "Fukushima"
+msgstr ""
+
+#: includes/states/JP.php:23
+msgid "Ibaraki"
+msgstr ""
+
+#: includes/states/JP.php:24
+msgid "Tochigi"
+msgstr ""
+
+#: includes/states/JP.php:25
+msgid "Gunma"
+msgstr ""
+
+#: includes/states/JP.php:26
+msgid "Saitama"
+msgstr ""
+
+#: includes/states/JP.php:27
+msgid "Chiba"
+msgstr ""
+
+#: includes/states/JP.php:28
+msgid "Tokyo"
+msgstr ""
+
+#: includes/states/JP.php:29
+msgid "Kanagawa"
+msgstr ""
+
+#: includes/states/JP.php:30
+msgid "Niigata"
+msgstr ""
+
+#: includes/states/JP.php:31
+msgid "Toyama"
+msgstr ""
+
+#: includes/states/JP.php:32
+msgid "Ishikawa"
+msgstr ""
+
+#: includes/states/JP.php:33
+msgid "Fukui"
+msgstr ""
+
+#: includes/states/JP.php:34
+msgid "Yamanashi"
+msgstr ""
+
+#: includes/states/JP.php:35
+msgid "Nagano"
+msgstr ""
+
+#: includes/states/JP.php:36
+msgid "Gifu"
+msgstr ""
+
+#: includes/states/JP.php:37
+msgid "Shizuoka"
+msgstr ""
+
+#: includes/states/JP.php:38
+msgid "Aichi"
+msgstr ""
+
+#: includes/states/JP.php:39
+msgid "Mie"
+msgstr ""
+
+#: includes/states/JP.php:40
+msgid "Shiga"
+msgstr ""
+
+#: includes/states/JP.php:41
+msgid "Kyouto"
+msgstr ""
+
+#: includes/states/JP.php:42
+msgid "Osaka"
+msgstr ""
+
+#: includes/states/JP.php:43
+msgid "Hyougo"
+msgstr ""
+
+#: includes/states/JP.php:44
+msgid "Nara"
+msgstr ""
+
+#: includes/states/JP.php:45
+msgid "Wakayama"
+msgstr ""
+
+#: includes/states/JP.php:46
+msgid "Tottori"
+msgstr ""
+
+#: includes/states/JP.php:47
+msgid "Shimane"
+msgstr ""
+
+#: includes/states/JP.php:48
+msgid "Okayama"
+msgstr ""
+
+#: includes/states/JP.php:49
+msgid "Hiroshima"
+msgstr ""
+
+#: includes/states/JP.php:50
+msgid "Yamaguchi"
+msgstr ""
+
+#: includes/states/JP.php:51
+msgid "Tokushima"
+msgstr ""
+
+#: includes/states/JP.php:52
+msgid "Kagawa"
+msgstr ""
+
+#: includes/states/JP.php:53
+msgid "Ehime"
+msgstr ""
+
+#: includes/states/JP.php:54
+msgid "Kochi"
+msgstr ""
+
+#: includes/states/JP.php:55
+msgid "Fukuoka"
+msgstr ""
+
+#: includes/states/JP.php:56
+msgid "Saga"
+msgstr ""
+
+#: includes/states/JP.php:57
+msgid "Nagasaki"
+msgstr ""
+
+#: includes/states/JP.php:58
+msgid "Kumamoto"
+msgstr ""
+
+#: includes/states/JP.php:59
+msgid "Oita"
+msgstr ""
+
+#: includes/states/JP.php:60
+msgid "Miyazaki"
+msgstr ""
+
+#: includes/states/JP.php:61
+msgid "Kagoshima"
+msgstr ""
+
+#: includes/states/JP.php:62
+msgid "Okinawa"
+msgstr ""
+
+#: includes/states/MY.php:16
+msgid "Johor"
+msgstr ""
+
+#: includes/states/MY.php:17
+msgid "Kedah"
+msgstr ""
+
+#: includes/states/MY.php:18
+msgid "Kelantan"
+msgstr ""
+
+#: includes/states/MY.php:19
+msgid "Melaka"
+msgstr ""
+
+#: includes/states/MY.php:20
+msgid "Negeri Sembilan"
+msgstr ""
+
+#: includes/states/MY.php:21
+msgid "Pahang"
+msgstr ""
+
+#: includes/states/MY.php:22
+msgid "Perak"
+msgstr ""
+
+#: includes/states/MY.php:23
+msgid "Perlis"
+msgstr ""
+
+#: includes/states/MY.php:24
+msgid "Pulau Pinang"
+msgstr ""
+
+#: includes/states/MY.php:25
+msgid "Sabah"
+msgstr ""
+
+#: includes/states/MY.php:26
+msgid "Sarawak"
+msgstr ""
+
+#: includes/states/MY.php:27
+msgid "Selangor"
+msgstr ""
+
+#: includes/states/MY.php:28
+msgid "Terengganu"
+msgstr ""
+
+#: includes/states/MY.php:29
+msgid "W.P. Kuala Lumpur"
+msgstr ""
+
+#: includes/states/MY.php:30
+msgid "W.P. Labuan"
+msgstr ""
+
+#: includes/states/MY.php:31
+msgid "W.P. Putrajaya"
+msgstr ""
+
+#: includes/states/PE.php:16
+msgid "El Callao"
+msgstr ""
+
+#: includes/states/PE.php:17
+msgid "Municipalidad Metropolitana de Lima"
+msgstr ""
+
+#: includes/states/PE.php:19
+msgid "Ancash"
+msgstr ""
+
+#: includes/states/PE.php:20
+msgid "Apur&iacute;mac"
+msgstr ""
+
+#: includes/states/PE.php:21
+msgid "Arequipa"
+msgstr ""
+
+#: includes/states/PE.php:22
+msgid "Ayacucho"
+msgstr ""
+
+#: includes/states/PE.php:23
+msgid "Cajamarca"
+msgstr ""
+
+#: includes/states/PE.php:24
+msgid "Cusco"
+msgstr ""
+
+#: includes/states/PE.php:25
+msgid "Huancavelica"
+msgstr ""
+
+#: includes/states/PE.php:26
+msgid "Hu&aacute;nuco"
+msgstr ""
+
+#: includes/states/PE.php:27
+msgid "Ica"
+msgstr ""
+
+#: includes/states/PE.php:28
+msgid "Jun&iacute;n"
+msgstr ""
+
+#: includes/states/PE.php:29
+msgid "La Libertad"
+msgstr ""
+
+#: includes/states/PE.php:30
+msgid "Lambayeque"
+msgstr ""
+
+#: includes/states/PE.php:31
+msgid "Lima"
+msgstr ""
+
+#: includes/states/PE.php:32
+msgid "Loreto"
+msgstr ""
+
+#: includes/states/PE.php:33
+msgid "Madre de Dios"
+msgstr ""
+
+#: includes/states/PE.php:34
+msgid "Moquegua"
+msgstr ""
+
+#: includes/states/PE.php:35
+msgid "Pasco"
+msgstr ""
+
+#: includes/states/PE.php:36
+msgid "Piura"
+msgstr ""
+
+#: includes/states/PE.php:37
+msgid "Puno"
+msgstr ""
+
+#: includes/states/PE.php:38
+msgid "San Mart&iacute;n"
+msgstr ""
+
+#: includes/states/PE.php:39
+msgid "Tacna"
+msgstr ""
+
+#: includes/states/PE.php:40
+msgid "Tumbes"
+msgstr ""
+
+#: includes/states/PE.php:41
+msgid "Ucayali"
+msgstr ""
+
+#: includes/states/TH.php:16
+msgid ""
+"Amnat Charoen (&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;"
+"&#3636;&#3597;)"
+msgstr ""
+
+#: includes/states/TH.php:17
+msgid "Ang Thong (&#3629;&#3656;&#3634;&#3591;&#3607;&#3629;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:18
+msgid ""
+"Ayutthaya (&#3614;&#3619;&#3632;&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;"
+"&#3629;&#3618;&#3640;&#3608;&#3618;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:19
+msgid ""
+"Bangkok (&#3585;&#3619;&#3640;&#3591;&#3648;&#3607;&#3614;&#3617;&#3627;"
+"&#3634;&#3609;&#3588;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:20
+msgid "Bueng Kan (&#3610;&#3638;&#3591;&#3585;&#3634;&#3628;)"
+msgstr ""
+
+#: includes/states/TH.php:21
+msgid ""
+"Buri Ram (&#3610;&#3640;&#3619;&#3637;&#3619;&#3633;&#3617;&#3618;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:22
+msgid ""
+"Chachoengsao (&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;&#3619;"
+"&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:23
+msgid "Chai Nat (&#3594;&#3633;&#3618;&#3609;&#3634;&#3607;)"
+msgstr ""
+
+#: includes/states/TH.php:24
+msgid "Chaiyaphum (&#3594;&#3633;&#3618;&#3616;&#3641;&#3617;&#3636;)"
+msgstr ""
+
+#: includes/states/TH.php:25
+msgid "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:26
+msgid ""
+"Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;&#3656;)"
+msgstr ""
+
+#: includes/states/TH.php:27
+msgid "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
+msgstr ""
+
+#: includes/states/TH.php:28
+msgid "Chonburi (&#3594;&#3621;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:29
+msgid "Chumphon (&#3594;&#3640;&#3617;&#3614;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:30
+msgid ""
+"Kalasin (&#3585;&#3634;&#3628;&#3626;&#3636;&#3609;&#3608;&#3640;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:31
+msgid ""
+"Kamphaeng Phet (&#3585;&#3635;&#3649;&#3614;&#3591;&#3648;&#3614;&#3594;"
+"&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:32
+msgid ""
+"Kanchanaburi (&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;"
+"&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:33
+msgid "Khon Kaen (&#3586;&#3629;&#3609;&#3649;&#3585;&#3656;&#3609;)"
+msgstr ""
+
+#: includes/states/TH.php:34
+msgid "Krabi (&#3585;&#3619;&#3632;&#3610;&#3637;&#3656;)"
+msgstr ""
+
+#: includes/states/TH.php:35
+msgid "Lampang (&#3621;&#3635;&#3611;&#3634;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:36
+msgid "Lamphun (&#3621;&#3635;&#3614;&#3641;&#3609;)"
+msgstr ""
+
+#: includes/states/TH.php:37
+msgid "Loei (&#3648;&#3621;&#3618;)"
+msgstr ""
+
+#: includes/states/TH.php:38
+msgid "Lopburi (&#3621;&#3614;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:39
+msgid ""
+"Mae Hong Son (&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;&#3629;"
+"&#3609;)"
+msgstr ""
+
+#: includes/states/TH.php:40
+msgid ""
+"Maha Sarakham (&#3617;&#3627;&#3634;&#3626;&#3634;&#3619;&#3588;&#3634;"
+"&#3617;)"
+msgstr ""
+
+#: includes/states/TH.php:41
+msgid "Mukdahan (&#3617;&#3640;&#3585;&#3604;&#3634;&#3627;&#3634;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:42
+msgid "Nakhon Nayok (&#3609;&#3588;&#3619;&#3609;&#3634;&#3618;&#3585;)"
+msgstr ""
+
+#: includes/states/TH.php:43
+msgid "Nakhon Pathom (&#3609;&#3588;&#3619;&#3611;&#3600;&#3617;)"
+msgstr ""
+
+#: includes/states/TH.php:44
+msgid "Nakhon Phanom (&#3609;&#3588;&#3619;&#3614;&#3609;&#3617;)"
+msgstr ""
+
+#: includes/states/TH.php:45
+msgid ""
+"Nakhon Ratchasima (&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;&#3637;"
+"&#3617;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:46
+msgid ""
+"Nakhon Sawan (&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;"
+"&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:47
+msgid ""
+"Nakhon Si Thammarat (&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;&#3619;"
+"&#3619;&#3617;&#3619;&#3634;&#3594;)"
+msgstr ""
+
+#: includes/states/TH.php:48
+msgid "Nan (&#3609;&#3656;&#3634;&#3609;)"
+msgstr ""
+
+#: includes/states/TH.php:49
+msgid "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
+msgstr ""
+
+#: includes/states/TH.php:50
+msgid ""
+"Nong Bua Lam Phu (&#3627;&#3609;&#3629;&#3591;&#3610;&#3633;&#3623;&#3621;"
+"&#3635;&#3616;&#3641;)"
+msgstr ""
+
+#: includes/states/TH.php:51
+msgid "Nong Khai (&#3627;&#3609;&#3629;&#3591;&#3588;&#3634;&#3618;)"
+msgstr ""
+
+#: includes/states/TH.php:52
+msgid "Nonthaburi (&#3609;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:53
+msgid "Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:54
+msgid "Pattani (&#3611;&#3633;&#3605;&#3605;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:55
+msgid "Phang Nga (&#3614;&#3633;&#3591;&#3591;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:56
+msgid "Phatthalung (&#3614;&#3633;&#3607;&#3621;&#3640;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:57
+msgid "Phayao (&#3614;&#3632;&#3648;&#3618;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:58
+msgid ""
+"Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:59
+msgid "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:60
+msgid "Phichit (&#3614;&#3636;&#3592;&#3636;&#3605;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:61
+msgid "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
+msgstr ""
+
+#: includes/states/TH.php:62
+msgid "Phrae (&#3649;&#3614;&#3619;&#3656;)"
+msgstr ""
+
+#: includes/states/TH.php:63
+msgid "Phuket (&#3616;&#3641;&#3648;&#3585;&#3655;&#3605;)"
+msgstr ""
+
+#: includes/states/TH.php:64
+msgid ""
+"Prachin Buri (&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;&#3619;"
+"&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:65
+msgid ""
+"Prachuap Khiri Khan (&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;&#3637;"
+"&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:66
+msgid "Ranong (&#3619;&#3632;&#3609;&#3629;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:67
+msgid "Ratchaburi (&#3619;&#3634;&#3594;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:68
+msgid "Rayong (&#3619;&#3632;&#3618;&#3629;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:69
+msgid "Roi Et (&#3619;&#3657;&#3629;&#3618;&#3648;&#3629;&#3655;&#3604;)"
+msgstr ""
+
+#: includes/states/TH.php:70
+msgid "Sa Kaeo (&#3626;&#3619;&#3632;&#3649;&#3585;&#3657;&#3623;)"
+msgstr ""
+
+#: includes/states/TH.php:71
+msgid "Sakon Nakhon (&#3626;&#3585;&#3621;&#3609;&#3588;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:72
+msgid ""
+"Samut Prakan (&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;&#3585;"
+"&#3634;&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:73
+msgid ""
+"Samut Sakhon (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;"
+"&#3619;)"
+msgstr ""
+
+#: includes/states/TH.php:74
+msgid ""
+"Samut Songkhram (&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3591;&#3588;"
+"&#3619;&#3634;&#3617;)"
+msgstr ""
+
+#: includes/states/TH.php:75
+msgid "Saraburi (&#3626;&#3619;&#3632;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:76
+msgid "Satun (&#3626;&#3605;&#3641;&#3621;)"
+msgstr ""
+
+#: includes/states/TH.php:77
+msgid ""
+"Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:78
+msgid "Sisaket (&#3624;&#3619;&#3637;&#3626;&#3632;&#3648;&#3585;&#3625;)"
+msgstr ""
+
+#: includes/states/TH.php:79
+msgid "Songkhla (&#3626;&#3591;&#3586;&#3621;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:80
+msgid "Sukhothai (&#3626;&#3640;&#3650;&#3586;&#3607;&#3633;&#3618;)"
+msgstr ""
+
+#: includes/states/TH.php:81
+msgid ""
+"Suphan Buri (&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;&#3619;"
+"&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:82
+msgid ""
+"Surat Thani (&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;&#3608;"
+"&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:83
+msgid "Surin (&#3626;&#3640;&#3619;&#3636;&#3609;&#3607;&#3619;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:84
+msgid "Tak (&#3605;&#3634;&#3585;)"
+msgstr ""
+
+#: includes/states/TH.php:85
+msgid "Trang (&#3605;&#3619;&#3633;&#3591;)"
+msgstr ""
+
+#: includes/states/TH.php:86
+msgid "Trat (&#3605;&#3619;&#3634;&#3604;)"
+msgstr ""
+
+#: includes/states/TH.php:87
+msgid ""
+"Ubon Ratchathani (&#3629;&#3640;&#3610;&#3621;&#3619;&#3634;&#3594;&#3608;"
+"&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:88
+msgid "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:89
+msgid ""
+"Uthai Thani (&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: includes/states/TH.php:90
+msgid ""
+"Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;&#3660;)"
+msgstr ""
+
+#: includes/states/TH.php:91
+msgid "Yala (&#3618;&#3632;&#3621;&#3634;)"
+msgstr ""
+
+#: includes/states/TH.php:92
+msgid "Yasothon (&#3618;&#3650;&#3626;&#3608;&#3619;)"
+msgstr ""
+
+#: includes/states/TR.php:16
+msgid "Adana"
+msgstr ""
+
+#: includes/states/TR.php:17
+msgid "Ad&#305;yaman"
+msgstr ""
+
+#: includes/states/TR.php:18
+msgid "Afyon"
+msgstr ""
+
+#: includes/states/TR.php:19
+msgid "A&#287;r&#305;"
+msgstr ""
+
+#: includes/states/TR.php:20
+msgid "Amasya"
+msgstr ""
+
+#: includes/states/TR.php:21
+msgid "Ankara"
+msgstr ""
+
+#: includes/states/TR.php:22
+msgid "Antalya"
+msgstr ""
+
+#: includes/states/TR.php:23
+msgid "Artvin"
+msgstr ""
+
+#: includes/states/TR.php:24
+msgid "Ayd&#305;n"
+msgstr ""
+
+#: includes/states/TR.php:25
+msgid "Bal&#305;kesir"
+msgstr ""
+
+#: includes/states/TR.php:26
+msgid "Bilecik"
+msgstr ""
+
+#: includes/states/TR.php:27
+msgid "Bing&#246;l"
+msgstr ""
+
+#: includes/states/TR.php:28
+msgid "Bitlis"
+msgstr ""
+
+#: includes/states/TR.php:29
+msgid "Bolu"
+msgstr ""
+
+#: includes/states/TR.php:30
+msgid "Burdur"
+msgstr ""
+
+#: includes/states/TR.php:31
+msgid "Bursa"
+msgstr ""
+
+#: includes/states/TR.php:32
+msgid "&#199;anakkale"
+msgstr ""
+
+#: includes/states/TR.php:33
+msgid "&#199;ank&#305;r&#305;"
+msgstr ""
+
+#: includes/states/TR.php:34
+msgid "&#199;orum"
+msgstr ""
+
+#: includes/states/TR.php:35
+msgid "Denizli"
+msgstr ""
+
+#: includes/states/TR.php:36
+msgid "Diyarbak&#305;r"
+msgstr ""
+
+#: includes/states/TR.php:37
+msgid "Edirne"
+msgstr ""
+
+#: includes/states/TR.php:38
+msgid "Elaz&#305;&#287;"
+msgstr ""
+
+#: includes/states/TR.php:39
+msgid "Erzincan"
+msgstr ""
+
+#: includes/states/TR.php:40
+msgid "Erzurum"
+msgstr ""
+
+#: includes/states/TR.php:41
+msgid "Eski&#351;ehir"
+msgstr ""
+
+#: includes/states/TR.php:42
+msgid "Gaziantep"
+msgstr ""
+
+#: includes/states/TR.php:43
+msgid "Giresun"
+msgstr ""
+
+#: includes/states/TR.php:44
+msgid "G&#252;m&#252;&#351;hane"
+msgstr ""
+
+#: includes/states/TR.php:45
+msgid "Hakkari"
+msgstr ""
+
+#: includes/states/TR.php:46
+msgid "Hatay"
+msgstr ""
+
+#: includes/states/TR.php:47
+msgid "Isparta"
+msgstr ""
+
+#: includes/states/TR.php:48
+msgid "&#304;&#231;el"
+msgstr ""
+
+#: includes/states/TR.php:49
+msgid "&#304;stanbul"
+msgstr ""
+
+#: includes/states/TR.php:50
+msgid "&#304;zmir"
+msgstr ""
+
+#: includes/states/TR.php:51
+msgid "Kars"
+msgstr ""
+
+#: includes/states/TR.php:52
+msgid "Kastamonu"
+msgstr ""
+
+#: includes/states/TR.php:53
+msgid "Kayseri"
+msgstr ""
+
+#: includes/states/TR.php:54
+msgid "K&#305;rklareli"
+msgstr ""
+
+#: includes/states/TR.php:55
+msgid "K&#305;r&#351;ehir"
+msgstr ""
+
+#: includes/states/TR.php:56
+msgid "Kocaeli"
+msgstr ""
+
+#: includes/states/TR.php:57
+msgid "Konya"
+msgstr ""
+
+#: includes/states/TR.php:58
+msgid "K&#252;tahya"
+msgstr ""
+
+#: includes/states/TR.php:59
+msgid "Malatya"
+msgstr ""
+
+#: includes/states/TR.php:60
+msgid "Manisa"
+msgstr ""
+
+#: includes/states/TR.php:61
+msgid "Kahramanmara&#351;"
+msgstr ""
+
+#: includes/states/TR.php:62
+msgid "Mardin"
+msgstr ""
+
+#: includes/states/TR.php:63
+msgid "Mu&#287;la"
+msgstr ""
+
+#: includes/states/TR.php:64
+msgid "Mu&#351;"
+msgstr ""
+
+#: includes/states/TR.php:65
+msgid "Nev&#351;ehir"
+msgstr ""
+
+#: includes/states/TR.php:66
+msgid "Ni&#287;de"
+msgstr ""
+
+#: includes/states/TR.php:67
+msgid "Ordu"
+msgstr ""
+
+#: includes/states/TR.php:68
+msgid "Rize"
+msgstr ""
+
+#: includes/states/TR.php:69
+msgid "Sakarya"
+msgstr ""
+
+#: includes/states/TR.php:70
+msgid "Samsun"
+msgstr ""
+
+#: includes/states/TR.php:71
+msgid "Siirt"
+msgstr ""
+
+#: includes/states/TR.php:72
+msgid "Sinop"
+msgstr ""
+
+#: includes/states/TR.php:73
+msgid "Sivas"
+msgstr ""
+
+#: includes/states/TR.php:74
+msgid "Tekirda&#287;"
+msgstr ""
+
+#: includes/states/TR.php:75
+msgid "Tokat"
+msgstr ""
+
+#: includes/states/TR.php:76
+msgid "Trabzon"
+msgstr ""
+
+#: includes/states/TR.php:77
+msgid "Tunceli"
+msgstr ""
+
+#: includes/states/TR.php:78
+msgid "&#350;anl&#305;urfa"
+msgstr ""
+
+#: includes/states/TR.php:79
+msgid "U&#351;ak"
+msgstr ""
+
+#: includes/states/TR.php:80
+msgid "Van"
+msgstr ""
+
+#: includes/states/TR.php:81
+msgid "Yozgat"
+msgstr ""
+
+#: includes/states/TR.php:82
+msgid "Zonguldak"
+msgstr ""
+
+#: includes/states/TR.php:83
+msgid "Aksaray"
+msgstr ""
+
+#: includes/states/TR.php:84
+msgid "Bayburt"
+msgstr ""
+
+#: includes/states/TR.php:85
+msgid "Karaman"
+msgstr ""
+
+#: includes/states/TR.php:86
+msgid "K&#305;r&#305;kkale"
+msgstr ""
+
+#: includes/states/TR.php:87
+msgid "Batman"
+msgstr ""
+
+#: includes/states/TR.php:88
+msgid "&#350;&#305;rnak"
+msgstr ""
+
+#: includes/states/TR.php:89
+msgid "Bart&#305;n"
+msgstr ""
+
+#: includes/states/TR.php:90
+msgid "Ardahan"
+msgstr ""
+
+#: includes/states/TR.php:91
+msgid "I&#287;d&#305;r"
+msgstr ""
+
+#: includes/states/TR.php:92
+msgid "Yalova"
+msgstr ""
+
+#: includes/states/TR.php:93
+msgid "Karab&#252;k"
+msgstr ""
+
+#: includes/states/TR.php:94
+msgid "Kilis"
+msgstr ""
+
+#: includes/states/TR.php:95
+msgid "Osmaniye"
+msgstr ""
+
+#: includes/states/TR.php:96
+msgid "D&#252;zce"
+msgstr ""
+
+#: includes/states/US.php:16
+msgid "Alabama"
+msgstr ""
+
+#: includes/states/US.php:17
+msgid "Alaska"
+msgstr ""
+
+#: includes/states/US.php:18
+msgid "Arizona"
+msgstr ""
+
+#: includes/states/US.php:19
+msgid "Arkansas"
+msgstr ""
+
+#: includes/states/US.php:20
+msgid "California"
+msgstr ""
+
+#: includes/states/US.php:21
+msgid "Colorado"
+msgstr ""
+
+#: includes/states/US.php:22
+msgid "Connecticut"
+msgstr ""
+
+#: includes/states/US.php:23
+msgid "Delaware"
+msgstr ""
+
+#: includes/states/US.php:24
+msgid "District Of Columbia"
+msgstr ""
+
+#: includes/states/US.php:25
+msgid "Florida"
+msgstr ""
+
+#: includes/states/US.php:27
+msgid "Hawaii"
+msgstr ""
+
+#: includes/states/US.php:28
+msgid "Idaho"
+msgstr ""
+
+#: includes/states/US.php:29
+msgid "Illinois"
+msgstr ""
+
+#: includes/states/US.php:30
+msgid "Indiana"
+msgstr ""
+
+#: includes/states/US.php:31
+msgid "Iowa"
+msgstr ""
+
+#: includes/states/US.php:32
+msgid "Kansas"
+msgstr ""
+
+#: includes/states/US.php:33
+msgid "Kentucky"
+msgstr ""
+
+#: includes/states/US.php:34
+msgid "Louisiana"
+msgstr ""
+
+#: includes/states/US.php:35
+msgid "Maine"
+msgstr ""
+
+#: includes/states/US.php:36
+msgid "Maryland"
+msgstr ""
+
+#: includes/states/US.php:37
+msgid "Massachusetts"
+msgstr ""
+
+#: includes/states/US.php:38
+msgid "Michigan"
+msgstr ""
+
+#: includes/states/US.php:39
+msgid "Minnesota"
+msgstr ""
+
+#: includes/states/US.php:40
+msgid "Mississippi"
+msgstr ""
+
+#: includes/states/US.php:41
+msgid "Missouri"
+msgstr ""
+
+#: includes/states/US.php:43
+msgid "Nebraska"
+msgstr ""
+
+#: includes/states/US.php:44
+msgid "Nevada"
+msgstr ""
+
+#: includes/states/US.php:45
+msgid "New Hampshire"
+msgstr ""
+
+#: includes/states/US.php:46
+msgid "New Jersey"
+msgstr ""
+
+#: includes/states/US.php:47
+msgid "New Mexico"
+msgstr ""
+
+#: includes/states/US.php:48
+msgid "New York"
+msgstr ""
+
+#: includes/states/US.php:49
+msgid "North Carolina"
+msgstr ""
+
+#: includes/states/US.php:50
+msgid "North Dakota"
+msgstr ""
+
+#: includes/states/US.php:51
+msgid "Ohio"
+msgstr ""
+
+#: includes/states/US.php:52
+msgid "Oklahoma"
+msgstr ""
+
+#: includes/states/US.php:53
+msgid "Oregon"
+msgstr ""
+
+#: includes/states/US.php:54
+msgid "Pennsylvania"
+msgstr ""
+
+#: includes/states/US.php:55
+msgid "Rhode Island"
+msgstr ""
+
+#: includes/states/US.php:56
+msgid "South Carolina"
+msgstr ""
+
+#: includes/states/US.php:57
+msgid "South Dakota"
+msgstr ""
+
+#: includes/states/US.php:58
+msgid "Tennessee"
+msgstr ""
+
+#: includes/states/US.php:59
+msgid "Texas"
+msgstr ""
+
+#: includes/states/US.php:60
+msgid "Utah"
+msgstr ""
+
+#: includes/states/US.php:61
+msgid "Vermont"
+msgstr ""
+
+#: includes/states/US.php:62
+msgid "Virginia"
+msgstr ""
+
+#: includes/states/US.php:63
+msgid "Washington"
+msgstr ""
+
+#: includes/states/US.php:64
+msgid "West Virginia"
+msgstr ""
+
+#: includes/states/US.php:65
+msgid "Wisconsin"
+msgstr ""
+
+#: includes/states/US.php:66
+msgid "Wyoming"
+msgstr ""
+
+#: includes/states/US.php:67
+msgid "Armed Forces (AA)"
+msgstr ""
+
+#: includes/states/US.php:68
+msgid "Armed Forces (AE)"
+msgstr ""
+
+#: includes/states/US.php:69
+msgid "Armed Forces (AP)"
+msgstr ""
+
+#: includes/states/US.php:70
+msgid "American Samoa"
+msgstr ""
+
+#: includes/states/US.php:71
+msgid "Guam"
+msgstr ""
+
+#: includes/states/US.php:72
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: includes/states/US.php:73
+msgid "Puerto Rico"
+msgstr ""
+
+#: includes/states/US.php:74
+msgid "US Minor Outlying Islands"
+msgstr ""
+
+#: includes/states/US.php:75
+msgid "US Virgin Islands"
+msgstr ""
+
+#: includes/states/ZA.php:16
+msgid "Eastern Cape"
+msgstr ""
+
+#: includes/states/ZA.php:17
+msgid "Free State"
+msgstr ""
+
+#: includes/states/ZA.php:18
+msgid "Gauteng"
+msgstr ""
+
+#: includes/states/ZA.php:19
+msgid "KwaZulu-Natal"
+msgstr ""
+
+#: includes/states/ZA.php:20
+msgid "Limpopo"
+msgstr ""
+
+#: includes/states/ZA.php:21
+msgid "Mpumalanga"
+msgstr ""
+
+#: includes/states/ZA.php:22
+msgid "Northern Cape"
+msgstr ""
+
+#: includes/states/ZA.php:23
+msgid "North West"
+msgstr ""
+
+#: includes/states/ZA.php:24
+msgid "Western Cape"
+msgstr ""
+
+#: wordpress-plugin-boilerplate.php:280 wordpress-plugin-boilerplate.php:292
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: wordpress-plugin-boilerplate.php:465
+#, php-format
+msgid "Sorry, %s requires WordPress "
+msgstr ""
