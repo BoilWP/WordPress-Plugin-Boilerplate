@@ -1,0 +1,4921 @@
+# WordPress Plugin Boilerplate Copyright (c) {2014}
+# Translators:
+# FxB <fxb@wp-translations.org>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Plugin Boilerplate\n"
+"Report-Msgid-Bugs-To: https://github.com/seb86/WordPress-Plugin-Boilerplate/issues\n"
+"POT-Creation-Date: 2014-08-25 14:08:25+00:00\n"
+"PO-Revision-Date: 2014-08-25 14:29+0000\n"
+"Last-Translator: FxB <fxb@wp-translations.org>\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/wordpress-plugin-boilerplate/language/fr_FR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: grunt-wp-i18n 0.4.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Textdomain-Support: yes\n"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:38
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin.php:122
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:12
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:371
+msgid "Documentation"
+msgstr "Documentation"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:41
+msgid ""
+"Thank you for using %s :) Should you need help using or extending %s please "
+"read the documentation."
+msgstr "Merci d'utiliser %s :) Si vous avez besoin d'aide pour utiliser ou modifier %s, veuillez lire la documentation."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:43
+msgid "%s Documentation"
+msgstr "Documentation de %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:43
+msgid "Restart Tour"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:49
+msgid "Support"
+msgstr "Aide"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:52
+msgid ""
+"After <a href=\"%s\">reading the documentation</a>, for further assistance "
+"you can use the <a href=\"%s\">community forum</a>."
+msgstr "Après la <a href=\"%s\">lecture de la documentation</a>, pour plus d'aide, vous pouvez utiliser le <a href=\"%s\"> forum de la communauté</a>."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:52
+msgid "Company Name"
+msgstr "Nom de la société"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:54
+msgid ""
+"Before asking for help we recommend checking the status page to identify any"
+" problems with your configuration."
+msgstr "Avant de demander de l'aide nous vous recommandons de vérifier votre page d'état afin d'identifier des problèmes avec votre configuration."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:56
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:67
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:113
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status.php:6
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:749
+msgid "System Status"
+msgstr "État du système"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:56
+msgid "Community Support"
+msgstr "Forum de la communauté"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:62
+msgid "Found a bug?"
+msgstr "Un bug à signaler ?"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:65
+msgid ""
+"If you find a bug within <strong>%s</strong> you can create a ticket via <a "
+"href=\"%s\">Github issues</a>. Ensure you read the <a "
+"href=\"%s\">contribution guide</a> prior to submitting your report. Be as "
+"descriptive as possible and please include your <a href=\"%s\">system status"
+" report</a>."
+msgstr "Si vous trouvez un bug dans <strong>%s</strong>, vous pouvez créer un ticket via les <a href=\"%s\">issues de Github</a>. Assurez-vous d'avoir lu le <a href=\"%s\">guide de la contribution</a> avant d'envoyer votre rapport. Soyez aussi descriptif que possible et merci d'inclure votre <a href=\"%s\">rapport d'état de système</a>."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:67
+msgid "Report a bug"
+msgstr "Signaler un bug"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:72
+msgid "For more information:"
+msgstr "Pour plus d'informations :"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:73
+msgid "About %s"
+msgstr "À propos de %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:74
+msgid "Project on WordPress.org"
+msgstr "Projet sur WordPress.org"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-help.php:75
+msgid "Project on Github"
+msgstr "Projet sur GitHub"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:89
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:93
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:109
+msgid "%s Settings"
+msgstr "Réglages de %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:89
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:93
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:215
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:273
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:345
+msgid "Settings"
+msgstr "Réglages"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:98
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:25
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:747
+msgid "First Tab"
+msgstr "Premier onglet"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:102
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:25
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:748
+msgid "Second Tab"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:113
+msgid "%s Status"
+msgstr "État de %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:115
+msgid "%s Tools"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-menus.php:115
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:10
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status.php:7
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:750
+msgid "Tools"
+msgstr "Outils"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:48
+msgid "Action failed. Please refresh the page and retry."
+msgstr "Échec. Veuillez rafraîchir la page et réessayer."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:56
+msgid "Your settings have been saved."
+msgstr "Vos réglages ont bien été enregistrés."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:109
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:743
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "Les modifications que vous avez faites seront perdues si vous changez de page."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:474
+msgid "Hard Crop?"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:499
+msgid "Select a page&hellip;"
+msgstr "Sélectionner une page&hellip;"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:523
+msgid "Choose a country&hellip;"
+msgstr "S&eacute;lectionner un pays&hellip;"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:549
+msgid "Choose countries&hellip;"
+msgstr "S&eacute;lectionner des pays&hellip;"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:557
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-settings.php:557
+msgid "Select none"
+msgstr "Ne rien sélectionner"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:64
+msgid "All missing %s pages was installed successfully."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:72
+msgid "Roles successfully reset"
+msgstr "Rôles réinitialisés avec succès"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:84
+msgid "All previous data has been removed and re-installed the defaults."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:95
+msgid "There was an error calling %s::%s"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:98
+msgid "There was an error calling %s"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:108
+msgid "Your changes have been saved."
+msgstr "Les modifications ont bien été enregistrées"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:123
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-install.php:6
+msgid "Install %s Pages"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:124
+msgid "Install pages"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:125
+msgid ""
+"<strong class=\"red\">Note:</strong> This tool will install all the missing "
+"%s pages. Pages already defined and set up will not be replaced."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:129
+msgid "Capabilities"
+msgstr "Capacités"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:130
+msgid "Reset capabilities"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:131
+msgid ""
+"This tool will reset the admin roles to default. Use this if your users "
+"cannot access all of the %s admin pages."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:135
+msgid "Start Over"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:136
+msgid "Restart"
+msgstr "Recommencer"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-status.php:137
+msgid ""
+"This tool will erase all settings, database tables (if any) and re-install "
+"\"<em>%s</em>\". Use this if you are really sure. All current data will be "
+"lost and will not be recoverable."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:48
+msgid "Welcome to %s"
+msgstr "Bienvenue dans %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:51
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:369
+msgid "Getting Started"
+msgstr "Mise en route"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:55
+msgid "%s Changelog"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:58
+msgid "Changelog"
+msgstr "Liste des modifications"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:62
+msgid "%s Credits"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:65
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:370
+msgid "Credits"
+msgstr "Cr&eacute;dits"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:69
+msgid "%s Translations"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:72
+msgid "Translations"
+msgstr "Traductions"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:76
+msgid "%s Freedoms"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:79
+msgid "Freedoms"
+msgstr "Libertés"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:182
+msgid "Thanks, all done!"
+msgstr "Merci, tout est terminé&nbsp;!"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:185
+msgid "Thank you for updating to the latest version!"
+msgstr "Merci d&rsquo;être passé à la dernière version !"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:188
+msgid "Thanks for installing!"
+msgstr "Merci pour l'installation !"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:191
+msgid ""
+"%s %s %s is a powerful, stable, and secure plugin boilerplate. I hope you "
+"enjoy it."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:197
+msgid "Version %s"
+msgstr "Version %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:216
+msgid "Docs"
+msgstr "Docs"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:217
+msgid "Your tweet message would be placed here."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:274
+msgid ""
+"Use this page to show what the plugin does or what features you have added "
+"since your first release. Replace the placeholder images with screenshots of"
+" your plugin. You can even make the screenshots linkable to show a larger "
+"screenshot with or without caption or play an embedded video. It's all up to"
+" you."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:277
+msgid "Three Columns with Screenshots"
+msgstr "Trois colonnes, avec captures d'écrans"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:280
+msgid "Screenshot Title"
+msgstr "Titre de la capture d&rsquo;écran"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:281
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:286
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:291
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:302
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:307
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:318
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:322
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:373
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:378
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:383
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:391
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:396
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:401
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:409
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:414
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:419
+msgid "Title of Feature or New Changes"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:285
+msgid "You can add captions to your screenshots."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:290
+msgid "Or add captions on your videos."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:290
+msgid "Video Title"
+msgstr "Titre de la vidéo"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:298
+msgid "Two Columns with Screenshots"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:314
+msgid "Two Columns with a Single Screenshot"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:329
+msgid "Callout Headline"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:334
+msgid "One Column centered with a Single Screenshot"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:343
+msgid "Two Columns, Content Left, Screenshot Right"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:345
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:362
+msgid "Sub-Title (H4)"
+msgstr "Sous-titre (H4)"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:360
+msgid "Two Columns, Content Right, Screenshot Left"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:369
+msgid "Three Columns with NO Screenshots"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:447
+msgid "Bulletpoint your changelog like so."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:450
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:256
+msgid "Version"
+msgstr "Version"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:477
+msgid "Project Lead &amp; Developer"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:484
+msgid "Translation Manager, CEO of WP-Translations.org"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:493
+msgid "Contributers"
+msgstr "Contributeurs"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:493
+msgid "These contributers are fetched from the GitHub repository."
+msgstr "Ces contributeurs sont récupérés à partir du repo GitHub."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:499
+msgid "Translators"
+msgstr "Traducteurs"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:510
+msgid "External Libraries"
+msgstr "Bibliothèques tierces"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:557
+msgid ""
+"WordPress Plugin Boilerplate is Free and open source software, built to help"
+" speed up plugin development and to be stable and secure for all WordPress "
+"versions. Below is a list explaining what you are allowed to do. Enjoy!"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:560
+msgid "You have the freedom to run the program, for any purpose."
+msgstr "Vous êtes libre de modifier ce programme, dans n&rsquo;importe quel but."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:561
+msgid ""
+"You have access to the source code, the freedom to study how the program "
+"works, and the freedom to change it to make it do what you wish."
+msgstr "Vous avez accès au code source, êtes libres d&rsquo;étudier la manière dont le programme fonctionne, et libres de le modifier pour en faire ce que vous souhaitez."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:562
+msgid ""
+"You have the freedom to redistribute copies of the original program so you "
+"can help your neighbor."
+msgstr "Vous êtes libres de redistribuer des copies du programme original, afin d&rsquo;aider votre prochain."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:563
+msgid ""
+"You have the freedom to distribute copies of your modified versions to "
+"others. By doing this you can give the whole community a chance to benefit "
+"from your changes."
+msgstr "Vous êtes libres de distribuer à autrui des copies de votre propre version modifiée de ce programme. Ce faisant, vous offrez à la communauté la possibilité de profiter de vos modifications."
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:591
+msgid "View %s's GitHub Profile"
+msgstr "Afficher le profil GitHub de %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:597
+msgid "Name"
+msgstr "Nom"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:600
+msgid "Username"
+msgstr "Identifiant"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin-welcome.php:603
+msgid "View Website"
+msgstr "Visiter le site web"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin.php:121
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:11
+msgid "Website"
+msgstr "Site Web"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin.php:157
+msgid "Contribute"
+msgstr "Contribuer"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin.php:158
+msgid "Report Bugs"
+msgstr "Signaler un bug"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-admin.php:167
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:25
+msgid "%s Version"
+msgstr "Version %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:156
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:96
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:299
+msgid "Example Page"
+msgstr "Page d'exemple"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:157
+msgid ""
+"This page was created as an example to show you the ability to creating "
+"pages automatically when the plugin is installed. You may if you wish create"
+" a page just to insert a single shortcode. You should find this page already"
+" set in the plugin settings. This save the user time to setup the pages the "
+"plugin requires."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:162
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:107
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:304
+msgid "Shortcode Example Page"
+msgstr "Page d'exemple des raccourcis"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:163
+msgid ""
+"[caption align=\"alignright\" width=\"300\"]<img "
+"src=\"http://placekitten.com/300/205\" alt=\"Cat\" title=\"Cute Cat\" "
+"width=\"300\" height=\"205\" /> Cute Cat[/caption] This page was created to "
+"show shortcode detection in the page."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:227
+msgid "Custom Role"
+msgstr "Rôle personnalisé"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:427
+msgid "What's new:"
+msgstr "Quoi de neuf :"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-transifex-api.php:56
+msgid "No responses"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-transifex-stats.php:53
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:741
+msgid "No results"
+msgstr "Aucun résultat"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-transifex-stats.php:167
+msgid "Translate"
+msgstr "Traduire"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:54
+msgid "Settings Title"
+msgstr "Titre des réglages"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:61
+msgid "Subscriber Access"
+msgstr "Accès abonné"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:62
+msgid "Prevent users from accessing WordPress admin."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:69
+msgid "Secure Content"
+msgstr "Sécuriser le contenu"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:70
+msgid ""
+"Keep your site secure by forcing SSL (HTTPS) on site (an SSL Certificate is "
+"required)."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:77
+msgid "Select Country"
+msgstr "Sélectionner un pays"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:78
+msgid "This gives you a list of countries. "
+msgstr "Cela vous donne une liste de pays."
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:87
+msgid "Multi Select Countries"
+msgstr "Multi-sélection de pays"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:97
+msgid ""
+"You can set pages that the plugin requires by having them installed and "
+"selected automatically when the plugin is installed."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:108
+msgid "This page has a shortcode applied when created by the plugin."
+msgstr "Cette page a un raccourci appliqué quand elle est créée par l'extension."
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:118
+msgid "Single Checkbox"
+msgstr "Case à cocher simple"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:119
+msgid "Can come in handy to display more options."
+msgstr "Cela peut être pratique pour afficher plus d'options"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:126
+msgid "Single Input (Text) "
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:129
+msgid "This admin setting can be hidden via the checkbox above."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:136
+msgid "Single Textarea "
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-one.php:139
+msgid ""
+"You can allow the user to use this field to enter their own CSS or HTML "
+"code."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:41
+msgid "Section One"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:42
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:29
+msgid "Section Two"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:82
+msgid "Section Two Options"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:89
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:241
+msgid "Select Page"
+msgstr "Sélectionner la page"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:90
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:242
+msgid "You can set a description here also."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:96
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:248
+msgid "You can select or search for a page."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:100
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:252
+msgid "Select"
+msgstr "Sélectionner"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:101
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:253
+msgid "This example shows you options from an array()."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:108
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:123
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:145
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:260
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:275
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:297
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:49
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:106
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:131
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:280
+msgid "Yes"
+msgstr "Oui"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:109
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:124
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:146
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:261
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:276
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:298
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:52
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:106
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:131
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:280
+msgid "No"
+msgstr "Non"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:115
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:267
+msgid "MultiSelect"
+msgstr "Multi-sélection"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:116
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:268
+msgid ""
+"This example shows you the ability to select multi options from an array()."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:130
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:282
+msgid "Checkbox"
+msgstr "Case à cocher"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:131
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:283
+msgid "Checkbox option"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:138
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:290
+msgid "Radio"
+msgstr "Radio"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:139
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:291
+msgid "Radio option"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:151
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:303
+msgid "Number"
+msgstr "Quantité"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:152
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:304
+msgid "Use this field for numbered options."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:165
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:317
+msgid "Color"
+msgstr "Couleur"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:166
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:318
+msgid "Use this field for color picking."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:175
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:327
+msgid "Group Checkboxes"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:176
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:328
+msgid "Checkbox One"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:185
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:337
+msgid "Checkbox Two"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:194
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:346
+msgid "Email"
+msgstr "E-mail "
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:203
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:355
+msgid "Password"
+msgstr "Mot de passe"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:212
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:364
+msgid "Image Size"
+msgstr "Taille de l'image"
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:213
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:365
+msgid "Use this field option to save multiple settings for an image size"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/settings/class-plugin-name-settings-tab-two.php:234
+msgid "Section One Options"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:2
+msgid "Please include this information when requesting support:"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:3
+msgid "Get System Report"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:11
+msgid "Environment"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:17
+msgid "Home URL"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:21
+msgid "Site URL"
+msgstr "Adresse web du site (URL)"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:29
+msgid "%s Database Version"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:33
+msgid "WordPress Version"
+msgstr "Version de WordPress"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:46
+msgid "WordPress Multisite Enabled"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:57
+msgid "Web Server Info"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:61
+msgid "PHP Version"
+msgstr "Version PHP"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:76
+msgid "MySQL Version"
+msgstr "Version MySQL"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:91
+msgid "WordPress Memory Limit"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:105
+msgid "WordPress Debug Mode"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:109
+msgid "WordPress Language"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:110
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:28
+msgid "Default"
+msgstr "Valeur par défaut"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:113
+msgid "WordPress Max Upload Size"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:118
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:122
+msgid "PHP Time Limit"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:126
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:130
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:135
+msgid "%s Logging"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:138
+msgid "Log directory is writable."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:140
+msgid ""
+"Log directory (<code>plugin-name/logs/</code>) is not writable. Logging will"
+" not be possible."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:144
+msgid "Default Timezone"
+msgstr "Fuseau horaire par défaut"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:148
+msgid "Default timezone is %s - it should be UTC"
+msgstr "Le fuseau horaire par défaut est %s - Il devrait être UTC"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:150
+msgid "Default timezone is %s"
+msgstr "Le fuseau horaire par défaut est %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:158
+msgid "fsockopen/cURL"
+msgstr "fsockopen/cURL"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:161
+msgid "Your server has fsockopen and cURL enabled."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:163
+msgid "Your server has fsockopen enabled, cURL is disabled."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:165
+msgid "Your server has cURL enabled, fsockopen is disabled."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:169
+msgid ""
+"Your server does not have fsockopen or cURL enabled - Various scripts which "
+"communicate with other servers will not work. Contact your hosting provider."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:174
+msgid "SOAP Client"
+msgstr "Client SOAP"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:176
+msgid "Your server has the SOAP Client class enabled."
+msgstr "Votre serveur a le client SOAP activé."
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:179
+msgid ""
+"Your server does not have the <a href=\"%s\">SOAP Client</a> class enabled -"
+" some features of the plugin which use SOAP may not work as expected."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:202
+msgid "Plugins"
+msgstr "Extensions"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:208
+msgid "Installed Plugins"
+msgstr "Extensions installées"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:229
+msgid "Visit plugin homepage"
+msgstr "Aller sur le site de l&rsquo;extension"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:253
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:401
+msgid "is available"
+msgstr "est disponible"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:256
+msgid "by"
+msgstr "par"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:279
+msgid "Force SSL"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:286
+msgid "%s Pages"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:294
+msgid "Sample Page"
+msgstr "Page d&rsquo;exemple"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:325
+msgid "Page not set"
+msgstr "La page n&rsquo;est pas définie"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:334
+msgid "Page does not exist"
+msgstr "La page n&rsquo;existe pas"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:338
+msgid "Page does not contain the shortcode: %s"
+msgstr "La page ne contient pas le raccourci : %s"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:344
+msgid "Page ID"
+msgstr "ID de la page"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:344
+msgid "Page Slug"
+msgstr "Identifiant de la page"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:355
+msgid "Theme"
+msgstr "Thème"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:393
+msgid "Theme Name"
+msgstr "Nom du thème"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:397
+msgid "Theme Version"
+msgstr "Version du thème"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:406
+msgid "Author URL"
+msgstr "URL de l'auteur"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:26
+msgid "Remove all data on uninstall"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:29
+msgid "Enabled"
+msgstr "Activé"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:32
+msgid "This tool will delete all data when uninstalling via Plugins > Delete."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:40
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:30
+msgid "Section Three"
+msgstr "Section Trois"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:55
+msgid ""
+"You can use this page to place the main back feature of your plugin. Place "
+"links at the end of your header and set the page into sections."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:56
+msgid ""
+"These sections can then display different content based on the section the "
+"user is viewing."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page.php:57
+msgid ""
+"There are many actions and filters in place to allow you to add and display "
+"anything you need."
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-admin-settings.php:20
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-install.php:5
+msgid ""
+"<strong>Welcome to %s</strong> &#8211; You're almost ready to start using "
+"this plugin :)"
+msgstr "<strong>Bienvenue dans %s</strong> &#8211; Vous êtes presque prêt pour commencer à utiliser cette extension :)"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-install.php:6
+msgid "Skip setup"
+msgstr "Passer l'installation"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-theme-support.php:6
+msgid "Theme Integration Guide"
+msgstr "Guide d'intégration du thème"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-theme-support.php:6
+msgid "Hide this notice"
+msgstr "Masquer cette notification"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-update.php:5
+msgid ""
+"<strong>%s Data Update Required</strong> &#8211; We just need to update your"
+" install to the latest version"
+msgstr "<strong>Mises à jour des données nécessaires de %s</strong> &#8211; Nous devons mettre à jour votre installation avec la dernière version."
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-update.php:6
+msgid "Run the updater"
+msgstr "Lancer la mise à jour"
+
+#: wordpress-plugin-boilerplate/includes/admin/views/html-notice-update.php:10
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the updater now?"
+msgstr "Il est fortement recommandé de sauvegarder votre base de données avant de procéder. Êtes-vous certain(e) de vouloir exécuter la mise à jour maintenant ?"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:37
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:38
+msgid "&#197;land Islands"
+msgstr "Îles d'Aland"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:39
+msgid "Albania"
+msgstr "Albanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:40
+msgid "Algeria"
+msgstr "Algérie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:41
+msgid "Andorra"
+msgstr "Andorre"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:42
+msgid "Angola"
+msgstr "Angola"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:43
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:44
+msgid "Antarctica"
+msgstr "Antartique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:45
+msgid "Antigua and Barbuda"
+msgstr "Antigua et Barbuda"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:46
+msgid "Argentina"
+msgstr "Argentine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:47
+msgid "Armenia"
+msgstr "Arménie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:48
+msgid "Aruba"
+msgstr "Aruba"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:49
+msgid "Australia"
+msgstr "Australie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:50
+msgid "Austria"
+msgstr "Autriche"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:51
+msgid "Azerbaijan"
+msgstr "Azerbaïjan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:52
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:53
+msgid "Bahrain"
+msgstr "Bahreïn"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:54
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:55
+msgid "Barbados"
+msgstr "Barbade"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:56
+msgid "Belarus"
+msgstr "Biélorussie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:57
+msgid "Belgium"
+msgstr "Belgique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:58
+msgid "Belau"
+msgstr "Belau"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:59
+msgid "Belize"
+msgstr "Belize"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:60
+msgid "Benin"
+msgstr "Bénin"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:61
+msgid "Bermuda"
+msgstr "Bermudes"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:62
+msgid "Bhutan"
+msgstr "Bhoutan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:63
+msgid "Bolivia"
+msgstr "Bolivie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:64
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Saba, Saint-Eustache et Bonaire"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:65
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnie-Herzégovine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:66
+msgid "Botswana"
+msgstr "Botswana"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:67
+msgid "Bouvet Island"
+msgstr "Île Bouvet"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:68
+msgid "Brazil"
+msgstr "Brésil"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:69
+msgid "British Indian Ocean Territory"
+msgstr "Territoire Britannique de l'Océan Indien"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:70
+msgid "British Virgin Islands"
+msgstr "Îles Vierges (britanniques)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:71
+msgid "Brunei"
+msgstr "Brunei"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:72
+msgid "Bulgaria"
+msgstr "Bulgarie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:73
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:74
+msgid "Burundi"
+msgstr "Burundi"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:75
+msgid "Cambodia"
+msgstr "Cambodge"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:76
+msgid "Cameroon"
+msgstr "Cameroun"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:77
+msgid "Canada"
+msgstr "Canada"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:78
+msgid "Cape Verde"
+msgstr "Cap-Vert"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:79
+msgid "Cayman Islands"
+msgstr "Îles Caïmans"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:80
+msgid "Central African Republic"
+msgstr "République Centrafricaine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:81
+msgid "Chad"
+msgstr "Tchad"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:82
+msgid "Chile"
+msgstr "Chili"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:83
+msgid "China"
+msgstr "Chine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:84
+msgid "Christmas Island"
+msgstr "Île Christmas"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:85
+msgid "Cocos (Keeling) Islands"
+msgstr "Îles Cocos (Keeling)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:86
+msgid "Colombia"
+msgstr "Colombie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:87
+msgid "Comoros"
+msgstr "Comores"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:88
+msgid "Congo (Brazzaville)"
+msgstr "Congo (Brazzaville)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:89
+msgid "Congo (Kinshasa)"
+msgstr "Congo (Kinshasa)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:90
+msgid "Cook Islands"
+msgstr "Îles Cook"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:91
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:92
+msgid "Croatia"
+msgstr "Croatie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:93
+msgid "Cuba"
+msgstr "Cuba"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:94
+msgid "Cura&Ccedil;ao"
+msgstr "Curaçao"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:95
+msgid "Cyprus"
+msgstr "Chypre"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:96
+msgid "Czech Republic"
+msgstr "République Tchèque"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:97
+msgid "Denmark"
+msgstr "Danemark"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:98
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:99
+msgid "Dominica"
+msgstr "Dominique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:100
+msgid "Dominican Republic"
+msgstr "République Dominicaine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:101
+msgid "Ecuador"
+msgstr "Equateur"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:102
+msgid "Egypt"
+msgstr "Egypte"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:103
+msgid "El Salvador"
+msgstr "Salvador"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:104
+msgid "Equatorial Guinea"
+msgstr "Guinée Equitoriale"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:105
+msgid "Eritrea"
+msgstr "Érythrée"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:106
+msgid "Estonia"
+msgstr "Estonie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:107
+msgid "Ethiopia"
+msgstr "Éthiopie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:108
+msgid "Falkland Islands"
+msgstr "Îles Falkland"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:109
+msgid "Faroe Islands"
+msgstr "Féroé (îles)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:110
+msgid "Fiji"
+msgstr "Fidji"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:111
+msgid "Finland"
+msgstr "Finlande"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:112
+msgid "France"
+msgstr "France"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:113
+msgid "French Guiana"
+msgstr "Guinée Française"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:114
+msgid "French Polynesia"
+msgstr "Polynésie Française"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:115
+msgid "French Southern Territories"
+msgstr "Terres Australes Françaises"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:116
+msgid "Gabon"
+msgstr "Gabon"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:117
+msgid "Gambia"
+msgstr "Gambie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:118
+#: wordpress-plugin-boilerplate/includes/states/US.php:26
+msgid "Georgia"
+msgstr "Géorgie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:119
+msgid "Germany"
+msgstr "Allemagne"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:120
+msgid "Ghana"
+msgstr "Ghana"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:121
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:122
+msgid "Greece"
+msgstr "Grèce"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:123
+msgid "Greenland"
+msgstr "Groenland"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:124
+msgid "Grenada"
+msgstr "Grenade"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:125
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:126
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:127
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:128
+msgid "Guinea"
+msgstr "Guinée"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:129
+msgid "Guinea-Bissau"
+msgstr "Guinée-Bissau"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:130
+msgid "Guyana"
+msgstr "Guyane"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:131
+msgid "Haiti"
+msgstr "Haïti"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:132
+msgid "Heard Island and McDonald Islands"
+msgstr "Îles McDonald et Heard"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:133
+msgid "Honduras"
+msgstr "Honduras"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:134
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:135
+msgid "Hungary"
+msgstr "Hongrie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:136
+msgid "Iceland"
+msgstr "Islande"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:137
+msgid "India"
+msgstr "Inde"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:138
+msgid "Indonesia"
+msgstr "Indonésie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:139
+msgid "Iran"
+msgstr "Iran"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:140
+msgid "Iraq"
+msgstr "Irak"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:141
+msgid "Republic of Ireland"
+msgstr "République d'Irlande"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:142
+msgid "Isle of Man"
+msgstr "Île de Man"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:143
+msgid "Israel"
+msgstr "Israël"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:144
+msgid "Italy"
+msgstr "Italie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:145
+msgid "Ivory Coast"
+msgstr "Côte d'Ivoire"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:146
+msgid "Jamaica"
+msgstr "Jamaïque"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:147
+msgid "Japan"
+msgstr "Japon"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:148
+msgid "Jersey"
+msgstr "Jersey"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:149
+msgid "Jordan"
+msgstr "Jordanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:150
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:151
+msgid "Kenya"
+msgstr "Kenya"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:152
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:153
+msgid "Kuwait"
+msgstr "Koweït"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:154
+msgid "Kyrgyzstan"
+msgstr "Kirghizistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:155
+msgid "Laos"
+msgstr "Laos"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:156
+msgid "Latvia"
+msgstr "Lettonie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:157
+msgid "Lebanon"
+msgstr "Liban"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:158
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:159
+msgid "Liberia"
+msgstr "Libéria"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:160
+msgid "Libya"
+msgstr "Libye"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:161
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:162
+msgid "Lithuania"
+msgstr "Lithuanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:163
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:164
+msgid "Macao S.A.R., China"
+msgstr "Macao S.A.R., Chine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:165
+msgid "Macedonia"
+msgstr "Macédoine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:166
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:167
+msgid "Malawi"
+msgstr "Malawi"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:168
+msgid "Malaysia"
+msgstr "Malaysie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:169
+msgid "Maldives"
+msgstr "Maldives"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:170
+msgid "Mali"
+msgstr "Mali"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:171
+msgid "Malta"
+msgstr "Malte"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:172
+msgid "Marshall Islands"
+msgstr "Îles Marshall"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:173
+msgid "Martinique"
+msgstr "Martinique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:174
+msgid "Mauritania"
+msgstr "Mauritanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:175
+msgid "Mauritius"
+msgstr "Île Maurice"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:176
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:177
+msgid "Mexico"
+msgstr "Méxique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:178
+msgid "Micronesia"
+msgstr "Micronésie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:179
+msgid "Moldova"
+msgstr "Moldavie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:180
+msgid "Monaco"
+msgstr "Monaco"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:181
+msgid "Mongolia"
+msgstr "Mongolie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:182
+msgid "Montenegro"
+msgstr "Monténégro"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:183
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:184
+msgid "Morocco"
+msgstr "Maroc"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:185
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:186
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:187
+msgid "Namibia"
+msgstr "Namibie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:188
+msgid "Nauru"
+msgstr "Nauru"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:189
+msgid "Nepal"
+msgstr "Népal"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:190
+msgid "Netherlands"
+msgstr "Pays-Bas"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:191
+msgid "Netherlands Antilles"
+msgstr "Antilles Néerlandaises"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:192
+msgid "New Caledonia"
+msgstr "Nouvelle Calédonie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:193
+msgid "New Zealand"
+msgstr "Nouvelle Zélande"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:194
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:195
+msgid "Niger"
+msgstr "Niger"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:196
+msgid "Nigeria"
+msgstr "Nigéria"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:197
+msgid "Niue"
+msgstr "Niué"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:198
+msgid "Norfolk Island"
+msgstr "Île Norfolk"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:199
+msgid "North Korea"
+msgstr "Corée du Nord"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:200
+msgid "Norway"
+msgstr "Norvège"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:201
+msgid "Oman"
+msgstr "Oman"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:202
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:203
+msgid "Palestinian Territory"
+msgstr "Territoire Palestinien"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:204
+msgid "Panama"
+msgstr "Panama"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:205
+msgid "Papua New Guinea"
+msgstr "Papouasie Nouvelle-Guinée"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:206
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:207
+msgid "Peru"
+msgstr "Pérou"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:208
+msgid "Philippines"
+msgstr "Philippines"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:209
+msgid "Pitcairn"
+msgstr "Îles Pitcairn"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:210
+msgid "Poland"
+msgstr "Pologne"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:211
+msgid "Portugal"
+msgstr "Portugal"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:212
+msgid "Qatar"
+msgstr "Qatar"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:213
+msgid "Reunion"
+msgstr "Île de la Réunion"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:214
+msgid "Romania"
+msgstr "Roumanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:215
+msgid "Russia"
+msgstr "Russie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:216
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:217
+msgid "Saint Barth&eacute;lemy"
+msgstr "Saint-Barthélemy"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:218
+msgid "Saint Helena"
+msgstr "Sainte-Hélène"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:219
+msgid "Saint Kitts and Nevis"
+msgstr "Saint-Kitts-et-Nevis"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:220
+msgid "Saint Lucia"
+msgstr "Sainte-Lucie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:221
+msgid "Saint Martin (French part)"
+msgstr "Saint-Martin (France)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:222
+msgid "Saint Martin (Dutch part)"
+msgstr "Saint-Martin (Pays-Bas)"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:223
+msgid "Saint Pierre and Miquelon"
+msgstr "St-Pierre et Miquelon"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:224
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent et les Grenadines"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:225
+msgid "San Marino"
+msgstr "Saint-Marin"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:226
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "Sao Tomé-et-Principe"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:227
+msgid "Saudi Arabia"
+msgstr "Arabie Saoudite"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:228
+msgid "Senegal"
+msgstr "Sénégal"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:229
+msgid "Serbia"
+msgstr "Serbie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:230
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:231
+msgid "Sierra Leone"
+msgstr "Sierra Léone"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:232
+msgid "Singapore"
+msgstr "Singapour"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:233
+msgid "Slovakia"
+msgstr "Slovaquie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:234
+msgid "Slovenia"
+msgstr "Slovénie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:235
+msgid "Solomon Islands"
+msgstr "Îles Salomon"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:236
+msgid "Somalia"
+msgstr "Somalie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:237
+msgid "South Africa"
+msgstr "Afrique du Sud"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:238
+msgid "South Georgia/Sandwich Islands"
+msgstr "Géorgie du Sud et îles Sandwich du Sud"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:239
+msgid "South Korea"
+msgstr "Corée du Sud"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:240
+msgid "South Sudan"
+msgstr "Sud-Soudan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:241
+msgid "Spain"
+msgstr "Espagne"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:242
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:243
+msgid "Sudan"
+msgstr "Soudan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:244
+msgid "Suriname"
+msgstr "Suriname"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:245
+msgid "Svalbard and Jan Mayen"
+msgstr "Îles Svalbard et Jan Mayen"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:246
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:247
+msgid "Sweden"
+msgstr "Suède"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:248
+msgid "Switzerland"
+msgstr "Suisse"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:249
+msgid "Syria"
+msgstr "Syrie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:250
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:251
+msgid "Tajikistan"
+msgstr "Tadjikistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:252
+msgid "Tanzania"
+msgstr "Tanzanie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:253
+msgid "Thailand"
+msgstr "Thaïlande"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:254
+msgid "Timor-Leste"
+msgstr "Timor-Leste"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:255
+msgid "Togo"
+msgstr "Togo"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:256
+msgid "Tokelau"
+msgstr "Tokélaou"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:257
+msgid "Tonga"
+msgstr "Tonga"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:258
+msgid "Trinidad and Tobago"
+msgstr "Trinité-et-Tobago"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:259
+msgid "Tunisia"
+msgstr "Tunisie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:260
+msgid "Turkey"
+msgstr "Turquie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:261
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:262
+msgid "Turks and Caicos Islands"
+msgstr "Îles Turques et Caïques"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:263
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:264
+msgid "Uganda"
+msgstr "Ouganda"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:265
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:266
+msgid "United Arab Emirates"
+msgstr "Émirats Arabes Unis"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:267
+msgid "United Kingdom (UK)"
+msgstr "Royaume-Uni"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:268
+msgid "United States (US)"
+msgstr "États-Unis d'Amérique"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:269
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:270
+msgid "Uzbekistan"
+msgstr "Ouzbékistan"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:271
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:272
+msgid "Vatican"
+msgstr "Vatican"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:273
+msgid "Venezuela"
+msgstr "Vénézuela"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:274
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:275
+msgid "Wallis and Futuna"
+msgstr "Wallis et Futuna"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:276
+msgid "Western Sahara"
+msgstr "Sahara occidental"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:277
+msgid "Western Samoa"
+msgstr "Samoa Occidental"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:278
+msgid "Yemen"
+msgstr "Yemen"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:279
+msgid "Zambia"
+msgstr "Zambie"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:280
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: wordpress-plugin-boilerplate/includes/classes/class-plugin-name-countries.php:438
+msgid "the"
+msgstr "le"
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:16
+msgid "Australian Capital Territory"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:17
+msgid "New South Wales"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:18
+msgid "Northern Territory"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:19
+msgid "Queensland"
+msgstr "Queensland"
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:20
+msgid "South Australia"
+msgstr "Australie du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:21
+msgid "Tasmania"
+msgstr "Tasmanie"
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:22
+msgid "Victoria"
+msgstr "Victoria"
+
+#: wordpress-plugin-boilerplate/includes/states/AU.php:23
+msgid "Western Australia"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:16
+msgid "Blagoevgrad"
+msgstr "Blagoevgrad"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:17
+msgid "Burgas"
+msgstr "Burgas"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:18
+msgid "Dobrich"
+msgstr "Dobrich"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:19
+msgid "Gabrovo"
+msgstr "Gabrovo"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:20
+msgid "Haskovo"
+msgstr "Haskovo"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:21
+msgid "Kardzhali"
+msgstr "Kardzhali"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:22
+msgid "Kyustendil"
+msgstr "Kyustendil"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:23
+msgid "Lovech"
+msgstr "Lovech"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:24
+#: wordpress-plugin-boilerplate/includes/states/US.php:42
+msgid "Montana"
+msgstr "Montana"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:25
+msgid "Pazardzhik"
+msgstr "Pazardzhik"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:26
+msgid "Pernik"
+msgstr "Pernik"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:27
+msgid "Pleven"
+msgstr "Pleven"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:28
+msgid "Plovdiv"
+msgstr "Plovdiv"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:29
+msgid "Razgrad"
+msgstr "Razgrad"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:30
+msgid "Ruse"
+msgstr "Ruse"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:31
+msgid "Shumen"
+msgstr "Shumen"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:32
+msgid "Silistra"
+msgstr "Silistra"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:33
+msgid "Sliven"
+msgstr "Sliven"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:34
+msgid "Smolyan"
+msgstr "Smolyan"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:35
+msgid "Sofia"
+msgstr "Sofia"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:36
+msgid "Sofia-Grad"
+msgstr "Sofia-Grad"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:37
+msgid "Stara Zagora"
+msgstr "Stara Zagora"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:38
+msgid "Targovishte"
+msgstr "Targovishte"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:39
+msgid "Varna"
+msgstr "Varna"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:40
+msgid "Veliko Tarnovo"
+msgstr "Veliko Tarnovo"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:41
+msgid "Vidin"
+msgstr "Vidin"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:42
+msgid "Vratsa"
+msgstr "Vratsa"
+
+#: wordpress-plugin-boilerplate/includes/states/BG.php:43
+msgid "Yambol"
+msgstr "Yambol"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:16
+msgid "Acre"
+msgstr "Acre"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:17
+msgid "Alagoas"
+msgstr "Alagoas"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:18
+msgid "Amap&aacute;"
+msgstr "Amap&aacute;"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:19
+#: wordpress-plugin-boilerplate/includes/states/PE.php:18
+msgid "Amazonas"
+msgstr "Amazonas"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:20
+msgid "Bahia"
+msgstr "Bahia"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:21
+msgid "Cear&aacute;"
+msgstr "Cear&aacute;"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:22
+msgid "Distrito Federal"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:23
+msgid "Esp&iacute;rito Santo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:24
+msgid "Goi&aacute;s"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:25
+msgid "Maranh&atilde;o"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:26
+msgid "Mato Grosso"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:27
+msgid "Mato Grosso do Sul"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:28
+msgid "Minas Gerais"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:29
+msgid "Par&aacute;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:30
+msgid "Para&iacute;ba"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:31
+msgid "Paran&aacute;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:32
+msgid "Pernambuco"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:33
+msgid "Piau&iacute;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:34
+msgid "Rio de Janeiro"
+msgstr "Rio de Janeiro"
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:35
+msgid "Rio Grande do Norte"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:36
+msgid "Rio Grande do Sul"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:37
+msgid "Rond&ocirc;nia"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:38
+msgid "Roraima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:39
+msgid "Santa Catarina"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:40
+msgid "S&atilde;o Paulo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:41
+msgid "Sergipe"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/BR.php:42
+msgid "Tocantins"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:16
+msgid "Alberta"
+msgstr "Alberta"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:17
+msgid "British Columbia"
+msgstr "Colombie-Britannique"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:18
+msgid "Manitoba"
+msgstr "Manitoba"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:19
+msgid "New Brunswick"
+msgstr "Nouveau-Brunswick"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:20
+msgid "Newfoundland"
+msgstr "Terre-Neuve"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:21
+msgid "Northwest Territories"
+msgstr "Territoires du Nord-Ouest"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:22
+msgid "Nova Scotia"
+msgstr "Nouvelle-Écosse"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:23
+msgid "Nunavut"
+msgstr "Nunavut"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:24
+msgid "Ontario"
+msgstr "Ontario"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:25
+msgid "Prince Edward Island"
+msgstr "Île du Prince-Édouard"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:26
+msgid "Quebec"
+msgstr "Québec"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:27
+msgid "Saskatchewan"
+msgstr "Saskatchewan"
+
+#: wordpress-plugin-boilerplate/includes/states/CA.php:28
+msgid "Yukon Territory"
+msgstr "Yukon"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:16
+msgid "Yunnan / &#20113;&#21335;"
+msgstr "Yunnan / &#20113;&#21335;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:17
+msgid "Beijing / &#21271;&#20140;"
+msgstr "Beijing / &#21271;&#20140;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:18
+msgid "Tianjin / &#22825;&#27941;"
+msgstr "Tianjin / &#22825;&#27941;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:19
+msgid "Hebei / &#27827;&#21271;"
+msgstr "Hebei / &#27827;&#21271;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:20
+msgid "Shanxi / &#23665;&#35199;"
+msgstr "Shanxi / &#23665;&#35199;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:21
+msgid "Inner Mongolia / &#20839;&#33945;&#21476;"
+msgstr "Mongolie-intérieure / &#20839;&#33945;&#21476;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:22
+msgid "Liaoning / &#36797;&#23425;"
+msgstr "Liaoning / &#36797;&#23425;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:23
+msgid "Jilin / &#21513;&#26519;"
+msgstr "Jilin / &#21513;&#26519;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:24
+msgid "Heilongjiang / &#40657;&#40857;&#27743;"
+msgstr "Heilongjiang / &#40657;&#40857;&#27743;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:25
+msgid "Shanghai / &#19978;&#28023;"
+msgstr "Shanghai / &#19978;&#28023;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:26
+msgid "Jiangsu / &#27743;&#33487;"
+msgstr "Jiangsu / &#27743;&#33487;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:27
+msgid "Zhejiang / &#27993;&#27743;"
+msgstr "Zhejiang / &#27993;&#27743;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:28
+msgid "Anhui / &#23433;&#24509;"
+msgstr "Anhui / &#23433;&#24509;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:29
+msgid "Fujian / &#31119;&#24314;"
+msgstr "Fujian / &#31119;&#24314;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:30
+msgid "Jiangxi / &#27743;&#35199;"
+msgstr "Jiangxi / &#27743;&#35199;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:31
+msgid "Shandong / &#23665;&#19996;"
+msgstr "Shandong / &#23665;&#19996;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:32
+msgid "Henan / &#27827;&#21335;"
+msgstr "Henan / &#27827;&#21335;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:33
+msgid "Hubei / &#28246;&#21271;"
+msgstr "Hubei / &#28246;&#21271;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:34
+msgid "Hunan / &#28246;&#21335;"
+msgstr "Hunan / &#28246;&#21335;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:35
+msgid "Guangdong / &#24191;&#19996;"
+msgstr "Guangdong / &#24191;&#19996;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:36
+msgid "Guangxi Zhuang / &#24191;&#35199;&#22766;&#26063;"
+msgstr "Guangxi Zhuang / &#24191;&#35199;&#22766;&#26063;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:37
+msgid "Hainan / &#28023;&#21335;"
+msgstr "Hainan / &#28023;&#21335;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:38
+msgid "Chongqing / &#37325;&#24198;"
+msgstr "Chongqing / &#37325;&#24198;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:39
+msgid "Sichuan / &#22235;&#24029;"
+msgstr "Sichuan / &#22235;&#24029;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:40
+msgid "Guizhou / &#36149;&#24030;"
+msgstr "Guizhou / &#36149;&#24030;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:41
+msgid "Shaanxi / &#38485;&#35199;"
+msgstr "Shaanxi / &#38485;&#35199;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:42
+msgid "Gansu / &#29976;&#32899;"
+msgstr "Gansu / &#29976;&#32899;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:43
+msgid "Qinghai / &#38738;&#28023;"
+msgstr "Qinghai / &#38738;&#28023;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:44
+msgid "Ningxia Hui / &#23425;&#22799;"
+msgstr "Ningxia Hui / &#23425;&#22799;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:45
+msgid "Macau / &#28595;&#38376;"
+msgstr "Macao / &#28595;&#38376;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:46
+msgid "Tibet / &#35199;&#34255;"
+msgstr "Tibet / &#35199;&#34255;"
+
+#: wordpress-plugin-boilerplate/includes/states/CN.php:47
+msgid "Xinjiang / &#26032;&#30086;"
+msgstr "Xinjiang / &#26032;&#30086;"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:16
+msgid "A Coru&ntilde;a"
+msgstr "La Corogne"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:17
+msgid "&Aacute;lava"
+msgstr "&Aacute;lava"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:18
+msgid "Albacete"
+msgstr "Albacete"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:19
+msgid "Alicante"
+msgstr "Alicante"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:20
+msgid "Almer&iacute;a"
+msgstr "Almeria"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:21
+msgid "Asturias"
+msgstr "Asturies"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:22
+msgid "&Aacute;vila"
+msgstr "&Aacute;vila"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:23
+msgid "Badajoz"
+msgstr "Badajoz"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:24
+msgid "Baleares"
+msgstr "Baléares"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:25
+msgid "Barcelona"
+msgstr "Barcelone"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:26
+msgid "Burgos"
+msgstr "Burgos"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:27
+msgid "C&aacute;ceres"
+msgstr "C&aacute;ceres"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:28
+msgid "C&aacute;diz"
+msgstr "Cadix"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:29
+msgid "Cantabria"
+msgstr "Cantabrie"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:30
+msgid "Castell&oacute;n"
+msgstr "Castell&oacute;n"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:31
+msgid "Ceuta"
+msgstr "Ceuta"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:32
+msgid "Ciudad Real"
+msgstr "Ciudad Real"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:33
+msgid "C&oacute;rdoba"
+msgstr "Cordoba"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:34
+msgid "Cuenca"
+msgstr "Cuenca"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:35
+msgid "Girona"
+msgstr "G&eacute;rone"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:36
+msgid "Granada"
+msgstr "Grenade"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:37
+msgid "Guadalajara"
+msgstr "Guadalajara"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:38
+msgid "Guip&uacute;zcoa"
+msgstr "Guipuzcoa"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:39
+msgid "Huelva"
+msgstr "Huelva"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:40
+msgid "Huesca"
+msgstr "Huesca"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:41
+msgid "Ja&eacute;n"
+msgstr "Ja&eacute;n"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:42
+msgid "La Rioja"
+msgstr "La Rioja"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:43
+msgid "Las Palmas"
+msgstr "Las Palmas"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:44
+msgid "Le&oacute;n"
+msgstr "Le&oacute;n"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:45
+msgid "Lleida"
+msgstr "Lleida"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:46
+msgid "Lugo"
+msgstr "Lugo"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:47
+msgid "Madrid"
+msgstr "Madrid"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:48
+msgid "M&aacute;laga"
+msgstr "Malaga"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:49
+msgid "Melilla"
+msgstr "Melilla"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:50
+msgid "Murcia"
+msgstr "Murcia"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:51
+msgid "Navarra"
+msgstr "Navarre"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:52
+msgid "Ourense"
+msgstr "Ourense"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:53
+msgid "Palencia"
+msgstr "Palencia"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:54
+msgid "Pontevedra"
+msgstr "Pontevedra"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:55
+msgid "Salamanca"
+msgstr "Salamanca"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:56
+msgid "Santa Cruz de Tenerife"
+msgstr "Santa Cruz de Tenerife"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:57
+msgid "Segovia"
+msgstr "S&eacute;govie"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:58
+msgid "Sevilla"
+msgstr "S&eacute;ville"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:59
+msgid "Soria"
+msgstr "Soria"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:60
+msgid "Tarragona"
+msgstr "Tarragone"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:61
+msgid "Teruel"
+msgstr "Teruel"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:62
+msgid "Toledo"
+msgstr "Toledo"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:63
+msgid "Valencia"
+msgstr "Valence"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:64
+msgid "Valladolid"
+msgstr "Valladolid"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:65
+msgid "Vizcaya"
+msgstr "Vizcaya"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:66
+msgid "Zamora"
+msgstr "Zamora"
+
+#: wordpress-plugin-boilerplate/includes/states/ES.php:67
+msgid "Zaragoza"
+msgstr "Saragosse"
+
+#: wordpress-plugin-boilerplate/includes/states/HK.php:16
+msgid "Hong Kong Island"
+msgstr "Hong Kong Island"
+
+#: wordpress-plugin-boilerplate/includes/states/HK.php:17
+msgid "Kowloon"
+msgstr "Kowloon"
+
+#: wordpress-plugin-boilerplate/includes/states/HK.php:18
+msgid "New Territories"
+msgstr "Nouveaux Territoires"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:16
+msgid "Bács-Kiskun"
+msgstr "Bács-Kiskun"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:17
+msgid "Békés"
+msgstr "Békés"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:18
+msgid "Baranya"
+msgstr "Baranya"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:19
+msgid "Borsod-Abaúj-Zemplén"
+msgstr "Borsod-Abaúj-Zemplén"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:20
+msgid "Budapest"
+msgstr "Budapest"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:21
+msgid "Csongrád"
+msgstr "Csongrád"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:22
+msgid "Fejér"
+msgstr "Fejér"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:23
+msgid "Győr-Moson-Sopron"
+msgstr "Győr-Moson-Sopron"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:24
+msgid "Hajdú-Bihar"
+msgstr "Hajdú-Bihar"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:25
+msgid "Heves"
+msgstr "Heves"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:26
+msgid "Jász-Nagykun-Szolnok"
+msgstr "Jász-Nagykun-Szolnok"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:27
+msgid "Komárom-Esztergom"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:28
+msgid "Nógrád"
+msgstr "Nógrád"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:29
+msgid "Pest"
+msgstr "Pest"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:30
+msgid "Somogy"
+msgstr "Somogy"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:31
+msgid "Szabolcs-Szatmár-Bereg"
+msgstr "Szabolcs-Szatmár-Bereg"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:32
+msgid "Tolna"
+msgstr "Tolna"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:33
+msgid "Vas"
+msgstr "Vas"
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:34
+msgid "Veszprém"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/HU.php:35
+msgid "Zala"
+msgstr "Zala"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:16
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:17
+msgid "Auckland"
+msgstr "Auckland"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:17
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:19
+msgid "Bay of Plenty"
+msgstr "Bay of Plenty"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:18
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:28
+msgid "Canterbury"
+msgstr "Canterbury"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:19
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:21
+msgid "Hawke&rsquo;s Bay"
+msgstr "Hawke&rsquo;s Bay"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:20
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:22
+msgid "Manawatu-Wanganui"
+msgstr "Manawatu-Wanganui"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:21
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:25
+msgid "Marlborough"
+msgstr "Marlborough"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:22
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:24
+msgid "Nelson"
+msgstr "Nelson"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:23
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:16
+msgid "Northland"
+msgstr "Northland"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:24
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:29
+msgid "Otago"
+msgstr "Otago"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:25
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:30
+msgid "Southland"
+msgstr "Southland"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:26
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:20
+msgid "Taranaki"
+msgstr "Taranaki"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:27
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:26
+msgid "Tasman"
+msgstr "Tasman"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:28
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:18
+msgid "Waikato"
+msgstr "Waikato"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:29
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:23
+msgid "Wellington"
+msgstr "Wellington"
+
+#: wordpress-plugin-boilerplate/includes/states/HZ.php:30
+#: wordpress-plugin-boilerplate/includes/states/NZ.php:27
+msgid "West Coast"
+msgstr "West Coast"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:16
+msgid "Daerah Istimewa Aceh"
+msgstr "Daerah Istimewa Aceh"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:17
+msgid "Sumatera Utara"
+msgstr "Sumatra du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:18
+msgid "Sumatera Barat"
+msgstr "Sumatra occidental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:19
+msgid "Riau"
+msgstr "Riau"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:20
+msgid "Kepulauan Riau"
+msgstr "Îles Riau"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:21
+msgid "Jambi"
+msgstr "Jambi"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:22
+msgid "Sumatera Selatan"
+msgstr "Sumatra du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:23
+msgid "Bangka Belitung"
+msgstr "Îles Bangka Belitung"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:24
+msgid "Bengkulu"
+msgstr "Bengkulu"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:25
+msgid "Lampung"
+msgstr "Lampung"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:26
+msgid "DKI Jakarta"
+msgstr "Jakarta"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:27
+msgid "Jawa Barat"
+msgstr "Java occidental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:28
+msgid "Banten"
+msgstr "Banten"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:29
+msgid "Jawa Tengah"
+msgstr "Java central"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:30
+msgid "Jawa Timur"
+msgstr "Java oriental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:31
+msgid "Daerah Istimewa Yogyakarta"
+msgstr "Yogyakarta"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:32
+msgid "Bali"
+msgstr "Bali"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:33
+msgid "Nusa Tenggara Barat"
+msgstr "Petites Îles de la Sonde occidentales"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:34
+msgid "Nusa Tenggara Timur"
+msgstr "Petites Îles de la Sonde orientales"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:35
+msgid "Kalimantan Barat"
+msgstr "Kalimantan occidental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:36
+msgid "Kalimantan Tengah"
+msgstr "Kalimantan central"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:37
+msgid "Kalimantan Timur"
+msgstr "Kalimantan oriental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:38
+msgid "Kalimantan Selatan"
+msgstr "Kalimantan du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:39
+msgid "Kalimantan Utara"
+msgstr "Kalimantan du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:40
+msgid "Sulawesi Utara"
+msgstr "Sulawesi du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:41
+msgid "Sulawesi Tengah"
+msgstr "Sulawesi central"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:42
+msgid "Sulawesi Tenggara"
+msgstr "Sulawesi du Sud-Est"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:43
+msgid "Sulawesi Barat"
+msgstr "Sulawesi occidental"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:44
+msgid "Sulawesi Selatan"
+msgstr "Sulawesi du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:45
+msgid "Gorontalo"
+msgstr "Gorontalo"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:46
+msgid "Maluku"
+msgstr "Moluques"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:47
+msgid "Maluku Utara"
+msgstr "Moluques du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:48
+msgid "Papua"
+msgstr "Papouasie"
+
+#: wordpress-plugin-boilerplate/includes/states/ID.php:49
+msgid "Papua Barat"
+msgstr "Papouasie occidentale"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:16
+msgid "Andra Pradesh"
+msgstr "Andhra Pradesh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:17
+msgid "Arunachal Pradesh"
+msgstr "Arunachal Pradesh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:18
+msgid "Assam"
+msgstr "Assam"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:19
+msgid "Bihar"
+msgstr "Bihar"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:20
+msgid "Chhattisgarh"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:21
+msgid "Goa"
+msgstr "Goa"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:22
+msgid "Gujarat"
+msgstr "Gujarat"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:23
+msgid "Haryana"
+msgstr "Haryana"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:24
+msgid "Himachal Pradesh"
+msgstr "Himachal Pradesh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:25
+msgid "Jammu and Kashmir"
+msgstr "Jammu-et-Cachemire"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:26
+msgid "Jharkhand"
+msgstr "Jharkhand"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:27
+msgid "Karnataka"
+msgstr "Karnataka"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:28
+msgid "Kerala"
+msgstr "Kérala"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:29
+msgid "Madhya Pradesh"
+msgstr "Madhya Pradesh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:30
+msgid "Maharashtra"
+msgstr "Maharashtra"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:31
+msgid "Manipur"
+msgstr "Manipur"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:32
+msgid "Meghalaya"
+msgstr "Meghalaya"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:33
+msgid "Mizoram"
+msgstr "Mizoram"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:34
+msgid "Nagaland"
+msgstr "Nagaland"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:35
+msgid "Orissa"
+msgstr "Orissa"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:36
+msgid "Punjab"
+msgstr "Punjab"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:37
+msgid "Rajasthan"
+msgstr "Rajasthan"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:38
+msgid "Sikkim"
+msgstr "Sikkim"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:39
+msgid "Tamil Nadu"
+msgstr "Tamil Nadu"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:40
+msgid "Tripura"
+msgstr "Tripura"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:41
+msgid "Uttaranchal"
+msgstr "Uttaranchal"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:42
+msgid "Uttar Pradesh"
+msgstr "Uttar Pradesh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:43
+msgid "West Bengal"
+msgstr "Bengale occidental"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:44
+msgid "Andaman and Nicobar Islands"
+msgstr "Îles Andaman-et-Nicobar"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:45
+msgid "Chandigarh"
+msgstr "Chandigarh"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:46
+msgid "Dadar and Nagar Haveli"
+msgstr "Dadra et Nagar Haveli"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:47
+msgid "Daman and Diu"
+msgstr "Daman et Diu"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:48
+msgid "Delhi"
+msgstr "Delhi"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:49
+msgid "Lakshadeep"
+msgstr "Lakshadeep"
+
+#: wordpress-plugin-boilerplate/includes/states/IN.php:50
+msgid "Pondicherry (Puducherry)"
+msgstr "Pondichéry (Puducherry)"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:16
+msgid "Agrigento"
+msgstr "Agrigente"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:17
+msgid "Alessandria"
+msgstr "Alexandrie"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:18
+msgid "Ancona"
+msgstr "Anc&ocirc;ne"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:19
+msgid "Aosta"
+msgstr "Aoste"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:20
+msgid "Arezzo"
+msgstr "Arezzo"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:21
+msgid "Ascoli Piceno"
+msgstr "Ascoli Piceno"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:22
+msgid "Asti"
+msgstr "Asti"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:23
+msgid "Avellino"
+msgstr "Avellino"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:24
+msgid "Bari"
+msgstr "Bari"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:25
+msgid "Barletta-Andria-Trani"
+msgstr "Barletta-Andria-Trani"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:26
+msgid "Belluno"
+msgstr "Belluno"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:27
+msgid "Benevento"
+msgstr "Benevento"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:28
+msgid "Bergamo"
+msgstr "Bergame"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:29
+msgid "Biella"
+msgstr "Biella"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:30
+msgid "Bologna"
+msgstr "Bologne"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:31
+msgid "Bolzano"
+msgstr "Bolzano"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:32
+msgid "Brescia"
+msgstr "Brescia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:33
+msgid "Brindisi"
+msgstr "Brindisi"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:34
+msgid "Cagliari"
+msgstr "Cagliari"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:35
+msgid "Caltanissetta"
+msgstr "Caltanissetta"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:36
+msgid "Campobasso"
+msgstr "Campobasso"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:37
+msgid "Carbonia-Iglesias"
+msgstr "Carbonia-Iglesias"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:38
+msgid "Caserta"
+msgstr "Caserta"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:39
+msgid "Catania"
+msgstr "Catania"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:40
+msgid "Catanzaro"
+msgstr "Catanzaro"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:41
+msgid "Chieti"
+msgstr "Chieti"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:42
+msgid "Como"
+msgstr "C&ocirc;me"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:43
+msgid "Cosenza"
+msgstr "Cosenza"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:44
+msgid "Cremona"
+msgstr "Cremona"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:45
+msgid "Crotone"
+msgstr "Crotone"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:46
+msgid "Cuneo"
+msgstr "Cuneo"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:47
+msgid "Enna"
+msgstr "Enna"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:48
+msgid "Fermo"
+msgstr "Fermo"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:49
+msgid "Ferrara"
+msgstr "Ferrara"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:50
+msgid "Firenze"
+msgstr "Firenze"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:51
+msgid "Foggia"
+msgstr "Foggia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:52
+msgid "Forlì-Cesena"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:53
+msgid "Frosinone"
+msgstr "Frosinone"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:54
+msgid "Genova"
+msgstr "G&ecirc;nes"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:55
+msgid "Gorizia"
+msgstr "Gorizia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:56
+msgid "Grosseto"
+msgstr "Grosseto"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:57
+msgid "Imperia"
+msgstr "Imperia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:58
+msgid "Isernia"
+msgstr "Isernia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:59
+msgid "La Spezia"
+msgstr "La Spezia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:60
+msgid "L&apos;Aquila"
+msgstr "L&apos;Aquila"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:61
+msgid "Latina"
+msgstr "Latina"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:62
+msgid "Lecce"
+msgstr "Lecce"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:63
+msgid "Lecco"
+msgstr "Lecco"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:64
+msgid "Livorno"
+msgstr "Livorno"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:65
+msgid "Lodi"
+msgstr "Lodi"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:66
+msgid "Lucca"
+msgstr "Lucca"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:67
+msgid "Macerata"
+msgstr "Macerata"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:68
+msgid "Mantova"
+msgstr "Mantova"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:69
+msgid "Massa-Carrara"
+msgstr "Massa-Carrara"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:70
+msgid "Matera"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:71
+msgid "Messina"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:72
+msgid "Milano"
+msgstr "Milan"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:73
+msgid "Modena"
+msgstr "Mod&egrave;ne"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:74
+msgid "Monza e della Brianza"
+msgstr "Monza e della Brianza"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:75
+msgid "Napoli"
+msgstr "Naples"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:76
+msgid "Novara"
+msgstr "Novare"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:77
+msgid "Nuoro"
+msgstr "Nuoro"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:78
+msgid "Olbia-Tempio"
+msgstr "Olbia-Tempio"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:79
+msgid "Oristano"
+msgstr "Oristano"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:80
+msgid "Padova"
+msgstr "Padova"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:81
+msgid "Palermo"
+msgstr "Palerme"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:82
+msgid "Parma"
+msgstr "Parme"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:83
+msgid "Pavia"
+msgstr "Pavia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:84
+msgid "Perugia"
+msgstr "Perugia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:85
+msgid "Pesaro e Urbino"
+msgstr "Pesaro e Urbino"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:86
+msgid "Pescara"
+msgstr "Pescara"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:87
+msgid "Piacenza"
+msgstr "Piacenza"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:88
+msgid "Pisa"
+msgstr "Pise"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:89
+msgid "Pistoia"
+msgstr "Pistoia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:90
+msgid "Pordenone"
+msgstr "Pordenone"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:91
+msgid "Potenza"
+msgstr "Potenza"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:92
+msgid "Prato"
+msgstr "Prato"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:93
+msgid "Ragusa"
+msgstr "Ragusa"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:94
+msgid "Ravenna"
+msgstr "Ravenne"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:95
+msgid "Reggio Calabria"
+msgstr "Reggio Calabria"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:96
+msgid "Reggio Emilia"
+msgstr "Reggio Emilia"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:97
+msgid "Rieti"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:98
+msgid "Rimini"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:99
+msgid "Roma"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:100
+msgid "Rovigo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:101
+msgid "Salerno"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:102
+msgid "Medio Campidano"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:103
+msgid "Sassari"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:104
+msgid "Savona"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:105
+msgid "Siena"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:106
+msgid "Siracusa"
+msgstr "Siracuse"
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:107
+msgid "Sondrio"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:108
+msgid "Taranto"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:109
+msgid "Teramo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:110
+msgid "Terni"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:111
+msgid "Torino"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:112
+msgid "Ogliastra"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:113
+msgid "Trapani"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:114
+msgid "Trento"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:115
+msgid "Treviso"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:116
+msgid "Trieste"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:117
+msgid "Udine"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:118
+msgid "Varese"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:119
+msgid "Venezia"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:120
+msgid "Verbano-Cusio-Ossola"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:121
+msgid "Vercelli"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:122
+msgid "Verona"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:123
+msgid "Vibo Valentia"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:124
+msgid "Vicenza"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/IT.php:125
+msgid "Viterbo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:16
+msgid "Hokkaido"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:17
+msgid "Aomori"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:18
+msgid "Iwate"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:19
+msgid "Miyagi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:20
+msgid "Akita"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:21
+msgid "Yamagata"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:22
+msgid "Fukushima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:23
+msgid "Ibaraki"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:24
+msgid "Tochigi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:25
+msgid "Gunma"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:26
+msgid "Saitama"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:27
+msgid "Chiba"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:28
+msgid "Tokyo"
+msgstr "Tōkyō"
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:29
+msgid "Kanagawa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:30
+msgid "Niigata"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:31
+msgid "Toyama"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:32
+msgid "Ishikawa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:33
+msgid "Fukui"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:34
+msgid "Yamanashi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:35
+msgid "Nagano"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:36
+msgid "Gifu"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:37
+msgid "Shizuoka"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:38
+msgid "Aichi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:39
+msgid "Mie"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:40
+msgid "Shiga"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:41
+msgid "Kyouto"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:42
+msgid "Osaka"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:43
+msgid "Hyougo"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:44
+msgid "Nara"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:45
+msgid "Wakayama"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:46
+msgid "Tottori"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:47
+msgid "Shimane"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:48
+msgid "Okayama"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:49
+msgid "Hiroshima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:50
+msgid "Yamaguchi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:51
+msgid "Tokushima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:52
+msgid "Kagawa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:53
+msgid "Ehime"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:54
+msgid "Kochi"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:55
+msgid "Fukuoka"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:56
+msgid "Saga"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:57
+msgid "Nagasaki"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:58
+msgid "Kumamoto"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:59
+msgid "Oita"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:60
+msgid "Miyazaki"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:61
+msgid "Kagoshima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/JP.php:62
+msgid "Okinawa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:16
+msgid "Johor"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:17
+msgid "Kedah"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:18
+msgid "Kelantan"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:19
+msgid "Melaka"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:20
+msgid "Negeri Sembilan"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:21
+msgid "Pahang"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:22
+msgid "Perak"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:23
+msgid "Perlis"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:24
+msgid "Pulau Pinang"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:25
+msgid "Sabah"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:26
+msgid "Sarawak"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:27
+msgid "Selangor"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:28
+msgid "Terengganu"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:29
+msgid "W.P. Kuala Lumpur"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:30
+msgid "W.P. Labuan"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/MY.php:31
+msgid "W.P. Putrajaya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:16
+msgid "El Callao"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:17
+msgid "Municipalidad Metropolitana de Lima"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:19
+msgid "Ancash"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:20
+msgid "Apur&iacute;mac"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:21
+msgid "Arequipa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:22
+msgid "Ayacucho"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:23
+msgid "Cajamarca"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:24
+msgid "Cusco"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:25
+msgid "Huancavelica"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:26
+msgid "Hu&aacute;nuco"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:27
+msgid "Ica"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:28
+msgid "Jun&iacute;n"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:29
+msgid "La Libertad"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:30
+msgid "Lambayeque"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:31
+msgid "Lima"
+msgstr "Lima"
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:32
+msgid "Loreto"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:33
+msgid "Madre de Dios"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:34
+msgid "Moquegua"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:35
+msgid "Pasco"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:36
+msgid "Piura"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:37
+msgid "Puno"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:38
+msgid "San Mart&iacute;n"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:39
+msgid "Tacna"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:40
+msgid "Tumbes"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/PE.php:41
+msgid "Ucayali"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:16
+msgid ""
+"Amnat Charoen "
+"(&#3629;&#3635;&#3609;&#3634;&#3592;&#3648;&#3592;&#3619;&#3636;&#3597;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:17
+msgid "Ang Thong (&#3629;&#3656;&#3634;&#3591;&#3607;&#3629;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:18
+msgid ""
+"Ayutthaya "
+"(&#3614;&#3619;&#3632;&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3629;&#3618;&#3640;&#3608;&#3618;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:19
+msgid ""
+"Bangkok "
+"(&#3585;&#3619;&#3640;&#3591;&#3648;&#3607;&#3614;&#3617;&#3627;&#3634;&#3609;&#3588;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:20
+msgid "Bueng Kan (&#3610;&#3638;&#3591;&#3585;&#3634;&#3628;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:21
+msgid ""
+"Buri Ram (&#3610;&#3640;&#3619;&#3637;&#3619;&#3633;&#3617;&#3618;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:22
+msgid ""
+"Chachoengsao "
+"(&#3593;&#3632;&#3648;&#3594;&#3636;&#3591;&#3648;&#3607;&#3619;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:23
+msgid "Chai Nat (&#3594;&#3633;&#3618;&#3609;&#3634;&#3607;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:24
+msgid "Chaiyaphum (&#3594;&#3633;&#3618;&#3616;&#3641;&#3617;&#3636;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:25
+msgid "Chanthaburi (&#3592;&#3633;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:26
+msgid ""
+"Chiang Mai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3651;&#3627;&#3617;&#3656;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:27
+msgid "Chiang Rai (&#3648;&#3594;&#3637;&#3618;&#3591;&#3619;&#3634;&#3618;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:28
+msgid "Chonburi (&#3594;&#3621;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:29
+msgid "Chumphon (&#3594;&#3640;&#3617;&#3614;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:30
+msgid ""
+"Kalasin (&#3585;&#3634;&#3628;&#3626;&#3636;&#3609;&#3608;&#3640;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:31
+msgid ""
+"Kamphaeng Phet "
+"(&#3585;&#3635;&#3649;&#3614;&#3591;&#3648;&#3614;&#3594;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:32
+msgid ""
+"Kanchanaburi "
+"(&#3585;&#3634;&#3597;&#3592;&#3609;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:33
+msgid "Khon Kaen (&#3586;&#3629;&#3609;&#3649;&#3585;&#3656;&#3609;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:34
+msgid "Krabi (&#3585;&#3619;&#3632;&#3610;&#3637;&#3656;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:35
+msgid "Lampang (&#3621;&#3635;&#3611;&#3634;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:36
+msgid "Lamphun (&#3621;&#3635;&#3614;&#3641;&#3609;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:37
+msgid "Loei (&#3648;&#3621;&#3618;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:38
+msgid "Lopburi (&#3621;&#3614;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:39
+msgid ""
+"Mae Hong Son "
+"(&#3649;&#3617;&#3656;&#3630;&#3656;&#3629;&#3591;&#3626;&#3629;&#3609;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:40
+msgid ""
+"Maha Sarakham "
+"(&#3617;&#3627;&#3634;&#3626;&#3634;&#3619;&#3588;&#3634;&#3617;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:41
+msgid "Mukdahan (&#3617;&#3640;&#3585;&#3604;&#3634;&#3627;&#3634;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:42
+msgid "Nakhon Nayok (&#3609;&#3588;&#3619;&#3609;&#3634;&#3618;&#3585;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:43
+msgid "Nakhon Pathom (&#3609;&#3588;&#3619;&#3611;&#3600;&#3617;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:44
+msgid "Nakhon Phanom (&#3609;&#3588;&#3619;&#3614;&#3609;&#3617;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:45
+msgid ""
+"Nakhon Ratchasima "
+"(&#3609;&#3588;&#3619;&#3619;&#3634;&#3594;&#3626;&#3637;&#3617;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:46
+msgid ""
+"Nakhon Sawan "
+"(&#3609;&#3588;&#3619;&#3626;&#3623;&#3619;&#3619;&#3588;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:47
+msgid ""
+"Nakhon Si Thammarat "
+"(&#3609;&#3588;&#3619;&#3624;&#3619;&#3637;&#3608;&#3619;&#3619;&#3617;&#3619;&#3634;&#3594;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:48
+msgid "Nan (&#3609;&#3656;&#3634;&#3609;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:49
+msgid "Narathiwat (&#3609;&#3619;&#3634;&#3608;&#3636;&#3623;&#3634;&#3626;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:50
+msgid ""
+"Nong Bua Lam Phu "
+"(&#3627;&#3609;&#3629;&#3591;&#3610;&#3633;&#3623;&#3621;&#3635;&#3616;&#3641;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:51
+msgid "Nong Khai (&#3627;&#3609;&#3629;&#3591;&#3588;&#3634;&#3618;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:52
+msgid "Nonthaburi (&#3609;&#3609;&#3607;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:53
+msgid ""
+"Pathum Thani (&#3611;&#3607;&#3640;&#3617;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:54
+msgid "Pattani (&#3611;&#3633;&#3605;&#3605;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:55
+msgid "Phang Nga (&#3614;&#3633;&#3591;&#3591;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:56
+msgid "Phatthalung (&#3614;&#3633;&#3607;&#3621;&#3640;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:57
+msgid "Phayao (&#3614;&#3632;&#3648;&#3618;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:58
+msgid ""
+"Phetchabun (&#3648;&#3614;&#3594;&#3619;&#3610;&#3641;&#3619;&#3603;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:59
+msgid "Phetchaburi (&#3648;&#3614;&#3594;&#3619;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:60
+msgid "Phichit (&#3614;&#3636;&#3592;&#3636;&#3605;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:61
+msgid "Phitsanulok (&#3614;&#3636;&#3625;&#3603;&#3640;&#3650;&#3621;&#3585;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:62
+msgid "Phrae (&#3649;&#3614;&#3619;&#3656;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:63
+msgid "Phuket (&#3616;&#3641;&#3648;&#3585;&#3655;&#3605;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:64
+msgid ""
+"Prachin Buri "
+"(&#3611;&#3619;&#3634;&#3592;&#3637;&#3609;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:65
+msgid ""
+"Prachuap Khiri Khan "
+"(&#3611;&#3619;&#3632;&#3592;&#3623;&#3610;&#3588;&#3637;&#3619;&#3637;&#3586;&#3633;&#3609;&#3608;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:66
+msgid "Ranong (&#3619;&#3632;&#3609;&#3629;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:67
+msgid "Ratchaburi (&#3619;&#3634;&#3594;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:68
+msgid "Rayong (&#3619;&#3632;&#3618;&#3629;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:69
+msgid "Roi Et (&#3619;&#3657;&#3629;&#3618;&#3648;&#3629;&#3655;&#3604;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:70
+msgid "Sa Kaeo (&#3626;&#3619;&#3632;&#3649;&#3585;&#3657;&#3623;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:71
+msgid "Sakon Nakhon (&#3626;&#3585;&#3621;&#3609;&#3588;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:72
+msgid ""
+"Samut Prakan "
+"(&#3626;&#3617;&#3640;&#3607;&#3619;&#3611;&#3619;&#3634;&#3585;&#3634;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:73
+msgid ""
+"Samut Sakhon "
+"(&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3634;&#3588;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:74
+msgid ""
+"Samut Songkhram "
+"(&#3626;&#3617;&#3640;&#3607;&#3619;&#3626;&#3591;&#3588;&#3619;&#3634;&#3617;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:75
+msgid "Saraburi (&#3626;&#3619;&#3632;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:76
+msgid "Satun (&#3626;&#3605;&#3641;&#3621;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:77
+msgid ""
+"Sing Buri (&#3626;&#3636;&#3591;&#3627;&#3660;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:78
+msgid "Sisaket (&#3624;&#3619;&#3637;&#3626;&#3632;&#3648;&#3585;&#3625;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:79
+msgid "Songkhla (&#3626;&#3591;&#3586;&#3621;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:80
+msgid "Sukhothai (&#3626;&#3640;&#3650;&#3586;&#3607;&#3633;&#3618;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:81
+msgid ""
+"Suphan Buri "
+"(&#3626;&#3640;&#3614;&#3619;&#3619;&#3603;&#3610;&#3640;&#3619;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:82
+msgid ""
+"Surat Thani "
+"(&#3626;&#3640;&#3619;&#3634;&#3625;&#3598;&#3619;&#3660;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:83
+msgid "Surin (&#3626;&#3640;&#3619;&#3636;&#3609;&#3607;&#3619;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:84
+msgid "Tak (&#3605;&#3634;&#3585;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:85
+msgid "Trang (&#3605;&#3619;&#3633;&#3591;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:86
+msgid "Trat (&#3605;&#3619;&#3634;&#3604;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:87
+msgid ""
+"Ubon Ratchathani "
+"(&#3629;&#3640;&#3610;&#3621;&#3619;&#3634;&#3594;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:88
+msgid "Udon Thani (&#3629;&#3640;&#3604;&#3619;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:89
+msgid ""
+"Uthai Thani "
+"(&#3629;&#3640;&#3607;&#3633;&#3618;&#3608;&#3634;&#3609;&#3637;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:90
+msgid ""
+"Uttaradit (&#3629;&#3640;&#3605;&#3619;&#3604;&#3636;&#3605;&#3606;&#3660;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:91
+msgid "Yala (&#3618;&#3632;&#3621;&#3634;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TH.php:92
+msgid "Yasothon (&#3618;&#3650;&#3626;&#3608;&#3619;)"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:16
+msgid "Adana"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:17
+msgid "Ad&#305;yaman"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:18
+msgid "Afyon"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:19
+msgid "A&#287;r&#305;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:20
+msgid "Amasya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:21
+msgid "Ankara"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:22
+msgid "Antalya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:23
+msgid "Artvin"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:24
+msgid "Ayd&#305;n"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:25
+msgid "Bal&#305;kesir"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:26
+msgid "Bilecik"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:27
+msgid "Bing&#246;l"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:28
+msgid "Bitlis"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:29
+msgid "Bolu"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:30
+msgid "Burdur"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:31
+msgid "Bursa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:32
+msgid "&#199;anakkale"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:33
+msgid "&#199;ank&#305;r&#305;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:34
+msgid "&#199;orum"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:35
+msgid "Denizli"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:36
+msgid "Diyarbak&#305;r"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:37
+msgid "Edirne"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:38
+msgid "Elaz&#305;&#287;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:39
+msgid "Erzincan"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:40
+msgid "Erzurum"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:41
+msgid "Eski&#351;ehir"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:42
+msgid "Gaziantep"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:43
+msgid "Giresun"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:44
+msgid "G&#252;m&#252;&#351;hane"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:45
+msgid "Hakkari"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:46
+msgid "Hatay"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:47
+msgid "Isparta"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:48
+msgid "&#304;&#231;el"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:49
+msgid "&#304;stanbul"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:50
+msgid "&#304;zmir"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:51
+msgid "Kars"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:52
+msgid "Kastamonu"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:53
+msgid "Kayseri"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:54
+msgid "K&#305;rklareli"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:55
+msgid "K&#305;r&#351;ehir"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:56
+msgid "Kocaeli"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:57
+msgid "Konya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:58
+msgid "K&#252;tahya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:59
+msgid "Malatya"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:60
+msgid "Manisa"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:61
+msgid "Kahramanmara&#351;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:62
+msgid "Mardin"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:63
+msgid "Mu&#287;la"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:64
+msgid "Mu&#351;"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:65
+msgid "Nev&#351;ehir"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:66
+msgid "Ni&#287;de"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:67
+msgid "Ordu"
+msgstr "Ordu"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:68
+msgid "Rize"
+msgstr "Rize"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:69
+msgid "Sakarya"
+msgstr "Sakarya"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:70
+msgid "Samsun"
+msgstr "Samsun"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:71
+msgid "Siirt"
+msgstr "Siirt"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:72
+msgid "Sinop"
+msgstr "Sinop"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:73
+msgid "Sivas"
+msgstr "Sivas"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:74
+msgid "Tekirda&#287;"
+msgstr "Tekirda&#287;"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:75
+msgid "Tokat"
+msgstr "Tokat"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:76
+msgid "Trabzon"
+msgstr "Trabzon"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:77
+msgid "Tunceli"
+msgstr "Tunceli"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:78
+msgid "&#350;anl&#305;urfa"
+msgstr "&#350;anl&#305;urfa"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:79
+msgid "U&#351;ak"
+msgstr "U&#351;ak"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:80
+msgid "Van"
+msgstr "Van"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:81
+msgid "Yozgat"
+msgstr "Yozgat"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:82
+msgid "Zonguldak"
+msgstr "Zonguldak"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:83
+msgid "Aksaray"
+msgstr "Aksaray"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:84
+msgid "Bayburt"
+msgstr "Bayburt"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:85
+msgid "Karaman"
+msgstr "Karaman"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:86
+msgid "K&#305;r&#305;kkale"
+msgstr "K&#305;r&#305;kkale"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:87
+msgid "Batman"
+msgstr "Batman"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:88
+msgid "&#350;&#305;rnak"
+msgstr "&#350;&#305;rnak"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:89
+msgid "Bart&#305;n"
+msgstr "Bart&#305;n"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:90
+msgid "Ardahan"
+msgstr "Ardahan"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:91
+msgid "I&#287;d&#305;r"
+msgstr "I&#287;d&#305;r"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:92
+msgid "Yalova"
+msgstr "Yalova"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:93
+msgid "Karab&#252;k"
+msgstr "Karab&#252;k"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:94
+msgid "Kilis"
+msgstr "Kilis"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:95
+msgid "Osmaniye"
+msgstr "Osmaniye"
+
+#: wordpress-plugin-boilerplate/includes/states/TR.php:96
+msgid "D&#252;zce"
+msgstr "D&#252;zce"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:16
+msgid "Alabama"
+msgstr "Alabama"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:17
+msgid "Alaska"
+msgstr "Alaska"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:18
+msgid "Arizona"
+msgstr "Arizona"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:19
+msgid "Arkansas"
+msgstr "Arkansas"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:20
+msgid "California"
+msgstr "Californie"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:21
+msgid "Colorado"
+msgstr "Colorado"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:22
+msgid "Connecticut"
+msgstr "Connecticut"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:23
+msgid "Delaware"
+msgstr "Delaware"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:24
+msgid "District Of Columbia"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:25
+msgid "Florida"
+msgstr "Floride"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:27
+msgid "Hawaii"
+msgstr "Hawaii"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:28
+msgid "Idaho"
+msgstr "Idaho"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:29
+msgid "Illinois"
+msgstr "Illinois"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:30
+msgid "Indiana"
+msgstr "Indiana"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:31
+msgid "Iowa"
+msgstr "Iowa"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:32
+msgid "Kansas"
+msgstr "Kansas"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:33
+msgid "Kentucky"
+msgstr "Kentucky"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:34
+msgid "Louisiana"
+msgstr "Louisiane"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:35
+msgid "Maine"
+msgstr "Maine"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:36
+msgid "Maryland"
+msgstr "Maryland"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:37
+msgid "Massachusetts"
+msgstr "Massachusetts"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:38
+msgid "Michigan"
+msgstr "Michigan"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:39
+msgid "Minnesota"
+msgstr "Minnesota"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:40
+msgid "Mississippi"
+msgstr "Mississippi"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:41
+msgid "Missouri"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:43
+msgid "Nebraska"
+msgstr "Nebraska"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:44
+msgid "Nevada"
+msgstr "Névada"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:45
+msgid "New Hampshire"
+msgstr "New Hampshire"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:46
+msgid "New Jersey"
+msgstr "New Jersey"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:47
+msgid "New Mexico"
+msgstr "Nouveau Méxique"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:48
+msgid "New York"
+msgstr "New York"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:49
+msgid "North Carolina"
+msgstr "Caroline du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:50
+msgid "North Dakota"
+msgstr "Dakota du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:51
+msgid "Ohio"
+msgstr "Ohio"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:52
+msgid "Oklahoma"
+msgstr "Oklahoma"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:53
+msgid "Oregon"
+msgstr "Oregon"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:54
+msgid "Pennsylvania"
+msgstr "Pennsylvanie"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:55
+msgid "Rhode Island"
+msgstr "Rhode Island"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:56
+msgid "South Carolina"
+msgstr "Caroline du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:57
+msgid "South Dakota"
+msgstr "Dakota du Sud"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:58
+msgid "Tennessee"
+msgstr "Tennessee"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:59
+msgid "Texas"
+msgstr "Texas"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:60
+msgid "Utah"
+msgstr "Utah"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:61
+msgid "Vermont"
+msgstr "Vermont"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:62
+msgid "Virginia"
+msgstr "Virginie"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:63
+msgid "Washington"
+msgstr "Washington"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:64
+msgid "West Virginia"
+msgstr "Virginie-Occidentale"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:65
+msgid "Wisconsin"
+msgstr "Wisconsin"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:66
+msgid "Wyoming"
+msgstr "Wyoming"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:67
+msgid "Armed Forces (AA)"
+msgstr "Forces armées américaines (AA)"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:68
+msgid "Armed Forces (AE)"
+msgstr "Forces armées américaines (AE)"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:69
+msgid "Armed Forces (AP)"
+msgstr "Forces armées américaines (AP)"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:70
+msgid "American Samoa"
+msgstr "Samoa américaines"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:71
+msgid "Guam"
+msgstr "Guam"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:72
+msgid "Northern Mariana Islands"
+msgstr "Îles Mariannes du Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:73
+msgid "Puerto Rico"
+msgstr "Porto Rico"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:74
+msgid "US Minor Outlying Islands"
+msgstr "Îles Mineures éloignées des États-Unis"
+
+#: wordpress-plugin-boilerplate/includes/states/US.php:75
+msgid "US Virgin Islands"
+msgstr "Îles Vierges des États-Unis"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:16
+msgid "Eastern Cape"
+msgstr "Cap-Oriental"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:17
+msgid "Free State"
+msgstr "Free State"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:18
+msgid "Gauteng"
+msgstr "Gauteng"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:19
+msgid "KwaZulu-Natal"
+msgstr "KwaZulu-Natal"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:20
+msgid "Limpopo"
+msgstr "Limpopo"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:21
+msgid "Mpumalanga"
+msgstr "Mpumalanga"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:22
+msgid "Northern Cape"
+msgstr "Cap-du-Nord"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:23
+msgid "North West"
+msgstr "Nord-Ouest"
+
+#: wordpress-plugin-boilerplate/includes/states/ZA.php:24
+msgid "Western Cape"
+msgstr "Cap-Occidental"
+
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:286
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:298
+msgid "Cheatin&#8217; huh?"
+msgstr "Alors on essaye de tricher&nbsp;?"
+
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:751
+msgid "Import"
+msgstr "Importer"
+
+#: wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php:752
+msgid "Export"
+msgstr "Exporter"
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress Plugin Boilerplate"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/seb86/WordPress-Plugin-Boilerplate"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The best WordPress plugin boilerplate you will ever need, comes prepaired "
+"with settings control panel, system information, a welcoming dashboard and "
+"more."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Sebastien Dumont"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.sebastiendumont.com"
+msgstr ""
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:155
+msgctxt "page_slug"
+msgid "example"
+msgstr "exemple"
+
+#: wordpress-plugin-boilerplate/includes/admin/class-plugin-name-install.php:161
+msgctxt "page_slug"
+msgid "shortcode"
+msgstr "raccourci"
