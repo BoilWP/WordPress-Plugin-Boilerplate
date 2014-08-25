@@ -9,7 +9,7 @@
  * Author Email: mailme@sebastiendumont.com
  * Requires at least: 3.8
  * Tested up to: 4.0 beta4
- * Text Domain: textdomain-plugin-name
+ * Text Domain: wordpress-plugin-boilerplate
  * Domain Path: languages
  * Network: false
  * GitHub Plugin URI: https://github.com/seb86/WordPress-Plugin-Boilerplate
@@ -26,6 +26,7 @@
  * You should have received a copy of the GNU General Public License
  * along with WordPress Plugin Boilerplate. If not, see <http://www.gnu.org/licenses/>.
  *
+ * @TODO Replace 'Plugin_Name' with the name of your plugin class.
  * @package Plugin_Name
  * @author Your Name / Your Company Name
  * @category Core
@@ -38,6 +39,7 @@ if ( ! class_exists( 'Plugin_Name' ) ) {
 /**
  * Main Plugin Name Class
  *
+ * @TODO Replace 'Plugin_Name' with the name of your plugin class.
  * @class Plugin_Name
  * @version 1.0.0
  */
@@ -58,6 +60,7 @@ final class Plugin_Name {
 	/**
 	 * Slug
 	 *
+	 * @TODO Rename the plugin slug to your own.
 	 * @var string
 	 */
 	public $plugin_slug = 'plugin_name';
@@ -65,19 +68,21 @@ final class Plugin_Name {
 	/**
 	 * Text Domain
 	 *
+	 * @TODO Rename the text domain to match the name of your plugin.
 	 * @var string
 	 */
-	public $text_domain = 'textdomain-plugin-name';
+	public $text_domain = 'wordpress-plugin-boilerplate';
 
 	/**
-	 * The Plug-in name.
+	 * The Plugin Name.
 	 *
+	 * @TODO Rename the plugin name to your own.
 	 * @var string
 	 */
 	public $name = "WordPress Plugin Boilerplate";
 
 	/**
-	 * The Plug-in version.
+	 * The Plugin Version.
 	 *
 	 * @var string
 	 */
@@ -103,7 +108,7 @@ final class Plugin_Name {
 	public $countries = null;
 
 	/**
-	 * The Plug-in URL.
+	 * The Plugin URL.
 	 *
 	 * @TODO Replace the url
 	 * @var string
@@ -111,7 +116,7 @@ final class Plugin_Name {
 	public $web_url = "http://www.sebastiendumont.com/plugins/boilerplates/wordpress-plugin-boilerplate/ ";
 
 	/**
-	 * The Plug-in documentation URL.
+	 * The Plugin documentation URL.
 	 *
 	 * @TODO Replace the url
 	 * @var string
@@ -119,7 +124,7 @@ final class Plugin_Name {
 	public $doc_url = "https://github.com/seb86/WordPress-Plugin-Boilerplate/wiki/";
 
 	/**
-	 * The WordPress Plug-in URL.
+	 * The WordPress.org Plugin URL.
 	 *
 	 * @TODO Replace the url ex. 'http://wordpress.org/plugins/your-plugin-name'
 	 * @var string
@@ -127,7 +132,7 @@ final class Plugin_Name {
 	public $wp_plugin_url = "http://wordpress.org/plugins/your-plugin-name";
 
 	/**
-	 * The WordPress Plug-in Support URL.
+	 * The WordPress.org Plugin Support URL.
 	 *
 	 * @TODO Replace the url ex. 'http://wordpress.org/support/plugin/your-plugin-name'
 	 * @var string
@@ -159,7 +164,7 @@ final class Plugin_Name {
 	/**
 	 * GitHub Repo URL
 	 *
-	 * @TODO Replace the url
+	 * @TODO Replace the url with your own repository
 	 * @var string
 	 */
 	public $github_repo_url = "https://github.com/seb86/WordPress-Plugin-Boilerplate/";
@@ -167,13 +172,13 @@ final class Plugin_Name {
 	/**
 	 * Transifex Project URL
 	 *
-	 * @TODO Replace the url
+	 * @TODO Replace the url with your own Transifex project
 	 * @var string
 	 */
 	public $transifex_project_url = "https://www.transifex.com/projects/p/wordpress-plugin-boilerplate/";
 
 	/**
-	 * The Plug-in menu name.
+	 * The Plugin menu name.
 	 *
 	 * @TODO Replace the name of the plugin for the side menu
 	 * @var string
@@ -181,15 +186,15 @@ final class Plugin_Name {
 	public $menu_name = "My Plugin";
 
 	/**
-	 * The Plug-in title page name.
+	 * The Plugin title page name.
 	 *
-	 * @TODO Replace the title
+	 * @TODO Replace the title with the name of your plugin.
 	 * @var string
 	 */
 	public $title_name = "WordPress Plugin Boilerplate";
 
 	/**
-	 * The Plug-in manage plugin name.
+	 * Manage Plugin.
 	 *
 	 * @TODO Replace the 'manage_plugin_name' with the 
 	 * level control the user must have to control the plugin.
@@ -254,6 +259,7 @@ final class Plugin_Name {
 	 *
 	 * Ensures only one instance of Plugin Name is loaded or can be loaded.
 	 *
+	 * @TODO Replace 'Plugin_Name' with the name of your plugin class.
 	 * @access public static
 	 * @see Plugin_Name()
 	 * @return Plugin Name - Main instance
@@ -277,7 +283,7 @@ final class Plugin_Name {
 	 */
 	public function __clone() {
 		// Cloning instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'textdomain-plugin-name' ), $this->version );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'wordpress-plugin-boilerplate' ), $this->version );
 	}
 
 	/**
@@ -289,7 +295,7 @@ final class Plugin_Name {
 	 */
 	public function __wakeup() {
 		// Unserializing instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'textdomain-plugin-name' ), $this->version );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'wordpress-plugin-boilerplate' ), $this->version );
 	}
 
 	/**
@@ -336,7 +342,7 @@ final class Plugin_Name {
 		// List your action links
 		if( current_user_can( $this->manage_plugin ) ) {
 			$plugin_links = array(
-				'<a href="' . admin_url( 'admin.php?page=' . PLUGIN_NAME_PAGE . '-settings' ) . '">' . __( 'Settings', 'textdomain-plugin-name' ) . '</a>',
+				'<a href="' . admin_url( 'admin.php?page=' . PLUGIN_NAME_PAGE . '-settings' ) . '">' . __( 'Settings', 'wordpress-plugin-boilerplate' ) . '</a>',
 			);
 			return array_merge( $links, $plugin_links );
 		}
@@ -360,9 +366,9 @@ final class Plugin_Name {
 		}
 
 		$links = array(
-			'<a href="' . admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-about' ) . '">' . esc_html( apply_filters( 'plugin_name_about_text_link', __( 'Getting Started', 'textdomain-plugin-name' ) ) ) . '</a>',
-			'<a href="' . admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-credits' ) . '">' . esc_html( __( 'Credits', 'textdomain-plugin-name' ) ) . '</a>',
-			'<a href="' . esc_url( apply_filters( 'plugin_name_documentation_url', $this->doc_url ) ) . '">' . __( 'Documentation', 'textdomain-plugin-name' ) . '</a>',
+			'<a href="' . admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-about' ) . '">' . esc_html( apply_filters( 'plugin_name_about_text_link', __( 'Getting Started', 'wordpress-plugin-boilerplate' ) ) ) . '</a>',
+			'<a href="' . admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-credits' ) . '">' . esc_html( __( 'Credits', 'wordpress-plugin-boilerplate' ) ) . '</a>',
+			'<a href="' . esc_url( apply_filters( 'plugin_name_documentation_url', $this->doc_url ) ) . '">' . __( 'Documentation', 'wordpress-plugin-boilerplate' ) . '</a>',
 		);
 
 		$input = array_merge( $input, $links );
@@ -428,6 +434,7 @@ final class Plugin_Name {
 		if ( ! defined( 'PLUGIN_NAME_SLUG' ) ) define( 'PLUGIN_NAME_SLUG', $this->plugin_slug );
 		if ( ! defined( 'PLUGIN_NAME_TEXT_DOMAIN' ) ) define( 'PLUGIN_NAME_TEXT_DOMAIN', $this->text_domain );
 
+		// TODO: change 'plugin-name' with the plugin slug of your plugin on "WordPress.org"
 		if ( ! defined( 'PLUGIN_NAME_README_FILE' ) ) define( 'PLUGIN_NAME_README_FILE', 'http://plugins.svn.wordpress.org/plugin-name/trunk/readme.txt' );
 
 		if ( ! defined( 'GITHUB_REPO_URL' ) ) define( 'GITHUB_REPO_URL', $this->github_repo_url );
@@ -462,7 +469,7 @@ final class Plugin_Name {
 	 */
 	static function display_req_notice() {
 		echo '<div id="message" class="error"><p><strong>';
-		echo sprintf( __('Sorry, %s requires WordPress ' . PLUGIN_NAME_WP_VERSION_REQUIRE . ' or higher. Please upgrade your WordPress setup', 'textdomain-plugin-name'), PLUGIN_NAME );
+		echo sprintf( __('Sorry, %s requires WordPress ' . PLUGIN_NAME_WP_VERSION_REQUIRE . ' or higher. Please upgrade your WordPress setup', 'wordpress-plugin-boilerplate'), PLUGIN_NAME );
 		echo '</strong></p></div>';
 	}
 
@@ -701,10 +708,9 @@ final class Plugin_Name {
 	private function register_scripts_and_styles() {
 		if ( is_admin() ) {
 			// Main Plugin Javascript
-			//$this->load_file( $this->plugin_slug . '_admin_script', '/assets/js/admin/plugin-name' . PLUGIN_NAME_SCRIPT_MODE . '.js', true, array('jquery', 'jquery-blockui', 'jquery-ui-sortable', 'jquery-ui-widget', 'jquery-ui-core', 'jquery-tiptip'), $this->version );
-			$this->load_file( $this->plugin_slug . '_admin_script', '/assets/js/admin/plugin-name.js', true, array('jquery', 'jquery-blockui', 'jquery-ui-sortable', 'jquery-ui-widget', 'jquery-ui-core', 'jquery-tiptip'), $this->version );
+			$this->load_file( $this->plugin_slug . '_admin_script', '/assets/js/admin/plugin-name' . PLUGIN_NAME_SCRIPT_MODE . '.js', true, array('jquery', 'jquery-blockui', 'jquery-ui-sortable', 'jquery-ui-widget', 'jquery-ui-core', 'jquery-tiptip'), $this->version );
 			// Plugin Menu
-			$this->load_file( $this->plugin_slug . '_admin_menu_script', '/assets/js/admin/admin-menu.js', true, array('jquery'), $this->version );
+			$this->load_file( $this->plugin_slug . '_admin_menu_script', '/assets/js/admin/admin-menu.' . PLUGIN_NAME_SCRIPT_MODE . '.js', true, array('jquery'), $this->version );
 
 			// Block UI
 			$this->load_file( 'jquery-blockui', '/assets/js/jquery-blockui/jquery.blockUI' . PLUGIN_NAME_SCRIPT_MODE . '.js', true, array('jquery'), '2.60' );
@@ -727,23 +733,23 @@ final class Plugin_Name {
 			$this->load_file( 'prettyPhoto-style', '/assets/css/prettyPhoto.css' );
 
 			// Transifex
-			$this->load_file( 'transifex', '/assets/js/admin/transifex.js', true, array('jquery'), $this->version );
+			$this->load_file( 'transifex', '/assets/js/admin/transifex' . PLUGIN_NAME_SCRIPT_MODE . '.js', true, array('jquery'), $this->version );
 
 			// Variables for Admin JavaScripts
 			wp_localize_script( $this->plugin_slug . '_admin_script', 'plugin_name_admin_params', apply_filters( 'plugin_name_admin_params', array(
 				'ajaxurl' 				=> admin_url('admin-ajax.php'),
-				'no_result' 			=> __( 'No results', 'textdomain-plugin-name' ),
+				'no_result' 			=> __( 'No results', 'wordpress-plugin-boilerplate' ),
 				'plugin_url' 			=> $this->plugin_url(),
-				'i18n_nav_warning' 		=> __( 'The changes you made will be lost if you navigate away from this page.', 'textdomain-plugin-name' ),
+				'i18n_nav_warning' 		=> __( 'The changes you made will be lost if you navigate away from this page.', 'wordpress-plugin-boilerplate' ),
 				'full_settings_menu' 	=> $this->full_settings_menu,
 				'plugin_menu_name' 		=> $this->menu_name,
 				'plugin_screen_id' 		=> PLUGIN_NAME_SCREEN_ID,
-				'_tab_one' 		=> __( 'First Tab', 'textdomain-plugin-name' ),
-				'_tab_two' 		=> __( 'Second Tab', 'textdomain-plugin-name' ),
-				'system_status' 		=> __( 'System Status', 'textdomain-plugin-name' ),
-				'tools' 				=> __( 'Tools', 'textdomain-plugin-name' ),
-				'_import' 				=> __( 'Import', 'textdomain-plugin-name' ),
-				'_export' 				=> __( 'Export', 'textdomain-plugin-name' ),
+				'_tab_one' 		=> __( 'First Tab', 'wordpress-plugin-boilerplate' ),
+				'_tab_two' 		=> __( 'Second Tab', 'wordpress-plugin-boilerplate' ),
+				'system_status' 		=> __( 'System Status', 'wordpress-plugin-boilerplate' ),
+				'tools' 				=> __( 'Tools', 'wordpress-plugin-boilerplate' ),
+				'_import' 				=> __( 'Import', 'wordpress-plugin-boilerplate' ),
+				'_export' 				=> __( 'Export', 'wordpress-plugin-boilerplate' ),
 				)
 			) );
 
