@@ -34,3 +34,7 @@ wiki/
 build/
 tests/
 tmp/
+
+# Grunt
+node_modules/
+build/
