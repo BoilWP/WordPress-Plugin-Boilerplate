@@ -10,9 +10,9 @@ grunt.initConfig({
     makepot: {
       target: {
         options: {
-          domainPath: '/languages/',    // Where to save the POT file.
+          domainPath: 'wordpress-plugin-boilerplate/languages/',    // Where to save the POT file.
           exclude: ['build/.*'],
-          mainFile: 'wordpress-plugin-boilerplate.php',    // Main project file.
+          mainFile: 'wordpress-plugin-boilerplate/wordpress-plugin-boilerplate.php',    // Main project file.
           potComments: 'WordPress Plugin Boilerplate Copyright (c) {{year}}',      // The copyright at the beginning of the POT file.
           potFilename: 'wordpress-plugin-boilerplate.pot',    // Name of the POT file.
           type: 'wp-plugin',    // Type of project.
@@ -21,7 +21,7 @@ grunt.initConfig({
             pot.headers['report-msgid-bugs-to'] = 'https://github.com/seb86/WordPress-Plugin-Boilerplate/issues\n';
             pot.headers['plural-forms'] = 'nplurals=2; plural=n != 1;\n';
             pot.headers['last-translator'] = 'WordPress Plugin Boilerplate <mailme@sebastiendumont.com>\n';
-            pot.headers['language-team'] = 'WP-Translations <http://www.transifex.com/projects/p/wp-translations/>\n';
+            pot.headers['language-team'] = 'WP-Translations <wpt@wp-translations.org>\n';
             pot.headers['x-poedit-basepath'] = '..\n';
             pot.headers['x-poedit-language'] = 'English\n';
             pot.headers['x-poedit-country'] = 'UNITED STATES\n';
@@ -40,7 +40,7 @@ grunt.initConfig({
         command: 'npm update'
       },
       txpull: { // Pull Transifex translation - grunt exec:txpull
-        cmd: 'tx pull -a --minimum-perc=100' // Change the percentage with --minimum-perc=yourvalue
+        cmd: 'tx pull -a --minimum-perc=60' // Change the percentage with --minimum-perc=yourvalue
       },
       txpush_s: { // Push pot to Transifex - grunt exec:txpush_s
         cmd: 'tx push -s'
@@ -48,7 +48,7 @@ grunt.initConfig({
     },
 
          dirs: {
-    lang: 'languages',
+    lang: 'wordpress-plugin-boilerplate/languages',
     },
 
     potomo: {
