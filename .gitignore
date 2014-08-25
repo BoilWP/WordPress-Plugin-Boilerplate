@@ -38,3 +38,7 @@ tmp/
 # Grunt
 node_modules/
 build/
+npm-debug.log
+
+# Transifex
+tx.exe

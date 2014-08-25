@@ -1,15 +1,27 @@
 {
-  "name": "grunt-transifex-wordpress",
-  "version": "1.0.0",
+  "name": "wordpress-plugin-boilerplate",
+  "title": "WordPress Plugin Boilerplate",
+  "version": "1.0.1",
+  "homepage": "http://www.sebastiendumont.com/plugins/boilerplates/wordpress-plugin-boilerplate/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seb86/WordPress-Plugin-Boilerplate.git"
+  },
   "private": true,
+  "main": "Gruntfile.js",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-exec": "~0.4.5",
     "grunt-wp-i18n": "~0.4.7",
     "grunt-potomo": "~2.1.0",
     "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-compress": "~0.8.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-checktextdomain": "^0.1.1",
+    "grunt-contrib-jshint": "^0.10.0"
   }
 }
