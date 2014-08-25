@@ -38,8 +38,10 @@ The WordPress Plugin Boilerplate includes the following files:
 * `.gitignore` file.
 * `.travis.yml` file.
 * `.composer.json` file.
+* Gruntfile.js file.
 * index.php file.
 * license.txt file
+* package.json file
 * A subdirectory called `wordpress-plugin-boilerplate` that represents the core plugin file.
 
 ## Installation
