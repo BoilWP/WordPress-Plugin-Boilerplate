@@ -3,9 +3,17 @@
   "title": "WordPress Plugin Boilerplate",
   "version": "1.0.1",
   "homepage": "http://www.sebastiendumont.com/plugins/boilerplates/wordpress-plugin-boilerplate/",
+  "author": {
+    "name": "Sebastien Dumont",
+    "email": "mailme@sebastiendumont.com",
+    "url": "http://www.sebastiendumont.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/seb86/WordPress-Plugin-Boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seb86/WordPress-Plugin-Boilerplate/issues"
   },
   "private": true,
   "main": "Gruntfile.js",
