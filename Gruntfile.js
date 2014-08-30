@@ -108,9 +108,9 @@ module.exports = function(grunt) {
 			minify: {
 				expand: true,
 				cwd: '<%= dirs.css %>/',
-				src: ['*.css'],
+				src: ['*.css', '!*.min.css'],
 				dest: '<%= dirs.css %>/',
-				ext: '.css'
+				ext: '.min.css'
 			}
 		},
 
@@ -132,10 +132,10 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: [
-					'<%= dirs.js %>/admin/*js',
-					'<%= dirs.js %>/*js',
-					'!<%= dirs.js %>/admin/*.min.js',
-					'!<%= dirs.js %>/*.min.js'
+					'<%= dirs.css %>/admin/*css',
+					'<%= dirs.css %>/*css',
+					'!<%= dirs.css %>/admin/*.min.css',
+					'!<%= dirs.css %>/*.min.css'
 				],
 				tasks: ['cssmin']
 			}
