@@ -2,12 +2,12 @@
 /**
  * Plugin Name Formatting
  *
- * Functions for formatting data.
- *
- * @author 		Your Name / Your Company Name
- * @category 	Core
- * @package 	Plugin Name/Functions
- * @version 	1.0.0
+ * @todo     Place your formatting functions here.
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Core
+ * @package  Plugin Name/Functions
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -17,8 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * Doesn't use sanitize_title as this destroys utf chars.
  *
+ * @since  1.0.0
  * @access public
- * @param mixed $taxonomy
+ * @param  mixed $taxonomy
  * @return string
  */
 function plugin_name_sanitize_taxonomy_name( $taxonomy ) {
@@ -28,13 +29,14 @@ function plugin_name_sanitize_taxonomy_name( $taxonomy ) {
 	$filtered = str_replace( array( ' ', '_' ), '-', $filtered ); // Replace spaces and underscores.
 
 	return apply_filters( 'sanitize_taxonomy_name', $filtered, $taxonomy );
-}
+} // END plugin_name_sanitize_taxonomy_name()
 
 /**
- * Gets the filename part of a download URL
+ * Gets the filename part of a download URI
  *
+ * @since  1.0.0
  * @access public
- * @param string $file_url
+ * @param  string $file_url
  * @return string
  */
 function plugin_name_get_filename_from_url( $file_url ) {
@@ -42,26 +44,25 @@ function plugin_name_get_filename_from_url( $file_url ) {
 	if ( isset( $parts['path'] ) ) {
 		return basename( $parts['path'] );
 	}
-}
+} // END plugin_name_get_filename_from_url()
 
 /**
  * Normalise dimensions, unify to cm then convert to wanted unit value
  *
  * Usage: plugin_name_get_dimension(55, 'in');
  *
+ * @since  1.0.0
  * @access public
- * @param mixed $dim
- * @param mixed $to_unit 'in', 'm', 'cm', 'm'
+ * @param  mixed $dim
+ * @param  mixed $to_unit 'in', 'm', 'cm', 'm'
  * @return float
  */
 function plugin_name_get_dimension( $dim, $to_unit ) {
-
-	$from_unit 	= strtolower( get_option( 'plugin_name_dimension_unit' ) );
-	$to_unit	= strtolower( $to_unit );
+	$from_unit = strtolower( get_option( 'plugin_name_dimension_unit' ) );
+	$to_unit   = strtolower( $to_unit );
 
 	// Unify all units to cm first
 	if ( $from_unit !== $to_unit ) {
-
 		switch ( $from_unit ) {
 			case 'in':
 				$dim *= 2.54;
@@ -93,27 +94,27 @@ function plugin_name_get_dimension( $dim, $to_unit ) {
 			break;
 		}
 	}
+
 	return ( $dim < 0 ) ? 0 : $dim;
-}
+} // END plugin_name_get_dimension()
 
 /**
  * Normalise weights, unify to cm then convert to wanted unit value
  *
  * Usage: plugin_name_get_weight(55, 'kg');
  *
+ * @since  1.0.0
  * @access public
- * @param mixed $weight
- * @param mixed $to_unit 'g', 'kg', 'lbs'
+ * @param  mixed $weight
+ * @param  mixed $to_unit 'g', 'kg', 'lbs'
  * @return float
  */
 function plugin_name_get_weight( $weight, $to_unit ) {
+	$from_unit = strtolower( get_option('plugin_name_weight_unit') );
+	$to_unit   = strtolower( $to_unit );
 
-	$from_unit 	= strtolower( get_option('plugin_name_weight_unit') );
-	$to_unit	= strtolower( $to_unit );
-
-	//Unify all units to kg first
+	// Unify all units to kg first
 	if ( $from_unit !== $to_unit ) {
-
 		switch ( $from_unit ) {
 			case 'g':
 				$weight *= 0.001;
@@ -139,25 +140,28 @@ function plugin_name_get_weight( $weight, $to_unit ) {
 			break;
 		}
 	}
+
 	return ( $weight < 0 ) ? 0 : $weight;
-}
+} // END plugin_name_get_weight()
 
 /**
  * Trim trailing zeros off prices.
  *
+ * @since  1.0.0
  * @access public
- * @param mixed $price
+ * @param  mixed $price
  * @return string
  */
 function plugin_name_trim_zeros( $price ) {
 	return preg_replace( '/' . preg_quote( get_option( 'plugin_name_price_decimal_sep' ), '/' ) . '0++$/', '', $price );
-}
+} // END plugin_name_trim_zeros()
 
 /**
  * Format decimal numbers ready for DB storage
  *
  * Sanitize, remove locale formatting, and optionally round + trim off zeros
  *
+ * @since  1.0.0
  * @param  float|string $number Expects either a float or a string with a decimal separator only (no thousands)
  * @param  mixed $dp number of decimal points to use, blank to use plugin_name_price_num_decimals, or false to avoid all rounding.
  * @param  boolean $trim_zeros from end of string
@@ -182,10 +186,13 @@ function plugin_name_format_decimal( $number, $dp = false, $trim_zeros = false )
 	}
 
 	return $number;
-}
+} // END plugin_name_format_decimal()
 
 /**
  * Convert a float to a string without locale formatting which PHP adds when changing floats to strings
+ *
+ * @since  1.0.0
+ * @access public
  * @param  float $float
  * @return string
  */
@@ -199,66 +206,75 @@ function plugin_name_float_to_string( $float ) {
 	$string = str_replace( $locale['decimal_point'], '.', $string );
 
 	return $string;
-}
+} // END plugin_name_float_to_string()
 
 /**
  * Clean variables
  *
+ * @since  1.0.0
  * @access public
- * @param string $var
+ * @param  string $var
  * @return string
  */
 function plugin_name_clean( $var ) {
 	return sanitize_text_field( $var );
-}
+} // END plugin_name_clean()
 
 /**
  * Merge two arrays
  *
+ * @since  1.0.0
  * @access public
- * @param array $a1
- * @param array $a2
+ * @param  array $a1
+ * @param  array $a2
  * @return array
  */
 function plugin_name_array_overlay( $a1, $a2 ) {
-    foreach( $a1 as $k => $v ) {
-        if ( ! array_key_exists( $k, $a2 ) ) {
-        	continue;
-        }
-        if ( is_array( $v ) && is_array( $a2[ $k ] ) ) {
-            $a1[ $k ] = plugin_name_array_overlay( $v, $a2[ $k ] );
-        } else {
-            $a1[ $k ] = $a2[ $k ];
-        }
+  foreach( $a1 as $k => $v ) {
+    if ( ! array_key_exists( $k, $a2 ) ) {
+      continue;
     }
-    return $a1;
-}
+    if ( is_array( $v ) && is_array( $a2[ $k ] ) ) {
+        $a1[ $k ] = plugin_name_array_overlay( $v, $a2[ $k ] );
+    } else {
+        $a1[ $k ] = $a2[ $k ];
+    }
+  }
+
+  return $a1;
+} // END plugin_name_array_overlay()
 
 /**
- * let_to_num function.
- *
  * This function transforms the php.ini notation for numbers (like '2M') to an integer.
  *
+ * @since  1.0.0
  * @access public
- * @param $size
+ * @param  $size
  * @return int
  */
 function plugin_name_let_to_num( $size ) {
-    $l 		= substr( $size, -1 );
-    $ret 	= substr( $size, 0, -1 );
-    switch( strtoupper( $l ) ) {
-	    case 'P':
-	        $ret *= 1024;
-	    case 'T':
-	        $ret *= 1024;
-	    case 'G':
-	        $ret *= 1024;
-	    case 'M':
-	        $ret *= 1024;
-	    case 'K':
-	        $ret *= 1024;
-    }
-    return $ret;
-}
+  $l   = substr( $size, -1 );
+  $ret = substr( $size, 0, -1 );
+
+  switch( strtoupper( $l ) ) {
+    case 'P':
+      $ret *= 1024;
+			break;
+    case 'T':
+      $ret *= 1024;
+			break;
+    case 'G':
+      $ret *= 1024;
+			break;
+    case 'M':
+      $ret *= 1024;
+			break;
+    case 'K':
+      $ret *= 1024;
+			break;
+  }
+
+  return $ret;
+} // END plugin_name_let_to_num()
 
 ?>

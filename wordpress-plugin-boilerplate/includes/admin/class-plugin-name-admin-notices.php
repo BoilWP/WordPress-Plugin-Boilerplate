@@ -1,11 +1,12 @@
 <?php
 /**
- * Display notices in admin.
+ * Display notices in the WordPress admin.
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Admin
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -18,19 +19,26 @@ if ( ! class_exists( 'Plugin_Name_Admin_Notices' ) ) {
 class Plugin_Name_Admin_Notices {
 
 	/**
-	 * Hook in tabs.
+	 * Constructor
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
 	 */
 	public function __construct() {
-		add_action( 'admin_print_styles', array( &$this, 'add_notices' ) );
-	}
+		add_action( 'admin_print_styles', array( $this, 'add_notices' ) );
+	} // END __construct()
 
 	/**
-	 * Add notices + styles if needed.
+	 * Add admin notices and styles when needed.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
 	public function add_notices() {
 		if ( get_option( '_plugin_name_needs_update' ) == 1 || get_option( '_plugin_name_needs_pages' ) == 1 ) {
 			wp_enqueue_style( 'plugin-name-activation', Plugin_Name()->plugin_url() . '/assets/css/admin/activation.css' );
-			add_action( 'admin_notices', array( &$this, 'install_notice' ) );
+			add_action( 'admin_notices', array( $this, 'install_notice' ) );
 		}
 
 		$template = get_option( 'template' );
@@ -49,32 +57,42 @@ class Plugin_Name_Admin_Notices {
 				add_action( 'admin_notices', array( $this, 'theme_check_notice' ) );
 			}
 		}
-	}
+	} // END add_notices()
 
 	/**
-	 * Show the install notices
+	 * Show the install notices.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
-	function install_notice() {
-		// If we need to update, include a message with the update button
+	public function install_notice() {
+		// If we need to update, include a message with the update button.
 		if ( get_option( '_plugin_name_needs_update' ) == 1 ) {
 			include( 'views/html-notice-update.php' );
 		}
 
-		// If we have just installed, show a message with the install pages button
-		elseif ( get_option( '_plugin_name_needs_pages' ) == 1 ) {
+		/**
+		 * If we have just installed the plugin for the first time,
+		 * include a message with an action button to install the plugins pages.
+		 */
+		else if ( get_option( '_plugin_name_needs_pages' ) == 1 ) {
 			include( 'views/html-notice-install.php' );
 		}
-	}
+	} // END install_notice()
 
 	/**
-	 * Show the Theme Check notice
+	 * Show the Theme Check notice.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
-	function theme_check_notice() {
+	public function theme_check_notice() {
 		include( 'views/html-notice-theme-support.php' );
-	}
-}
+	} // END theme_check_notice()
 
-} // end if class exists.
+} // END Plugin_Name_Admin_Notices class.
+
+} // END if class exists.
 
 return new Plugin_Name_Admin_Notices();
 

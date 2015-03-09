@@ -792,12 +792,12 @@ msgid "Environment"
 msgstr ""
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:17
-msgid "Home URL"
+msgid "Home URI"
 msgstr ""
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:21
-msgid "Site URL"
-msgstr "Adresse web du site (URL)"
+msgid "Site URI"
+msgstr "Adresse web du site (URI)"
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:29
 msgid "%s Database Version"
@@ -887,24 +887,24 @@ msgid "Default timezone is %s"
 msgstr "Le fuseau horaire par défaut est %s"
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:158
-msgid "fsockopen/cURL"
-msgstr "fsockopen/cURL"
+msgid "fsockopen/cURI"
+msgstr "fsockopen/cURI"
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:161
-msgid "Your server has fsockopen and cURL enabled."
+msgid "Your server has fsockopen and cURI enabled."
 msgstr ""
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:163
-msgid "Your server has fsockopen enabled, cURL is disabled."
+msgid "Your server has fsockopen enabled, cURI is disabled."
 msgstr ""
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:165
-msgid "Your server has cURL enabled, fsockopen is disabled."
+msgid "Your server has cURI enabled, fsockopen is disabled."
 msgstr ""
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:169
 msgid ""
-"Your server does not have fsockopen or cURL enabled - Various scripts which "
+"Your server does not have fsockopen or cURI enabled - Various scripts which "
 "communicate with other servers will not work. Contact your hosting provider."
 msgstr ""
 
@@ -988,8 +988,8 @@ msgid "Theme Version"
 msgstr "Version du thème"
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-report.php:406
-msgid "Author URL"
-msgstr "URL de l'auteur"
+msgid "Author URI"
+msgstr "URI de l'auteur"
 
 #: wordpress-plugin-boilerplate/includes/admin/views/html-admin-page-status-tools.php:26
 msgid "Remove all data on uninstall"

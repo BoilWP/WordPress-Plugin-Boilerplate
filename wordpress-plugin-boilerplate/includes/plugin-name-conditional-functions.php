@@ -4,10 +4,11 @@
  *
  * Functions for determining the current query/page.
  *
- * @author 		Your Name / Your Company Name
- * @category 	Core
- * @package 	Plugin Name/Functions
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Core
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -15,18 +16,19 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! function_exists( 'is_ajax' ) ) {
 
 	/**
-	 * is_ajax - Returns true when the page is loaded via ajax.
+	 * Returns true when the page is loaded via ajax.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return bool
 	 */
 	function is_ajax() {
-		if ( defined('DOING_AJAX') ) {
+		if ( defined( 'DOING_AJAX' ) ) {
 			return true;
 		}
 
 		return ( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && strtolower( $_SERVER['HTTP_X_REQUESTED_WITH'] ) == 'xmlhttprequest' ) ? true : false;
-	}
+	} // END is_ajax
 }
 
 ?>

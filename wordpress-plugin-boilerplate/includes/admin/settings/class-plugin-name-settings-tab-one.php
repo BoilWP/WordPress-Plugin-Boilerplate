@@ -2,10 +2,11 @@
 /**
  * Plugin Name First Tab Settings
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Admin
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -13,25 +14,36 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Plugin_Name_Settings_First_Tab' ) ) {
 
 /**
- * Plugin_Name_Admin_Settings_First_Tab
+ * Plugin_Name_Settings_First_Tab
  */
 class Plugin_Name_Settings_First_Tab extends Plugin_Name_Settings_Page {
 
 	/**
 	 * Constructor.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
 	public function __construct() {
-		$this->id 		= 'tab_one';
-		$this->label 	= __( 'First Tab', PLUGIN_NAME_TEXT_DOMAIN );
+		$this->id    = 'tab_one';
+		$this->label = __( 'First Tab', PLUGIN_NAME_TEXT_DOMAIN );
 
-		add_filter( 'plugin_name_settings_submenu_array', array( &$this, 'add_menu_page' ), 20 );
-		add_filter( 'plugin_name_settings_tabs_array', array( &$this, 'add_settings_page' ), 20 );
-		add_action( 'plugin_name_settings_' . $this->id, array( &$this, 'output' ) );
-		add_action( 'plugin_name_settings_save_' . $this->id, array( &$this, 'save' ) );
-	}
+		add_filter( 'plugin_name_settings_submenu_array',           array( $this, 'add_menu_page' ),     20 );
+		add_filter( 'plugin_name_settings_tabs_array',              array( $this, 'add_settings_page' ), 20 );
+		add_action( 'plugin_name_settings_' . $this->id,            array( $this, 'output' ) );
+		add_action( 'plugin_name_settings_save_' . $this->id,       array( $this, 'save' ) );
+		add_action( 'plugin_name_settings_start',                   array( $this, 'settings_top' ) );
+		add_action( 'plugin_name_settings_start_tab_' . $this->id,  array( $this, 'settings_top_this_tab_only' ) );
+		add_action( 'plugin_name_settings_finish',                  array( $this, 'settings_bottom' ) );
+		add_action( 'plugin_name_settings_finish_tab_' . $this->id, array( $this, 'settings_bottom_this_tab_only' ) );
+	} // END __construct()
 
 	/**
 	 * Save settings
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @global $current_tab
 	 */
 	public function save() {
 		global $current_tab;
@@ -44,6 +56,8 @@ class Plugin_Name_Settings_First_Tab extends Plugin_Name_Settings_Page {
 	/**
 	 * Get settings array
 	 *
+	 * @since  1.0.0
+	 * @access public
 	 * @return array
 	 */
 	public function get_settings() {
@@ -51,9 +65,9 @@ class Plugin_Name_Settings_First_Tab extends Plugin_Name_Settings_Page {
 		return apply_filters( 'plugin_name_' . $this->id . '_settings', array(
 
 			array(
-				'title' 	=> __( 'Settings Title', PLUGIN_NAME_TEXT_DOMAIN ), 
-				'type' 		=> 'title', 
-				'desc' 		=> '', 
+				'title' 	=> __( 'Settings Title', PLUGIN_NAME_TEXT_DOMAIN ),
+				'type' 		=> 'title',
+				'desc' 		=> '',
 				'id' 		=> $this->id . '_options'
 			),
 

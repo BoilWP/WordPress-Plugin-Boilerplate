@@ -1,42 +1,47 @@
 <?php
 /**
- * Plugin_Name_Shortcodes class.
+ * Plugin Name Shortcodes.
  *
- * @class 		Plugin_Name_Shortcodes
- * @package		Plugin Name/Classes
- * @category	Class
- * @author 		Your Name / Your Company Name
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Class
+ * @package  Plugin Name/Classes
+ * @license  GPL-2.0+
  */
 class Plugin_Name_Shortcodes {
 
 	/**
-	 * Init shortcodes
+	 * Initiate Shortcodes
+	 *
+	 * @todo   Define your shortcodes here.
+	 * @since  1.0.0
+	 * @access public static
 	 */
 	public static function init() {
-		// Define shortcodes
 		$shortcodes = array(
-			'sample'               => __CLASS__ . '::sample',
+			'sample' => __CLASS__ . '::sample',
 		);
 
 		foreach ( $shortcodes as $shortcode => $function ) {
-			add_shortcode( apply_filters( "{$shortcode}_shortcode_tag", $shortcode ), $function );
+			add_shortcode( apply_filters( "plugin_name_{$shortcode}_shortcode_tag", $shortcode ), $function );
 		}
-	}
+	} // END init()
 
 	/**
 	 * Shortcode Wrapper
 	 *
+	 * @since  1.0.0
 	 * @access public
-	 * @param mixed $function
-	 * @param array $atts (default: array())
+	 * @param  mixed $function
+	 * @param  array $atts (default: array())
 	 * @return string
 	 */
 	public function shortcode_wrapper(
 		$function, $atts = array(), $wrapper = array( 'class' => 'plugin_name', 'before' => null, 'after' => null ) ){
 		ob_start();
 
-		$before 	= empty( $wrapper['before'] ) ? '<div class="' . $wrapper['class'] . '">' : $wrapper['before'];
-		$after 		= empty( $wrapper['after'] ) ? '</div>' : $wrapper['after'];
+		$before = empty( $wrapper['before'] ) ? '<div class="' . $wrapper['class'] . '">' : $wrapper['before'];
+		$after  = empty( $wrapper['after'] ) ? '</div>' : $wrapper['after'];
 
 		echo $before;
 		call_user_func( $function, $atts );
@@ -48,13 +53,14 @@ class Plugin_Name_Shortcodes {
 	/**
 	 * Sample shortcode.
 	 *
+	 * @since  1.0.0
 	 * @access public
-	 * @param mixed $atts
+	 * @param  mixed $atts
 	 * @return string
 	 */
 	public static function sample( $atts ) {
 		return $this->shortcode_wrapper( array( 'Plugin_Name_Shortcode_Sample', 'output' ), $atts );
-	}
+	} // END sample()
 
-}
+} // END Plugin_Name_Shortcodes class
 ?>

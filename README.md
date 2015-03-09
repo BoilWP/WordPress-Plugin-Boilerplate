@@ -4,16 +4,16 @@ The best WordPress plugin boilerplate you will ever need. Start developing your 
 
 ## What is this boilerplate designed for?
 
-The boilerplate is designed for either free or premium plugins in mind. What I have done is set a developer friendly environment that allows you to get a head start with the ground work for any plugin. You don’t have to use all the features given to you so removing those parts is easy to do. With the boilerplate you also have actions and filter hooks in place that not only make it easy for you to create extensions for your plugin but for third-party developers as well.
+The boilerplate is designed for either free or premium plugins in mind. What I have done is set a developer friendly environment that allows you to get a head start with the ground work for any plugin. You don't have to use all the features given to you so removing those parts is easy to do. With the boilerplate you also have actions and filter hooks in place that not only make it easy for you to create extensions for your plugin but for third-party developers as well.
 
 ## What about support?
 
-If the documentation provided doesn’t help you then you can use the [forum topic](http://www.sebastiendumont.com/support/forum/wordpress-plugin-boilerplate/) to ask any questions about the boilerplate and either I or the community will respond.
+If the documentation on my site doesn't help you then you can use the [forum topic](http://www.sebastiendumont.com/support/forum/wordpress-plugin-boilerplate/) to ask any questions about the boilerplate and I will respond as soon as I can.
 
 ## Features
 
 * Ready to build on and is third-party ready for other developers to build add-ons for your plugin.
-* Custom settings page seperated via tabs and sections.
+* Custom settings page separated via tabs and sections.
 * Built-in System Status, giving a list of details about the site environment, plugins installed and current active theme ready for export when a user requests support for your plugin.
 * Help Tabs on all the plugin pages ready and prepared.
 * Tools prepared to help the user install pre-set pages required for the plugin, reset capabilities or simply start over from scratch.
@@ -23,8 +23,8 @@ If the documentation provided doesn’t help you then you can use the [forum topic
 
 ### Features Coming Soon
 
-* Admin Pointers. – A simple class that also allows you to have more than one pointer per page.
-* Import/Export – Allows you to import and export the plugin settings in json format and can be filtered either way.
+* Admin Pointers. - A simple class that also allows you to have more than one pointer per page.
+* Import/Export - Allows you to import and export the plugin settings in json format and can be filtered either way.
 
 ## Contents
 

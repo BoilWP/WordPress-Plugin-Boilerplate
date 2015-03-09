@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 .idea/
 
 # Bin
-
+bin/
 
 # Less
 wordpress-plugin-boilerplate/assets/less

@@ -126,6 +126,6 @@ grunt.registerTask( 'makandpush', [ 'makepot', 'exec:txpush_s' ] );
 grunt.registerTask( 'tx', [ 'exec:txpull', 'potomo' ] );
 
 // Build task(s).
-  grunt.registerTask( 'build', [ 'clean', 'copy', 'compress' ] );
+grunt.registerTask( 'build', [ 'clean', 'copy', 'compress' ] );
 
 };

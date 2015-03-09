@@ -1,11 +1,12 @@
 <?php
 /**
- * Plugin Name Settings Page/Tab
+ * Plugin Name Settings Page
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Admin
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -21,43 +22,61 @@ class Plugin_Name_Settings_Page {
 	protected $label = '';
 
 	/**
-	 * Add this page to settings
+	 * Add this page to settings.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array $pages
+	 * @return array $pages
 	 */
 	public function add_settings_page( $pages ) {
 		$pages[ $this->id ] = $this->label;
 
 		return $pages;
-	}
+	} // END add_settings_page()
 
 	/**
-	 * Add this settings page to plugin menu
+	 * Add this settings page to plugin menu.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array $pages
+	 * @return array $pages
 	 */
 	public function add_menu_page( $pages ) {
 		$pages[ $this->id ] = $this->label;
 
 		return $pages;
-	}
+	} // END add_menu_page()
 
 	/**
 	 * Get settings array
 	 *
+	 * @since  1.0.0
+	 * @access public
 	 * @return array
 	 */
 	public function get_settings() {
 		return array();
-	}
+	} // END get_settings()
 
 	/**
 	 * Get sections
 	 *
+	 * @since  1.0.0
+	 * @access public
 	 * @return array
 	 */
 	public function get_sections() {
 		return array();
-	}
+	} // END get_section()
 
 	/**
 	 * Output sections
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @global $current_section
 	 */
 	public function output_sections() {
 		global $current_section;
@@ -88,19 +107,27 @@ class Plugin_Name_Settings_Page {
 
 		$output .= '</ul><br class="clear" />';
 		echo $output;
-	}
+	} // END output_sections()
 
 	/**
-	 * Output the settings
+	 * Output the settings.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
 	public function output() {
 		$settings = $this->get_settings();
 
 		Plugin_Name_Admin_Settings::output_fields( $settings );
-	}
+	} // END output()
 
 	/**
-	 * Save settings
+	 * Save settings.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @global $current_tab
+	 * @global $current_section
 	 */
 	public function save() {
 		global $current_tab, $current_section;
@@ -112,9 +139,10 @@ class Plugin_Name_Settings_Page {
 		if ( $current_section ) {
 			do_action( 'plugin_name_update_options_' . $this->id . '_' . $current_section );
 		}
-	}
-}
+	} // END save()
 
-} // end if class exists.
+} // END class
+
+} // END if class exists.
 
 ?>

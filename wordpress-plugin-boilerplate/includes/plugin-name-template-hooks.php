@@ -4,9 +4,11 @@
  *
  * Action/filter hooks used for Plugin Name functions/templates
  *
- * @author 		Your Name / Your Company Name
- * @package 	Plugin Name/Templates
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Core
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly

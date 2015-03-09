@@ -2,41 +2,42 @@
 /**
  * Welcome Page Class
  *
- * Shows a feature overview of your plugin or a new version including credits.
+ * Shows a feature overview of your plugin, new changes, credits and translations.
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Admin
- * @version 	1.0.0
-*/
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
+ */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if( ! class_exists( 'Plugin_Name_Admin_Welcome' ) ) {
+if ( ! class_exists( 'Plugin_Name_Admin_Welcome' ) ) {
 
 /**
  * Plugin_Name_Admin_Welcome class.
  */
 class Plugin_Name_Admin_Welcome {
 
-	private $plugin;
-
 	/**
-	 * __construct function.
+	 * Constructor.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
 	public function __construct() {
-		add_action( 'admin_menu', array( &$this, 'admin_menus') );
-		add_action( 'admin_head', array( &$this, 'admin_head' ) );
-		add_action( 'admin_init', array( &$this, 'welcome' ) );
-	}
+		add_action( 'admin_menu', array( $this, 'admin_menus') );
+		add_action( 'admin_head', array( $this, 'admin_head' ) );
+		add_action( 'admin_init', array( $this, 'welcome' ) );
+	} // END __construct()
 
 	/**
-	 * List your dashboard pages, page slug, title, capability and screen.
+	 * Register your dashboard pages, page slug, title, capability and screen.
 	 *
-	 * @TODO   List your dashboard pages here
+	 * @todo   List your dashboard pages here.
+	 * @since  1.0.0
 	 * @filter plugin_name_register_dashboard_pages
 	 * @access public
 	 * @return array()
@@ -44,64 +45,66 @@ class Plugin_Name_Admin_Welcome {
 	public function register_admin_menu() {
 		return $menus = apply_filters( 'plugin_name_register_dashboard_pages', array(
 					array(
-						'id' 			=> PLUGIN_NAME_PAGE . '-about',
-						'title' 		=> sprintf( __( 'Welcome to %s', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
-						'capability' 	=> 'manage_options',
-						'screen' 		=> 'about_screen',
-						'tab_name' 		=> __( 'Getting Started', PLUGIN_NAME_TEXT_DOMAIN )
+						'id'         => PLUGIN_NAME_PAGE . '-about',
+						'title'      => sprintf( __( 'Welcome to %s', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
+						'capability' => 'manage_options',
+						'screen'     => 'about_screen',
+						'tab_name'   => __( 'Getting Started', PLUGIN_NAME_TEXT_DOMAIN )
 					),
 					array(
-						'id' 			=> PLUGIN_NAME_PAGE . '-changelog',
-						'title' 		=> sprintf( __( '%s Changelog', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
-						'capability' 	=> 'manage_options',
-						'screen' 		=> 'changelog_screen',
-						'tab_name' 		=> __( 'Changelog', PLUGIN_NAME_TEXT_DOMAIN )
+						'id'         => PLUGIN_NAME_PAGE . '-changelog',
+						'title'      => sprintf( __( '%s Changelog', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
+						'capability' => 'manage_options',
+						'screen'     => 'changelog_screen',
+						'tab_name'   => __( 'Changelog', PLUGIN_NAME_TEXT_DOMAIN )
 					),
 					array(
-						'id' 			=> PLUGIN_NAME_PAGE . '-credits',
-						'title' 		=> sprintf( __( '%s Credits', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
-						'capability' 	=> 'manage_options',
-						'screen' 		=> 'credits_screen',
-						'tab_name' 		=> __( 'Credits', PLUGIN_NAME_TEXT_DOMAIN )
+						'id'         => PLUGIN_NAME_PAGE . '-credits',
+						'title'      => sprintf( __( '%s Credits', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
+						'capability' => 'manage_options',
+						'screen'     => 'credits_screen',
+						'tab_name'   => __( 'Credits', PLUGIN_NAME_TEXT_DOMAIN )
 					),
 					array(
-						'id' 			=> PLUGIN_NAME_PAGE . '-translations',
-						'title' 		=> sprintf( __( '%s Translations', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
-						'capability' 	=> 'manage_options',
-						'screen' 		=> 'translations_screen',
-						'tab_name' 		=> __( 'Translations', PLUGIN_NAME_TEXT_DOMAIN )
+						'id'         => PLUGIN_NAME_PAGE . '-translations',
+						'title'      => sprintf( __( '%s Translations', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
+						'capability' => 'manage_options',
+						'screen'     => 'translations_screen',
+						'tab_name'   => __( 'Translations', PLUGIN_NAME_TEXT_DOMAIN )
 					),
 					array(
-						'id' 			=> PLUGIN_NAME_PAGE . '-freedoms',
-						'title' 		=> sprintf( __( '%s Freedoms', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
-						'capability' 	=> 'manage_options',
-						'screen' 		=> 'freedoms_screen',
-						'tab_name' 		=> __( 'Freedoms', PLUGIN_NAME_TEXT_DOMAIN )
+						'id'         => PLUGIN_NAME_PAGE . '-freedoms',
+						'title'      => sprintf( __( '%s Freedoms', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->name ),
+						'capability' => 'manage_options',
+						'screen'     => 'freedoms_screen',
+						'tab_name'   => __( 'Freedoms', PLUGIN_NAME_TEXT_DOMAIN )
 					),
 		) );
-	}
+	} // END register_admin_menu()
 
 	/**
 	 * Register the Dashboard Pages which are normally hidden.
-	 * These pages are used to render the Welcome and Credits pages. 
-	 * Can be accessed again via the version number link at the 
+	 * These pages are used to render the Welcome and Credits pages.
+	 * Can be accessed again via the version number link at the
 	 * bottom of the plugin pages.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
 	public function admin_menus() {
 		foreach ( $this->register_admin_menu() as $menu ) {
 			$page_title = $menu['title'];
-			$dashboard_page = add_dashboard_page( $page_title, $page_title, $menu['capability'], $menu['id'], array( &$this, $menu['screen'] ) );
-			add_action( 'admin_print_styles-'. $dashboard_page, array( &$this, 'admin_css' ) );
+			$dashboard_page = add_dashboard_page( $page_title, $page_title, $menu['capability'], $menu['id'], array( $this, $menu['screen'] ) );
+			add_action( 'admin_print_styles-'. $dashboard_page, array( $this, 'admin_css' ) );
 		}
-	}
+	} // END admin_menus()
 
 	/**
 	 * Remove submenus. This hides each submenu under the dashboard page.
 	 *
-	 * TODO    Replace the submenus with your own
+	 * @todo   Replace the submenus with your own.
+	 * @since  1.0.0
 	 * @filter plugin_name_remove_submenus
 	 * @access public
 	 * @return array()
@@ -116,21 +119,23 @@ class Plugin_Name_Admin_Welcome {
 		) );
 
 		return $submenus;
-	}
+	} // END remove_submenus()
 
 	/**
 	 * Loads the stylesheets for each of the dashboard pages.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
 	public function admin_css() {
 		wp_enqueue_style( 'plugin-name-activation', Plugin_Name()->plugin_url() . '/assets/css/admin/welcome.css' );
-	}
+	} // END admin_css()
 
 	/**
 	 * Add styles just for this page, and remove dashboard page links.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -155,12 +160,15 @@ class Plugin_Name_Admin_Welcome {
 		}
 		</style>
 		<?php
-	}
+	} // END admin_head()
 
 	/**
-	 * Intro text/links shown on all about pages.
+	 * Intro text and links shown on all welcome pages.
 	 *
+	 * @since  1.0.0
 	 * @access private
+	 * @filter plugin_name_docs_url
+	 * @filter plugin_name_welcome_twitter_username
 	 * @return void
 	 */
 	private function intro() {
@@ -212,9 +220,9 @@ class Plugin_Name_Admin_Welcome {
 		</div><!-- .plugin-name-social-links -->
 
 		<p class="plugin-name-actions">
-			<a href="<?php echo admin_url('admin.php?page=' . PLUGIN_NAME_PAGE . '-settings'); ?>" class="button button-primary"><?php _e( 'Settings', PLUGIN_NAME_TEXT_DOMAIN ); ?></a>
+			<a href="<?php echo admin_url( 'admin.php?page=' . PLUGIN_NAME_PAGE . '-settings' ); ?>" class="button button-primary"><?php _e( 'Settings', PLUGIN_NAME_TEXT_DOMAIN ); ?></a>
 			<a class="docs button button-primary" href="<?php echo esc_url( apply_filters( 'plugin_name_docs_url', Plugin_Name()->doc_url, PLUGIN_NAME_TEXT_DOMAIN ) ); ?>"><?php _e( 'Docs', PLUGIN_NAME_TEXT_DOMAIN ); ?></a>
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo Plugin_Name()->web_url; ?>" data-text="<?php echo apply_filters( 'plugin_name_welcome_twitter_username', __('Your tweet message would be placed here.', PLUGIN_NAME_TEXT_DOMAIN) ); ?>" data-via="<?php echo Plugin_Name()->twitter_username; ?>" data-size="large" data-hashtags="<?php echo Plugin_Name()->name; ?>">Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo Plugin_Name()->web_url; ?>" data-text="<?php echo apply_filters( 'plugin_name_welcome_twitter_username', __( 'Your tweet message would be placed here.', PLUGIN_NAME_TEXT_DOMAIN ) ); ?>" data-via="<?php echo Plugin_Name()->twitter_username; ?>" data-size="large" data-hashtags="<?php echo Plugin_Name()->name; ?>">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 			<div id="social-blocks">
@@ -256,12 +264,13 @@ class Plugin_Name_Admin_Welcome {
 			?>
 		</h2>
 		<?php
-	}
+	} // END intro()
 
 	/**
 	 * Output the about screen.
 	 *
-	 * TODO    Replace the about page with your own content.
+	 * @todo   Replace the about page with your own content.
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -288,6 +297,24 @@ class Plugin_Name_Admin_Welcome {
 					</div>
 					<div class="last-feature">
 						<a href="http://vimeo.com/88671403" data-rel="prettyPhoto" title="<?php _e( 'Or add captions on your videos.', PLUGIN_NAME_TEXT_DOMAIN ); ?>"><img src="http://placekitten.com/300/250" alt="<?php _e( 'Video Title', PLUGIN_NAME_TEXT_DOMAIN ); ?>" style="width: 99%; margin: 0 0 1em;"></a>
+						<h4><?php _e( 'Title of Feature or New Changes', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet diam a facilisis eleifend. Cras ac justo felis. Mauris faucibus, orci eu blandit fermentum, lorem nibh sollicitudin mi, sit amet interdum metus urna ut lacus.</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h3><?php _e( 'Three Columns with a white background', PLUGIN_NAME_TEXT_DOMAIN ); ?></h3>
+				<div class="plugin-name-feature feature-section col three-col bg-white">
+					<div>
+						<h4><?php _e( 'Title of Feature or New Changes', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet diam a facilisis eleifend. Cras ac justo felis. Mauris faucibus, orci eu blandit fermentum, lorem nibh sollicitudin mi, sit amet interdum metus urna ut lacus.</p>
+					</div>
+					<div>
+						<h4><?php _e( 'Title of Feature or New Changes', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet diam a facilisis eleifend. Cras ac justo felis. Mauris faucibus, orci eu blandit fermentum, lorem nibh sollicitudin mi, sit amet interdum metus urna ut lacus.</p>
+					</div>
+					<div class="last-feature">
 						<h4><?php _e( 'Title of Feature or New Changes', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet diam a facilisis eleifend. Cras ac justo felis. Mauris faucibus, orci eu blandit fermentum, lorem nibh sollicitudin mi, sit amet interdum metus urna ut lacus.</p>
 					</div>
@@ -429,12 +456,13 @@ class Plugin_Name_Admin_Welcome {
 			</div>
 		</div>
 		<?php
-	}
+	} // END about_screen()
 
 	/**
 	 * Output the changelog screen.
 	 *
-	 * @TODO   List your own changelog
+	 * @todo   List your own changelog
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -447,18 +475,44 @@ class Plugin_Name_Admin_Welcome {
 			<p><?php _e( 'Bulletpoint your changelog like so.', PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 
 			<div class="changelog point-releases">
-				<h3><?php _e( 'Version', PLUGIN_NAME_TEXT_DOMAIN ); ?> 1.0.0</strong></h3>
-				<p><strong><?php _e( sprintf( 'First version of the %s.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+				<h3><?php _e( 'Version', PLUGIN_NAME_TEXT_DOMAIN ); ?> 1.0.1 (2<?php _e( 'nd March', PLUGIN_NAME_TEXT_DOMAIN ); ?> 2015)</h3>
+				<ul>
+					<li>Tested on WordPress 4 and up.</li>
+					<li>Corrected spelling errors within the whole of the boilerplate and README.md file.</li>
+					<li>Improved the use of PHPDoc conventions to document the code.</li>
+					<li>Improved @todo through out the boilerplate.</li>
+					<li>Improved the System Report page and added a new filter for the status tabs.</li>
+					<li>Removed 'Author Email', 'Requires at least' and 'Tested up to' from the plugin header as they are not read by WordPress. These are mainly for the Readme.txt file.</li>
+					<li>Moved the global $wpdb to the top of the uninstall.php file so both single and multisites can query the database.</li>
+					<li>Removed the `countries` class and variables. - Can be added by following the documentation.</li>
+					<li>Removed variable $theme_author_url. - Can be added by following the documentation.</li>
+					<li>Removed variable $changelog_url. - Can be added by following the documentation.</li>
+					<li>Removed 'after_setup_theme' action and setup_enviroment() function. - Can be added by following the documentation.</li>
+					<li>Removed function set_admin_menu_separator(). This is no longer supported.</li>
+					<li>Removed support for older versions of WordPress lower than version 3.8</li>
+				</ul>
+
+				<h3><?php _e( 'Version', PLUGIN_NAME_TEXT_DOMAIN ); ?> 1.0.1 (25<?php _e( 'th August', PLUGIN_NAME_TEXT_DOMAIN ); ?> 2014)</h3>
+				<ul>
+					<li>Grunt Setup</li>
+					<li>Text Domain corrections</li>
+					<li>Admin javascript minified</li>
+					<li>README.md file updated</li>
+				</ul>
+
+				<h3><?php _e( 'Version', PLUGIN_NAME_TEXT_DOMAIN ); ?> 1.0.0 (25<?php _e( 'th August', PLUGIN_NAME_TEXT_DOMAIN ); ?> 2014)</h3>
+				<p><strong><?php _e( sprintf( 'First version of the %s.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></strong></p>
 			</div>
 
 		</div>
 		<?php
-	}
+	} // END changelog_screen()
 
 	/**
 	 * Output the credits.
 	 *
-	 * TODO    Place your own credits
+	 * @todo   Place your own credits
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -468,21 +522,49 @@ class Plugin_Name_Admin_Welcome {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php _e( sprintf( 'The %s is developed and maintained by "S&eacute;bastien Dumont". Are you a passionate individual, would you like to give your support and see your name here? <a href="%s" target="_blank">Contribute to %s</a>.', Plugin_Name()->name, GITHUB_REPO_URL . 'blob/master/CONTRIBUTING.md', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+			<p class="about-description"><?php _e( sprintf( 'The %s is developed and maintained by "S&eacute;bastien Dumont". Are you a passionate individual, would you like to give your support and see your name here? <a href="%s" target="_blank">Contribute to %s</a>.', Plugin_Name()->name, PLUGIN_NAME_GITHUB_REPO_URI . 'blob/master/CONTRIBUTING.md', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 
 			<div class="plugin-name-feature feature-section col two-col">
 
 				<div>
 					<h2>S&eacute;bastien Dumont</h2>
-					<h4 style="font-weight:0; margin-top:0"><?php _e( 'Project Lead &amp; Developer', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
-					<p><img style="float:left; margin: 0 15px 0 0;" src="<?php echo Plugin_Name()->plugin_url() . '/assets/images/sebd.jpg'; ?>" width="100" height="100" /><?php _e( sprintf( '%s has been developing plugins for WordPress since 2009. He is a freelance Web and WordPress developer.', 'S&eacute;bastien'), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+					<h4 style="font-weight:0; margin-top:0"><?php _e( 'Project Leader &amp; Developer', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
+					<p><img style="float:left; margin: 0 15px 0 0;" src="<?php echo Plugin_Name()->plugin_url() . '/assets/images/sebd.jpg'; ?>" width="100" height="100" /><?php _e( 'I am a freelance WordPress Developer and I have been developing for WordPress since 2009. I provide Code Reviews, e-Commerce installations and custom WordPress plugin and theme development services. I developed this boilerplate and many others.', PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+					<div class="plugin-name-social-links">
+						<a class="facebook_link" href="https://www.facebook.com/Sebd86" target="_blank">
+							<span class="dashicons dashicons-facebook-alt"></span>
+						</a>
+
+						<a class="twitter_link" href="https://twitter.com/sebd86" target="_blank">
+							<span class="dashicons dashicons-twitter"></span>
+						</a>
+
+						<a class="googleplus_link" href="https://plus.google.com/114016411970997366558" target="_blank">
+							<span class="dashicons dashicons-googleplus"></span>
+						</a>
+
+					</div><!-- .plugin-name-social-links -->
 					<p><a href="http://www.sebastiendumont.com" target="_blank"><?php _e( sprintf( 'View %s&rsquo;s website', 'S&eacute;bastien' ), PLUGIN_NAME_TEXT_DOMAIN ); ?></a></p>
 				</div>
 
 				<div class="last-feature">
 					<h2>Francois-Xavier B&eacute;nard</h2>
 					<h4 style="font-weight:0; margin-top:0"><?php _e( 'Translation Manager, CEO of WP-Translations.org', PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
-					<p><img style="float:left; margin: 0 15px 0 0;" src="<?php echo Plugin_Name()->plugin_url() . '/assets/images/fxbenard.jpg'; ?>" width="100" height="100" />Translation is my hobby, make it a living is my plan. I translate but also check and code the missing i18n() functions in your plugins or themes. I run a FREE WP Community of translators on Transifex. So if you need someone who cares about quality work, get in touch. Many developers are already trusting me, Seb of course but also Yoast, Pippin and the Mailpoet Team.</p>
+					<p><img style="float:left; margin: 0 15px 0 0;" src="<?php echo Plugin_Name()->plugin_url() . '/assets/images/fxbenard.jpg'; ?>" width="100" height="100" /><?php _e( 'Translation is my hobby, make it a living is my plan. I translate but also check and code the missing i18n() functions in your plugins or themes. I run a FREE WP Community of translators on Transifex. So if you need someone who cares about quality work, get in touch. Many developers are already trusting me, Seb of course but also Yoast, Pippin and the Mailpoet Team.', PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+					<div class="plugin-name-social-links">
+						<a class="facebook_link" href="https://www.facebook.com/francoisxavier.benard" target="_blank">
+							<span class="dashicons dashicons-facebook-alt"></span>
+						</a>
+
+						<a class="twitter_link" href="https://twitter.com/fxbenard" target="_blank">
+							<span class="dashicons dashicons-twitter"></span>
+						</a>
+
+						<a class="googleplus_link" href="https://plus.google.com/115184248259085010066" target="_blank">
+							<span class="dashicons dashicons-googleplus"></span>
+						</a>
+
+					</div><!-- .plugin-name-social-links -->
 					<p><a href="http://wp-translations.org" target="_blank"><?php _e( sprintf( 'View %s&rsquo;s website', 'Francois' ), PLUGIN_NAME_TEXT_DOMAIN ); ?></a></p>
 				</div>
 
@@ -496,7 +578,7 @@ class Plugin_Name_Admin_Welcome {
 
 			<hr class="clear">
 
-			<h4 class="wp-people-group"><?php _e( 'Translators' , PLUGIN_NAME_TEXT_DOMAIN ); ?></h4><span style="color:#aaa; float:right; position:relative; top:-40px;"><?php _e( sprintf( 'These translators are fetched from the Transifex project for %s.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></span>
+			<h4 class="wp-people-group"><?php _e( 'Translators' , PLUGIN_NAME_TEXT_DOMAIN ); ?> <span style="color:#aaa; float:right;"><?php _e( sprintf( 'These translators are fetched from the Transifex project for %s.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></span></h4>
 
 			<p class="about-description"><?php _e( sprintf( '<strong>%s</strong> has been kindly translated into several other languages thanks to the WordPress community.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 			<?php
@@ -509,21 +591,22 @@ class Plugin_Name_Admin_Welcome {
 
 			<h4 class="wp-people-group"><?php _e( 'External Libraries' , PLUGIN_NAME_TEXT_DOMAIN ); ?></h4>
 			<p class="wp-credits-list">
-			<a href="http://jquery.com/" target="_blank">jQuery</a>, 
+			<a href="http://jquery.com/" target="_blank">jQuery</a>,
 			<a href="http://jqueryui.com/" target="_blank">jQuery UI</a>,
-			<a href="http://malsup.com/jquery/block/" target="_blank">jQuery Block UI</a>, 
-			<a href="https://github.com/harvesthq/chosen" target="_blank">jQuery Chosen</a>, 
-			<a href="https://github.com/carhartl/jquery-cookie" target="_blank">jQuery Cookie</a>, 
-			<a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin" target="_blank">jQuery TipTip</a> and 
+			<a href="http://malsup.com/jquery/block/" target="_blank">jQuery Block UI</a>,
+			<a href="https://github.com/harvesthq/chosen" target="_blank">jQuery Chosen</a>,
+			<a href="https://github.com/carhartl/jquery-cookie" target="_blank">jQuery Cookie</a>,
+			<a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin" target="_blank">jQuery TipTip</a> and
 			<a href="http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/" target="_blank">prettyPhoto</a>
 			</p>
 		</div>
 		<?php
-	}
+	} // END credits_screen()
 
 	/**
 	 * Output the translations.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -533,18 +616,19 @@ class Plugin_Name_Admin_Welcome {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php _e( sprintf( 'Translations currently in progress and completed for %s. <a href="%s" target="_blank">View more on %s</a>.', Plugin_Name()->name, TRANSIFEX_PROJECT_URL, 'Transifex' ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
+			<p class="about-description"><?php _e( sprintf( 'Translations currently in progress and completed for %s. <a href="%s" target="_blank">View more on %s</a>.', Plugin_Name()->name, PLUGIN_NAME_TRANSIFEX_PROJECT_URI, 'Transifex' ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 
 			<?php transifex_display_translation_progress(); ?>
 
 		</div>
 		<?php
-	}
+	} // END translations_screen()
 
 	/**
 	 * Output the freedoms page.
 	 *
-	 * TODO    It's up to you if you want to keep this page
+	 * @todo   It's up to you if you want to keep this page.
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -564,12 +648,14 @@ class Plugin_Name_Admin_Welcome {
 			</ol>
 		</div>
 		<?php
-	}
+	} // END freedoms_screen()
 
 	/**
 	 * Render Contributors List
 	 *
+	 * @since  1.0.0
 	 * @access public
+	 * @filter plugin_name_filter_contributors
 	 * @return string $contributor_list HTML formatted list of contributors.
 	 */
 	public function contributors() {
@@ -580,40 +666,48 @@ class Plugin_Name_Admin_Welcome {
 
 		$contributor_list = '<ul class="wp-people-group">';
 
+		$filtered_contributers = apply_filters( 'plugin_name_filter_contributors', $contributors );
+
 		foreach ( $contributors as $contributor ) {
 
-			// Get details about this contributor.
-			$contributor_details = $this->get_indvidual_contributor( $contributor->login );
+			if ( !in_array( $contributor->login, $filtered_contributers ) ) {
 
-			$contributor_list .= '<li class="wp-person">';
-			$contributor_list .= sprintf( '<a href="%s" target="_blank" title="%s">',
-				esc_url( 'https://github.com/' . $contributor->login ),
-				esc_html( sprintf( __( 'View %s\'s GitHub Profile', PLUGIN_NAME_TEXT_DOMAIN ), $contributor_details->name ) )
-			);
-			$contributor_list .= sprintf( '<img src="%s" width="64" height="64" class="gravatar" alt="%s" />', esc_url( $contributor->avatar_url ), esc_html( $contributor->login ) );
-			$contributor_list .= '</a>';
+				// Get details about this contributor.
+				$contributor_details = $this->get_indvidual_contributor( $contributor->login );
 
-			if( isset( $contributor_details->name ) ) {
-				$contributor_list .= __( 'Name', PLUGIN_NAME_TEXT_DOMAIN ) . ':<strong>' . $contributor_details->name . '</strong><br>';
-			}
+				$contributor_list .= '<li class="wp-person">';
+				$contributor_list .= sprintf( '<a href="%s" target="_blank" title="%s">',
+					esc_url( 'https://github.com/' . $contributor->login ),
+					esc_html( sprintf( __( 'View %s\'s GitHub Profile', PLUGIN_NAME_TEXT_DOMAIN ), $contributor_details->name ) )
+				);
+				$contributor_list .= sprintf( '<img src="%s" width="64" height="64" class="gravatar" alt="%s" />', esc_url( $contributor->avatar_url ), esc_html( $contributor->login ) );
+				$contributor_list .= '</a>';
 
-			$contributor_list .= sprintf( __( 'Username', PLUGIN_NAME_TEXT_DOMAIN ) . ':<strong><a href="%s" target="_blank">%s</a></strong><br>', esc_url( 'https://github.com/' . $contributor->login ), esc_html( $contributor->login ) );
+				if( isset( $contributor_details->name ) ) {
+					$contributor_list .= __( 'Name', PLUGIN_NAME_TEXT_DOMAIN ) . ': <strong>' . htmlspecialchars( $contributor_details->name ) . '</strong><br>';
+				}
 
-			if( isset( $contributor_details->blog ) ) { 
-				$contributor_list .= sprintf( '<strong><a href="%s" target="_blank">%s</a></strong><br>', esc_url( $contributor_details->blog ), __( 'View Website', PLUGIN_NAME_TEXT_DOMAIN ) );
-			}
+				$contributor_list .= sprintf( __( 'Username', PLUGIN_NAME_TEXT_DOMAIN ) . ': <strong><a href="%s" target="_blank">%s</a></strong><br>', esc_url( 'https://github.com/' . $contributor->login ), esc_html( $contributor->login ) );
 
-			$contributor_list .= '</li>';
-		}
+				if( isset( $contributor_details->blog ) ) {
+					$contributor_list .= sprintf( '<strong><a href="%s" target="_blank">%s</a></strong><br>', esc_url( $contributor_details->blog ), __( 'View Website', PLUGIN_NAME_TEXT_DOMAIN ) );
+				}
+
+				$contributor_list .= '</li>';
+
+			} // END if
+
+		} // END foreach
 
 		$contributor_list .= '</ul>';
 
 		return $contributor_list;
-	}
+	} // END contributors()
 
 	/**
 	 * Retrieve list of contributors from GitHub.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return mixed
 	 */
@@ -639,12 +733,14 @@ class Plugin_Name_Admin_Welcome {
 		set_transient( 'plugin_name_contributors', $contributors, 3600 );
 
 		return $contributors;
-	}
+	} // END get_contributors()
 
 	/**
 	 * Retrieve details about the single contributor from GitHub.
 	 *
+	 * @since  1.0.0
 	 * @access public
+	 * @param  string $username
 	 * @return mixed
 	 */
 	public function get_indvidual_contributor( $username ) {
@@ -665,12 +761,14 @@ class Plugin_Name_Admin_Welcome {
 		set_transient( 'plugin_name_' . $username . 'contributor', $contributor, 3600 );
 
 		return $contributor;
-	}
+	} // END get_indvidual_contributor()
 
 	/**
-	 * Sends user to the Welcome page on first activation of Plugin Name as well as each
-	 * time Plugin Name is upgraded to a new version.
+	 * Sends user to the Welcome page on first activation of
+	 * Plugin Name as well as each time Plugin Name is
+	 * upgraded to a new version.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -695,7 +793,7 @@ class Plugin_Name_Admin_Welcome {
 
 		wp_redirect( admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-about' ) );
 		exit;
-	}
+	} // END welcome()
 
 } // end class.
 

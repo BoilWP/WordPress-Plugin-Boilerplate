@@ -2,10 +2,11 @@
 /**
  * Installation related functions and actions.
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Classes
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -18,19 +19,26 @@ if ( ! class_exists( 'Plugin_Name_Install' ) ) {
 class Plugin_Name_Install {
 
 	/**
-	 * Hook in tabs.
+	 * Constructor.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 */
 	public function __construct() {
-		register_activation_hook( PLUGIN_NAME_FILE, array( &$this, 'install' ) );
+		register_activation_hook( PLUGIN_NAME_FILE,                                    array( $this, 'install' ) );
 
-		add_action( 'admin_init', array( &$this, 'install_actions' ) );
-		add_action( 'admin_init', array( &$this, 'check_version' ), 5 );
-		add_action( 'in_plugin_update_message-' . plugin_basename( PLUGIN_NAME_FILE ), array( &$this, 'in_plugin_update_message' ) );
-	}
+		add_action( 'admin_init',                                                      array( $this, 'install_actions' ) );
+		add_action( 'admin_init',                                                      array( $this, 'check_version' ), 5 );
+		add_action( 'in_plugin_update_message-' . plugin_basename( PLUGIN_NAME_FILE ), array( $this, 'in_plugin_update_message' ) );
+	} // END __construct()
 
 	/**
-	 * check_version function.
+	 * When called, the plugin checks the version
+	 * of the plugin and the database version in use.
+	 * This function determins if the plugin requires
+	 * to process an update.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -39,11 +47,12 @@ class Plugin_Name_Install {
 			$this->install();
 
 			do_action( 'plugin_name_updated' );
-	}
+	} // END check_version()
 
 	/**
 	 * Install actions such as installing pages when a button is clicked.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 */
 	public function install_actions() {
@@ -61,8 +70,7 @@ class Plugin_Name_Install {
 			exit;
 
 		// Skip button
-		} elseif ( ! empty( $_GET['skip_install_plugin_name_pages'] ) ) {
-
+		} else if ( ! empty( $_GET['skip_install_plugin_name_pages'] ) ) {
 			// We no longer need to install pages
 			delete_option( '_plugin_name_needs_pages' );
 			delete_transient( 'plugin_name_activation_redirect' );
@@ -72,8 +80,7 @@ class Plugin_Name_Install {
 			exit;
 
 		// Update button
-		} elseif ( ! empty( $_GET['do_update_plugin_name'] ) ) {
-
+		} else if ( ! empty( $_GET['do_update_plugin_name'] ) ) {
 			$this->update();
 
 			// Update complete
@@ -85,27 +92,28 @@ class Plugin_Name_Install {
 			wp_redirect( admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-about&plugin-name-updated=true' ) );
 			exit;
 		}
-	}
+	} // END install_action()
 
 	/**
 	 * Install Plugin Name
 	 *
-	 * @TODO Change the 'page-slug' to the page slug 
-	 * of the main page this plugin needs.
+	 * @todo   Change the 'page-slug' to the page slug
+	 *         of the main page this plugin needs.
+	 * @since  1.0.0
 	 * @access public
 	 */
 	public function install() {
 		$this->create_options();
-		$this->create_roles();
+		$this->create_user_roles();
+		$this->create_files();
 
 		// Queue upgrades
-		$current_version = get_option( 'plugin_name_version', null );
+		$current_version    = get_option( 'plugin_name_version', null );
 		$current_db_version = get_option( 'plugin_name_db_version', null );
 
 		if ( version_compare( $current_db_version, '1.0.1', '<' ) && null !== $current_db_version ) {
 			update_option( '_plugin_name_needs_update', 1 );
-		}
-		else {
+		} else {
 			update_option( 'plugin_name_db_version', Plugin_Name()->version );
 		}
 
@@ -121,12 +129,16 @@ class Plugin_Name_Install {
 		flush_rewrite_rules();
 
 		// Redirect to welcome screen
-		set_transient( 'plugin_name_activation_redirect', 1, 60 * 60 );
-	}
+		set_transient( 'plugin_name_activation_redirect', 1, HOUR_IN_SECONDS );
+
+		// Trigger action
+		do_action( 'plugin_name_installed' );
+	} // END install()
 
 	/**
 	 * Handle updates
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 */
 	public function update() {
@@ -139,37 +151,38 @@ class Plugin_Name_Install {
 		}
 
 		update_option( 'plugin_name_db_version', Plugin_Name()->version );
-	}
+	} // END update()
 
 	/**
-	 * List the pages that the plugin relies on, 
+	 * List the pages that your plugin relies on,
 	 * fetching the page id's in variables.
 	 *
+	 * @since  1.0.0
 	 * @access public
+	 * @filter plugin_name_pages
 	 * @return void
 	 */
 	public function plugin_name_pages() {
 		return apply_filters( 'plugin_name_pages', array(
-
-			'example' => array(
-				'name' 		=> _x( 'example', 'page_slug', PLUGIN_NAME_TEXT_DOMAIN ),
-				'title' 	=> __( 'Example Page', PLUGIN_NAME_TEXT_DOMAIN ),
-				'content' 	=> __( 'This page was created as an example to show you the ability to creating pages automatically when the plugin is installed. You may if you wish create a page just to insert a single shortcode. You should find this page already set in the plugin settings. This save the user time to setup the pages the plugin requires.', PLUGIN_NAME_TEXT_DOMAIN )
+			'example'   => array(
+				'name'    => _x( 'example', 'page_slug', PLUGIN_NAME_TEXT_DOMAIN ),
+				'title'   => __( 'Example Page', PLUGIN_NAME_TEXT_DOMAIN ),
+				'content' => __( 'This page was created as an example to show you the ability to creating pages automatically when the plugin is installed. You may if you wish create a page just to insert a single shortcode. You should find this page already set in the plugin settings. This save the user time to setup the pages the plugin requires.', PLUGIN_NAME_TEXT_DOMAIN )
 			),
 
 			'shortcode' => array(
-				'name' 		=> _x( 'shortcode', 'page_slug', PLUGIN_NAME_TEXT_DOMAIN ),
-				'title' 	=> __( 'Shortcode Example Page', PLUGIN_NAME_TEXT_DOMAIN ),
-				'content' 	=> __( '[caption align="alignright" width="300"]<img src="http://placekitten.com/300/205" alt="Cat" title="Cute Cat" width="300" height="205" /> Cute Cat[/caption] This page was created to show shortcode detection in the page.', PLUGIN_NAME_TEXT_DOMAIN )
+				'name'    => _x( 'shortcode', 'page_slug', PLUGIN_NAME_TEXT_DOMAIN ),
+				'title'   => __( 'Shortcode Example Page', PLUGIN_NAME_TEXT_DOMAIN ),
+				'content' => __( '[caption align="alignright" width="300"]<img src="http://placekitten.com/300/205" alt="Cat" title="Cute Cat" width="300" height="205" /> Cute Cat[/caption] This page was created to show shortcode detection in the page.', PLUGIN_NAME_TEXT_DOMAIN )
 			),
-
 		) );
-	}
+	} // END plugin_name_pages()
 
 	/**
-	 * Create the pages the plugin relies on, 
+	 * Create the pages the plugin relies on,
 	 * storing page id's in variables.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -179,13 +192,14 @@ class Plugin_Name_Install {
 		foreach ( $pages as $key => $page ) {
 			plugin_name_create_page( esc_sql( $page['name'] ), 'plugin_name_' . $key . '_page_id', $page['title'], $page['content'], ! empty( $page['parent'] ) ? plugin_name_get_page_id( $page['parent'] ) : '' );
 		}
-	}
+	} // END create_pages()
 
 	/**
-	 * Default options
+	 * Default Options
 	 *
-	 * Sets up the default options used on the settings page
+	 * Sets up the default options defined on the settings pages.
 	 *
+	 * @since  1.0.0
 	 * @access public
 	 */
 	public function create_options() {
@@ -202,17 +216,20 @@ class Plugin_Name_Install {
 				}
 			}
 		}
-	}
+	} // END create_options()
 
 	/**
-	 * Create roles and capabilities
+	 * Create user roles and user capabilities.
 	 *
+	 * @since  1.0.0
 	 * @access public
+	 * @global $wp_roles
+	 * @see    http://codex.wordpress.org/Roles_and_Capabilities
 	 */
-	public function create_roles() {
+	public function create_user_roles() {
 		global $wp_roles;
 
-		if ( class_exists('WP_Roles') ) {
+		if ( class_exists( 'WP_Roles' ) ) {
 			if ( ! isset( $wp_roles ) ) {
 				$wp_roles = new WP_Roles();
 			}
@@ -221,11 +238,11 @@ class Plugin_Name_Install {
 		if ( is_object( $wp_roles ) ) {
 
 			/**
-			 * Add your custom user roles here and 
+			 * Add your custom user roles here and
 			 * set the permissions for that role.
 			 */
-			add_role( 'custom_role', __( 'Custom Role', PLUGIN_NAME_TEXT_DOMAIN ), array(
-				'level_9'                => false,
+			add_role( 'custom_role', sprintf( __( '%s Manager', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->version ), array(
+				'level_9'                => true,
 				'level_8'                => false,
 				'level_7'                => false,
 				'level_6'                => false,
@@ -275,17 +292,18 @@ class Plugin_Name_Install {
 				}
 			}
 		}
-	}
+	} // END create_roles()
 
 	/**
 	 * Get capabilities for Plugin Name.
 	 *
-	 * These are assigned to admin and any 
-	 * other role cap during installation 
-	 * or reset.
+	 * These are assigned to admin and any other
+	 * user role capabilities during installation
+	 * or resetting the plugin.
 	 *
-	 * @TODO   Replace the post types with your custom post type.
+	 * @todo   Replace the post types with your custom post types.
 	 * @access public
+	 * @filter plugin_name_capability_post_types
 	 * @return array
 	 */
 	public function get_core_capabilities() {
@@ -295,8 +313,8 @@ class Plugin_Name_Install {
 			"manage_plugin_name",
 		);
 
-		// List the post types you want to apply these capability types.
-		$capability_types = apply_filters( 'plugin_name_capability_post_types', array( 'custom_post', 'custom_page' ) );
+		// List the post types you want to apply these capability types to.
+		$capability_types = apply_filters( 'plugin_name_capability_post_types', array( 'post', 'page' ) );
 
 		foreach( $capability_types as $capability_type ) {
 
@@ -325,18 +343,21 @@ class Plugin_Name_Install {
 		}
 
 		return $capabilities;
-	}
+	} // END get_core_capabilities()
 
 	/**
-	 * plugin_name_remove_roles function.
+	 * Remove User Roles.
 	 *
+	 * This removes any custom user roles created by the plugin.
+	 *
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
-	public function remove_roles() {
+	public function remove_user_roles() {
 		global $wp_roles;
 
-		if ( class_exists('WP_Roles') ) {
+		if ( class_exists( 'WP_Roles' ) ) {
 			if ( ! isset( $wp_roles ) ) {
 				$wp_roles = new WP_Roles();
 			}
@@ -346,39 +367,45 @@ class Plugin_Name_Install {
 
 			$capabilities = self::get_core_capabilities();
 
-			foreach( $capabilities as $cap_group ) {
-				foreach( $cap_group as $cap ) {
+			foreach ( $capabilities as $cap_group ) {
+				foreach ( $cap_group as $cap ) {
 					$wp_roles->remove_cap( 'administrator', $cap );
 				}
 			}
 
 			remove_role( 'custom_role' );
 		}
-	}
+	} // END remove_user_roles()
 
 	/**
 	 * Delete all plugin options.
 	 *
+	 * @todo   Replace 'plugin_name' with the prefix
+	 *         your plugin options begin with.
+	 * @since  1.0.0
 	 * @access public
+	 * @global $wpdb
 	 * @return void
 	 */
 	public function delete_options() {
 		global $wpdb;
 
 		// Delete options
-		$wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE 'plugin_name_%';");
-	}
+		$wpdb->query( "DELETE FROM $wpdb->options WHERE option_name LIKE 'plugin_name_%';" );
+	} // END delete_options()
 
 	/**
 	 * Active plugins pre update option filter
 	 *
-	 * @param string $new_value
+	 * @since  1.0.0
+	 * @access public
+	 * @param  string $new_value
 	 * @return string
 	 */
-	function pre_update_option_active_plugins($new_value) {
+	/*public function pre_update_option_active_plugins( $new_value ) {
 		$old_value = (array) get_option('active_plugins');
 
-		if ($new_value !== $old_value && in_array(W3TC_FILE, (array) $new_value) && in_array(W3TC_FILE, (array) $old_value)) {
+		if ( $new_value !== $old_value && in_array( W3TC_FILE, (array) $new_value ) && in_array( W3TC_FILE, (array) $old_value ) ) {
 			$this->_config->set('notes.plugins_updated', true);
 
 			try {
@@ -389,21 +416,57 @@ class Plugin_Name_Install {
 		}
 
 		return $new_value;
-	}
+	}*/
 
 	/**
-	 * Show details of plugin changes on Installed Plugin Screen.
+	 * Create files and directories.
 	 *
+	 * @since  1.0.2
+	 * @access private
+	 * @filter plugin_name_create_files
+	 */
+	private static function create_files() {
+		$upload_dir = wp_upload_dir();
+
+		$files = apply_filters( 'plugin_name_create_files', array(
+			array(
+				'base'    => $upload_dir['basedir'] . '/plugin-name-logs/',
+				'file'    => '.htaccess',
+				'content' => 'deny from all'
+			),
+			array(
+				'base'    => $upload_dir['basedir'] . '/plugin-name-logs/',
+				'file'    => 'index.html',
+				'content' => ''
+			)
+		) );
+
+		foreach ( $files as $file ) {
+			if ( wp_mkdir_p( $file['base'] ) && ! file_exists( trailingslashit( $file['base'] ) . $file['file'] ) ) {
+				if ( $file_handle = @fopen( trailingslashit( $file['base'] ) . $file['file'], 'w' ) ) {
+					fwrite( $file_handle, $file['content'] );
+					fclose( $file_handle );
+				}
+			}
+		}
+	} // END create_files()
+
+	/**
+	 * Show details of plugin changes on the
+	 * Installed Plugins screen.
+	 *
+	 * @since  1.0.0
+	 * @access public
 	 * @return void
 	 */
-	function in_plugin_update_message() {
+	public function in_plugin_update_message() {
 		$response = wp_remote_get( PLUGIN_NAME_README_FILE );
 
 		if ( ! is_wp_error( $response ) && ! empty( $response['body'] ) ) {
 
 			// Output Upgrade Notice
 			$matches = null;
-			$regexp = '~==\s*Upgrade Notice\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote( PLUGIN_NAME_VERSION ) . '\s*=|$)~Uis';
+			$regexp  = '~==\s*Upgrade Notice\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote( PLUGIN_NAME_VERSION ) . '\s*=|$)~Uis';
 
 			if ( preg_match( $regexp, $response['body'], $matches ) ) {
 				$notices = (array) preg_split('~[\r\n]+~', trim( $matches[1] ) );
@@ -419,7 +482,7 @@ class Plugin_Name_Install {
 
 			// Output Changelog
 			$matches = null;
-			$regexp = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*-(.*)=(.*)(=\s*' . preg_quote( PLUGIN_NAME_VERSION ) . '\s*-(.*)=|$)~Uis';
+			$regexp  = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*-(.*)=(.*)(=\s*' . preg_quote( PLUGIN_NAME_VERSION ) . '\s*-(.*)=|$)~Uis';
 
 			if ( preg_match( $regexp, $response['body'], $matches ) ) {
 				$changelog = (array) preg_split('~[\r\n]+~', trim( $matches[2] ) );
@@ -436,8 +499,7 @@ class Plugin_Name_Install {
 						}
 						$line = preg_replace( '~^\s*\*\s*~', '', htmlspecialchars( $line ) );
 						echo '<li style="width: 50%; margin: 0; float: left; ' . ( $index % 2 == 0 ? 'clear: left;' : '' ) . '">' . $line . '</li>';
-					}
-					else {
+					} else {
 						if ( $ul ) {
 							echo '</ul>';
 							$ul = false;
@@ -446,18 +508,18 @@ class Plugin_Name_Install {
 					}
 				}
 
-				if ($ul) {
+				if ( $ul ) {
 					echo '</ul>';
 				}
 
 				echo '</div>';
 			}
 		}
-	}
+	} // END in_plugin_update_message()
 
-} // end if class.
+} // END if class.
 
-} // end if class exists.
+} // END if class exists.
 
 return new Plugin_Name_Install();
 

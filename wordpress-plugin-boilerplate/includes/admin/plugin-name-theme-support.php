@@ -1,11 +1,10 @@
 <?php
 $themes_supported = array(
-	'twentyfourteen', 
-	'twentythirteen', 
-	'twentytwelve', 
-	'twentyeleven', 
+	'twentyfifteen',
+	'twentyfourteen',
+	'twentythirteen',
+	'twentytwelve',
+	'twentyeleven',
 	'twentyten',
-	
 );
-
 ?>

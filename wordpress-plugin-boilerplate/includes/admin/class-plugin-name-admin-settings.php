@@ -2,10 +2,11 @@
 /**
  * Plugin Name Admin Settings Class.
  *
- * @author 		Your Name / Your Company Name
- * @category 	Admin
- * @package 	Plugin Name/Admin
- * @version 	1.0.0
+ * @since    1.0.0
+ * @author   Your Name / Your Company Name
+ * @category Admin
+ * @package  Plugin Name
+ * @license  GPL-2.0+
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -14,6 +15,8 @@ if ( ! class_exists( 'Plugin_Name_Admin_Settings' ) ) {
 
 /**
  * Plugin_Name_Admin_Settings
+ *
+ * @since 1.0.0
  */
 class Plugin_Name_Admin_Settings {
 
@@ -22,7 +25,24 @@ class Plugin_Name_Admin_Settings {
 	private static $messages = array();
 
 	/**
+	 * Constructor
+	 *
+	 * @since  1.0.2
+	 * @access public
+	 * @return void
+	 */
+	public function __construct() {
+		add_action( 'plugin_name_settings_start',  array( $this, 'settings_top' ),    10, 2 );
+		add_action( 'plugin_name_settings_finish', array( $this, 'settings_bottom' ), 10, 2 );
+	} // END __construct()
+
+	/**
 	 * Include the settings page classes
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @filter plugin_name_get_settings_pages
+	 * @return $settings
 	 */
 	public static function get_settings_pages() {
 		if ( empty( self::$settings ) ) {
@@ -36,10 +56,15 @@ class Plugin_Name_Admin_Settings {
 			self::$settings = apply_filters( 'plugin_name_get_settings_pages', $settings );
 		}
 		return self::$settings;
-	}
+	} // END get_settings_page()
 
 	/**
 	 * Save the settings
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @global $current_section
+	 * @global $current_tab
 	 */
 	public static function save() {
 		global $current_section, $current_tab;
@@ -56,26 +81,36 @@ class Plugin_Name_Admin_Settings {
 		self::add_message( __( 'Your settings have been saved.', PLUGIN_NAME_TEXT_DOMAIN ) );
 
 		do_action( 'plugin_name_settings_saved' );
-	}
+	} // END save()
 
 	/**
 	 * Add a message
-	 * @param string $text
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @param  string $text
 	 */
 	public static function add_message( $text ) {
 		self::$messages[] = $text;
-	}
+	} // END add_message()
 
 	/**
 	 * Add an error
-	 * @param string $text
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @param  string $text
 	 */
 	public static function add_error( $text ) {
 		self::$errors[] = $text;
-	}
+	} // END add_error()
 
 	/**
-	 * Output messages + errors
+	 * Output messages and errors.
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @return string
 	 */
 	public static function show_messages() {
 		if ( sizeof( self::$errors ) > 0 ) {
@@ -88,34 +123,74 @@ class Plugin_Name_Admin_Settings {
 				echo '<div id="message" class="updated plugin-name fade"><p><strong>' . esc_html( $message ) . '</strong></p></div>';
 			}
 		}
+	} // END show_messages()
+
+	/**
+	 * Settings Top.
+	 *
+	 * Display what you would like at the
+	 * top of the settings page.
+	 *
+	 * @since  1.0.2
+	 * @access public
+	 * @param  string $current_tab
+	 * @param  string $current_section
+	 */
+	public function settings_top( $current_tab, $current_section ) {
+		// Use this action for displaying on a single tab.
+		do_action( 'plugin_name_settings_top_' . $current_tab );
+		// Use this action for displaying on a single section, under a single tab.
+		do_action( 'plugin_name_settings_top_' . $current_tab . '_' . $current_section );
 	}
 
 	/**
-	 * Settings page.
+	 * Settings Bottom.
 	 *
-	 * Handles the display of the main plugin name settings page in admin.
+	 * Display what you would like at the
+	 * bottom of the settings page.
 	 *
+	 * @since  1.0.2
 	 * @access public
+	 * @param  string $current_tab
+	 * @param  string $current_section
+	 */
+	public function settings_bottom( $current_tab, $current_section ) {
+		// Use this action for displaying on a single tab.
+		do_action( 'plugin_name_settings_bottom_' . $current_tab );
+		// Use this action for displaying on a single section, under a single tab.
+		do_action( 'plugin_name_settings_bottom_' . $current_tab . '_' . $current_section );
+	}
+
+	/**
+	 * Settings Page.
+	 *
+	 * Handles the display of the main settings page in admin.
+	 *
+	 * @since  1.0.0
+	 * @access public static
+	 * @filter plugin_name_settings_params
+	 * @filter plugin_name_settings_tabs_array
+	 * @global $current_section
+	 * @global $current_tab
 	 * @return void
 	 */
 	public static function output() {
 		global $current_section, $current_tab;
 
-		do_action( 'plugin_name_settings_start' );
+		// Get current tab or section
+		$current_tab     = empty( $_GET['tab'] ) ? PLUGIN_NAME_DEFAULT_SETTINGS_TAB : sanitize_text_field( urldecode( $_GET['tab'] ) );
+		$current_section = empty( $_REQUEST['section'] ) ? '' : sanitize_text_field( urldecode( $_REQUEST['section'] ) );
 
-		wp_enqueue_script( 'plugin_name_settings', Plugin_Name()->plugin_url() . '/assets/js/admin/settings.min.js', array( 'jquery', 'jquery-ui-datepicker', 'jquery-ui-sortable', 'iris' ), Plugin_Name()->version, true );
+		do_action( 'plugin_name_settings_start', $current_tab, $current_section );
+
+		wp_enqueue_script( 'plugin_name_settings', Plugin_Name()->plugin_url() . '/assets/js/admin/settings' . PLUGIN_NAME_SCRIPT_MODE . '.js', array( 'jquery', 'jquery-ui-datepicker', 'jquery-ui-sortable', 'iris' ), Plugin_Name()->version, true );
 
 		wp_localize_script( 'plugin_name_settings', 'plugin_name_settings_params', apply_filters( 'plugin_name_settings_params', array(
 			'i18n_nav_warning' => __( 'The changes you made will be lost if you navigate away from this page.', PLUGIN_NAME_TEXT_DOMAIN ),
-			)
-		) );
+		) ) );
 
 		// Include settings pages
 		self::get_settings_pages();
-
-		// Get current tab/section
-		$current_tab 		= empty( $_GET['tab'] ) ? 'tab_one' : sanitize_text_field( urldecode( $_GET['tab'] ) );
-		$current_section 	= empty( $_REQUEST['section'] ) ? '' : sanitize_text_field( urldecode( $_REQUEST['section'] ) );
 
 		// Save settings if data has been posted
 		if ( ! empty( $_POST ) ) {
@@ -136,13 +211,18 @@ class Plugin_Name_Admin_Settings {
 		// Get tabs for the settings page
 		$tabs = apply_filters( 'plugin_name_settings_tabs_array', array() );
 
-		include 'views/html-admin-settings.php';
-	}
+		include( 'views/html-admin-settings.php' );
+
+		// This action hook was added in version 1.0.2
+		do_action( 'plugin_name_settings_finish', $current_tab, $current_section );
+	} // END output()
 
 	/**
 	 * Get a setting from the settings API.
 	 *
-	 * @param mixed $option
+	 * @since  1.0.0
+	 * @access public static
+	 * @param  mixed $option
 	 * @return string
 	 */
 	public static function get_option( $option_name, $default = '' ) {
@@ -179,15 +259,16 @@ class Plugin_Name_Admin_Settings {
 		}
 
 		return $option_value === null ? $default : $option_value;
-	}
+	} // END get_option()
 
 	/**
 	 * Output admin fields.
 	 *
 	 * Loops though the plugin name options array and outputs each field.
 	 *
-	 * @access public
-	 * @param array $options Opens array to output
+	 * @since  1.0.0
+	 * @access public static
+	 * @param  array $options Opens array to output
 	 */
 	public static function output_fields( $options ) {
 		foreach ( $options as $value ) {
@@ -214,11 +295,11 @@ class Plugin_Name_Admin_Settings {
 				$description = '';
 				$tip = $value['desc'];
 			}
-			elseif ( ! empty( $value['desc_tip'] ) ) {
+			else if ( ! empty( $value['desc_tip'] ) ) {
 				$description = $value['desc'];
 				$tip = $value['desc_tip'];
 			}
-			elseif ( ! empty( $value['desc'] ) ) {
+			else if ( ! empty( $value['desc'] ) ) {
 				$description = $value['desc'];
 				$tip = '';
 			}
@@ -229,14 +310,14 @@ class Plugin_Name_Admin_Settings {
 			if ( $description && in_array( $value['type'], array( 'textarea', 'radio' ) ) ) {
 				$description = '<p style="margin-top:0">' . wp_kses_post( $description ) . '</p>';
 			}
-			elseif ( $description ) {
+			else if ( $description ) {
 				$description = '<span class="description">' . wp_kses_post( $description ) . '</span>';
 			}
 
 			if ( $tip && in_array( $value['type'], array( 'checkbox' ) ) ) {
 				$tip = '<p class="description">' . $tip . '</p>';
 			}
-			elseif ( $tip ) {
+			else if ( $tip ) {
 				$tip = '<img class="help_tip" data-tip="' . esc_attr( $tip ) . '" src="' . Plugin_Name()->plugin_url() . '/assets/images/help.png" height="16" width="16" />';
 			}
 
@@ -276,15 +357,14 @@ class Plugin_Name_Admin_Settings {
 				case 'number':
 				case 'color':
 				case 'password':
-
-					$type 			= $value['type'];
-					$class 			= '';
-					$option_value 	= self::get_option( $value['id'], $value['default'] );
+					$type         = $value['type'];
+					$class        = '';
+					$option_value = self::get_option( $value['id'], $value['default'] );
 
 					if ( $value['type'] == 'color' ) {
 						$type = 'text';
 						$value['class'] .= 'colorpick';
-						$description .= '<div id="colorPickerDiv_' . esc_attr( $value['id'] ) . '" class="colorpickdiv" style="z-index: 100;background:#eee;border:1px solid #ccc;position:absolute;display:none;"></div>';
+						$description .= '<div id="colorPickerDiv_' . esc_attr( $value['id'] ) . '" class="colorpickdiv" style="z-index:100;background:#eee;border:1px solid #ccc;position:absolute;display:none;"></div>';
 					}
 
 					?><tr valign="top">
@@ -308,9 +388,7 @@ class Plugin_Name_Admin_Settings {
 
 				// Textarea
 				case 'textarea':
-
 					$option_value = self::get_option( $value['id'], $value['default'] );
-
 					?><tr valign="top">
 						<th scope="row" class="titledesc">
 							<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?></label>
@@ -333,10 +411,8 @@ class Plugin_Name_Admin_Settings {
 				// Select boxes
 				case 'select':
 				case 'multiselect':
-
-				$option_value = self::get_option( $value['id'], $value['default'] );
-
-				?><tr valign="top">
+					$option_value = self::get_option( $value['id'], $value['default'] );
+					?><tr valign="top">
 						<th scope="row" class="titledesc">
 							<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?></label>
 							<?php echo $tip; ?>
@@ -365,14 +441,12 @@ class Plugin_Name_Admin_Settings {
 								?>
 							</select> <?php echo $description; ?>
 						</td>
-					</tr><?php
-					break;
+						</tr><?php
+						break;
 
 				// Radio inputs
 				case 'radio':
-
 					$option_value = self::get_option( $value['id'], $value['default'] );
-
 					?><tr valign="top">
 						<th scope="row" class="titledesc">
 							<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?></label>
@@ -403,7 +477,6 @@ class Plugin_Name_Admin_Settings {
 
 				// Checkbox input
 				case 'checkbox':
-
 					$option_value = self::get_option( $value['id'], $value['default'] );
 
 					if ( ! isset( $value['hide_if_checked'] ) ) $value['hide_if_checked'] = false;
@@ -460,39 +533,33 @@ class Plugin_Name_Admin_Settings {
 
 				// Image width settings
 				case 'image_width':
-
-					$width 	= self::get_option( $value['id'] . '[width]', $value['default']['width'] );
-					$height = self::get_option( $value['id'] . '[height]', $value['default']['height'] );
-					$crop 	= checked( 1, self::get_option( $value['id'] . '[crop]', $value['default']['crop'] ), false );
-
+					$width  = self::get_option( $value['id']['width'], $value['default']['width'] );
+					$height = self::get_option( $value['id']['height'], $value['default']['height'] );
+					$crop   = checked( 1, self::get_option( $value['id']['crop'], $value['default']['crop'] ), false );
 					?><tr valign="top">
 						<th scope="row" class="titledesc"><?php echo esc_html( $value['title'] ); ?> <?php echo $tip; ?></th>
 						<td class="forminp image_width_settings">
-
 							<input name="<?php echo esc_attr( $value['id'] ); ?>[width]" id="<?php echo esc_attr( $value['id'] ); ?>-width" type="text" size="3" value="<?php echo $width; ?>" /> &times; <input name="<?php echo esc_attr( $value['id'] ); ?>[height]" id="<?php echo esc_attr( $value['id'] ); ?>-height" type="text" size="3" value="<?php echo $height; ?>" />px
-
-						<label><input name="<?php echo esc_attr( $value['id'] ); ?>[crop]" id="<?php echo esc_attr( $value['id'] ); ?>-crop" type="checkbox" <?php echo $crop; ?> /> <?php _e( 'Hard Crop?', PLUGIN_NAME_TEXT_DOMAIN ); ?></label>
-
+							<label><input name="<?php echo esc_attr( $value['id'] ); ?>[crop]" id="<?php echo esc_attr( $value['id'] ); ?>-crop" type="checkbox" <?php echo $crop; ?> /> <?php _e( 'Hard Crop?', PLUGIN_NAME_TEXT_DOMAIN ); ?></label>
 						</td>
 					</tr><?php
 					break;
 
 				// Single page selects
 				case 'single_select_page':
+					$args = array(
+						'name'             => $value['id'],
+						'id'               => $value['id'],
+						'sort_column'      => 'menu_order',
+						'sort_order'       => 'ASC',
+						'show_option_none' => ' ',
+						'class'            => $value['class'],
+						'echo'             => false,
+						'selected'         => absint( self::get_option( $value['id'] ) )
+					);
 
-					$args = array( 'name'				=> $value['id'],
-								   'id'					=> $value['id'],
-								   'sort_column' 		=> 'menu_order',
-								   'sort_order'			=> 'ASC',
-								   'show_option_none' 	=> ' ',
-								   'class'				=> $value['class'],
-								   'echo' 				=> false,
-								   'selected'			=> absint( self::get_option( $value['id'] ) )
-							);
-
-					if( isset( $value['args'] ) )
+					if ( isset( $value['args'] ) )
 						$args = wp_parse_args( $value['args'], $args );
-
 					?><tr valign="top" class="single_select_page">
 						<th scope="row" class="titledesc"><?php echo esc_html( $value['title'] ); ?> <?php echo $tip; ?></th>
 						<td class="forminp">
@@ -502,7 +569,7 @@ class Plugin_Name_Admin_Settings {
 					break;
 
 				// Single country selects
-				case 'single_select_country':
+				/*case 'single_select_country':
 					$country_setting = (string) self::get_option( $value['id'] );
 					$countries 		 = Plugin_Name()->countries->countries;
 
@@ -525,11 +592,10 @@ class Plugin_Name_Admin_Settings {
 						</select> <?php echo $description; ?>
 						</td>
 					</tr><?php
-					break;
+					break;*/
 
 				// Country multiselects
-				case 'multi_select_countries':
-
+				/*case 'multi_select_countries':
 					$selections = (array) self::get_option( $value['id'] );
 
 					if ( ! empty( $value['options'] ) ) {
@@ -557,24 +623,24 @@ class Plugin_Name_Admin_Settings {
 							</select> <?php if ( $description ) { echo $description; } ?> </br><a class="select_all button" href="#"><?php _e( 'Select all', PLUGIN_NAME_TEXT_DOMAIN ); ?></a> <a class="select_none button" href="#"><?php _e( 'Select none', PLUGIN_NAME_TEXT_DOMAIN ); ?></a>
 						</td>
 					</tr><?php
-					break;
+					break;*/
 
 				// Default: run an action
 				default:
 					do_action( 'plugin_name_admin_field_' . $value['type'], $value );
-
 					break;
 			} // end switch
 		}
-	}
+	} // END output_fields()
 
 	/**
 	 * Save admin fields.
 	 *
 	 * Loops though the plugin name options array and outputs each field.
 	 *
-	 * @access public
-	 * @param array $options Opens array to output
+	 * @since  1.0.0
+	 * @access public static
+	 * @param  array $options Opens array to output
 	 * @return bool
 	 */
 	public static function save_fields( $options, $current_tab, $current_section = '' ) {
@@ -599,25 +665,21 @@ class Plugin_Name_Admin_Settings {
 
 				// Standard types
 				case "checkbox" :
-
 					if ( isset( $_POST[ $value['id'] ] ) ) {
 						$option_value = 'yes';
 					}
 					else {
 						$option_value = 'no';
 					}
-
 				break;
 
 				case "textarea" :
-
 					if ( isset( $_POST[$value['id']] ) ) {
 						$option_value = wp_kses_post( trim( stripslashes( $_POST[ $value['id'] ] ) ) );
 					}
 					else {
 						$option_value = '';
 					}
-
 				break;
 
 				case "text" :
@@ -627,38 +689,32 @@ class Plugin_Name_Admin_Settings {
 				case "color" :
 				case "password" :
 				case "single_select_page" :
-				case "single_select_country" :
+				//case "single_select_country" :
 				case "radio" :
-
 					if ( isset( $_POST[$value['id']] ) ) {
 						$option_value = plugin_name_clean( stripslashes( $_POST[ $value['id'] ] ) );
 					}
 					else {
 						$option_value = '';
 					}
-
 				break;
 
 				// Special types
 				case "multiselect" :
-				case "multi_select_countries" :
-
+				//case "multi_select_countries" :
 					// Get countries array
 					if ( isset( $_POST[ $value['id'] ] ) ) {
-						$selected_countries = array_map( 'plugin_name_clean', array_map( 'stripslashes', (array) $_POST[ $value['id'] ] ) );
+						$selected_values = array_map( 'plugin_name_clean', array_map( 'stripslashes', (array) $_POST[ $value['id'] ] ) );
 					}
 					else {
-						$selected_countries = array();
+						$selected_values = array();
 					}
 
-					$option_value = $selected_countries;
-
+					$option_value = $selected_values;
 				break;
 
 				case "image_width" :
-
 					if ( isset( $_POST[$value['id'] ]['width'] ) ) {
-
 						$update_options[ $value['id'] ]['width']  = plugin_name_clean( stripslashes( $_POST[ $value['id'] ]['width'] ) );
 						$update_options[ $value['id'] ]['height'] = plugin_name_clean( stripslashes( $_POST[ $value['id'] ]['height'] ) );
 
@@ -674,17 +730,13 @@ class Plugin_Name_Admin_Settings {
 						$update_options[ $value['id'] ]['height'] 	= $value['default']['height'];
 						$update_options[ $value['id'] ]['crop'] 	= $value['default']['crop'];
 					}
-
 				break;
 
 				// Custom handling
 				default :
-
 					do_action( 'plugin_name_update_option_' . $type, $value );
-
 				break;
-
-			}
+			} // END switch()
 
 			if ( ! is_null( $option_value ) ) {
 				// Check if option is an array
@@ -734,9 +786,9 @@ class Plugin_Name_Admin_Settings {
 		}
 
 		return true;
-	}
+	} // END save_fields()
 
-}
+} // END class.
 
 } // end if class exists.
 
