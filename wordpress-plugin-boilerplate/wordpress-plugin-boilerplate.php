@@ -1,8 +1,8 @@
 <?php
 /*
  * Plugin Name:       WordPress Plugin Boilerplate
- * Plugin URI:        https://github.com/seb86/WordPress-Plugin-Boilerplate
- * Description:       The best WordPress plugin boilerplate you will ever need, comes prepaired with settings control panel, system information, a welcoming dashboard and more.
+ * Plugin URI:        https://github.com/BoilWP/WordPress-Plugin-Boilerplate
+ * Description:       The #1 WordPress Plugin Boilerplate, comes prepaired with settings control panel, system information, a welcoming dashboard and more.
  * Version:           1.0.2
  * Author:            Sébastien Dumont
  * Author URI:        http://www.sebastiendumont.com
@@ -11,7 +11,7 @@
  * Text Domain:       wordpress-plugin-boilerplate
  * Domain Path:       languages
  * Network:           false
- * GitHub Plugin URI: https://github.com/seb86/WordPress-Plugin-Boilerplate
+ * GitHub Plugin URI: https://github.com/BoilWP/WordPress-Plugin-Boilerplate
  *
  * WordPress Plugin Boilerplate is distributed under the terms of the
  * GNU General Public License as published by the Free Software Foundation,
@@ -129,7 +129,7 @@ final class Plugin_Name {
 	 * @access public
 	 * @var    string
 	 */
-	public $doc_url = "https://github.com/seb86/WordPress-Plugin-Boilerplate/wiki/";
+	public $doc_url = "https://github.com/BoilWP/WordPress-Plugin-Boilerplate/wiki/";
 
 	/**
 	 * The WordPress.org Plugin URI.
@@ -175,7 +175,7 @@ final class Plugin_Name {
 	 * @access public
 	 * @var    string
 	 */
-	public $github_repo_url = "https://github.com/seb86/WordPress-Plugin-Boilerplate/";
+	public $github_repo_url = "https://github.com/BoilWP/WordPress-Plugin-Boilerplate/";
 
 	/**
 	 * Transifex Project URI
@@ -457,7 +457,7 @@ final class Plugin_Name {
 	 * Define Constants
 	 *
 	 * @todo   1. Change 'PLUGIN_NAME' to the name of the plugin.
-	 *         2. Change 'plugin-name' with the plugin slug of your plugin on "WordPress.org"
+	 * @todo   2. Change 'plugin-name' with the plugin slug of your plugin on "WordPress.org"
 	 * @since  1.0.0
 	 * @access private
 	 */

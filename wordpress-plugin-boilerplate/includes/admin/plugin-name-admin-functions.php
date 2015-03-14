@@ -155,7 +155,7 @@ function plugin_name_settings_get_option( $option_name, $default = '' ) {
  * @since  1.0.0
  * @access public
  */
-function transifex_display_translation_progress() {
+function plugin_name_transifex_display_translation_progress() {
 	$stats = new Plugin_Name_Transifex_Stats();
 
 	$resource = Plugin_Name()->transifex_resources_slug;
@@ -166,7 +166,7 @@ function transifex_display_translation_progress() {
 		<?php $stats->display_translations_progress(); ?>
 	</div>
 	<?php
-} // END transifex_display_translation_progress()
+} // END plugin_name_transifex_display_translation_progress()
 
 /**
  * Display Translation Stats from Transifex
@@ -174,14 +174,14 @@ function transifex_display_translation_progress() {
  * @since  1.0.0
  * @access public
  */
-function transifex_display_translators() {
+function plugin_name_transifex_display_translators() {
 	$stats = new Plugin_Name_Transifex_Stats();
 	?>
 	<div class='transifex-stats-contributors' data-project-slug='<?php echo Plugin_Name()->transifex_project_slug; ?>'/>
 		<?php $stats->display_contributors(); ?>
 	</div>
 	<?php
-} // END transifex_display_translators()
+} // END plugin_name_transifex_display_translators()
 
 /**
  * Hooks Plugin Name actions, when present in the $_REQUEST superglobal.

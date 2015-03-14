@@ -583,7 +583,7 @@ class Plugin_Name_Admin_Welcome {
 			<p class="about-description"><?php _e( sprintf( '<strong>%s</strong> has been kindly translated into several other languages thanks to the WordPress community.', Plugin_Name()->name ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 			<?php
 			// Display all translators on the project with a link to their profile.
-			transifex_display_translators();
+			plugin_name_transifex_display_translators();
 			?>
 			<p><?php _e( sprintf( 'Is your name not listed? Then how about taking part in helping with the translation of this plugin. See the list of <a href="%s">languages to translate</a>.', admin_url( 'index.php?page=' . PLUGIN_NAME_PAGE . '-translations' ) ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 
@@ -618,7 +618,7 @@ class Plugin_Name_Admin_Welcome {
 
 			<p class="about-description"><?php _e( sprintf( 'Translations currently in progress and completed for %s. <a href="%s" target="_blank">View more on %s</a>.', Plugin_Name()->name, PLUGIN_NAME_TRANSIFEX_PROJECT_URI, 'Transifex' ), PLUGIN_NAME_TEXT_DOMAIN ); ?></p>
 
-			<?php transifex_display_translation_progress(); ?>
+			<?php plugin_name_transifex_display_translation_progress(); ?>
 
 		</div>
 		<?php
