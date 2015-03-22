@@ -1,3 +1,10 @@
+<?php
+/**
+* Admin View: Plugin Page
+*/
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+?>
 <div class="wrap plugin_name">
 	<h2>
 		<?php echo Plugin_Name()->name; ?>

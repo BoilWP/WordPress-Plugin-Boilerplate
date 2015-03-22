@@ -134,38 +134,35 @@ final class Plugin_Name {
 	/**
 	 * The WordPress.org Plugin URI.
 	 *
-	 * @todo    Replace 'your-plugin-name' with the name of the
-	 *          plugin slug given for your wordpress repository
+	 * @todo    Replace 'plugin-name' with the name of the plugin slug given for your wordpress repository.
 	 * @since   1.0.0
-	 * @example https://wordpress.org/plugins/your-plugin-name
+	 * @example https://wordpress.org/plugins/plugin-name
 	 * @access  public
 	 * @var     string
 	 */
-	public $wp_plugin_url = "https://wordpress.org/plugins/your-plugin-name";
+	public $wp_plugin_url = "https://wordpress.org/plugins/plugin-name";
 
 	/**
 	 * The WordPress.org Plugin Support URI.
 	 *
-	 * @todo    Replace 'your-plugin-name' with the name of the
-	 *          plugin slug given for your wordpress repository
+	 * @todo    Replace 'plugin-name' with the name of the plugin slug given for your wordpress repository.
 	 * @since   1.0.0
-	 * @example https://wordpress.org/support/plugin/your-plugin-name
+	 * @example https://wordpress.org/support/plugin/plugin-name
 	 * @access  public
 	 * @var     string
 	 */
-	public $wp_plugin_support_url = "https://wordpress.org/support/plugin/your-plugin-name";
+	public $wp_plugin_support_url = "https://wordpress.org/support/plugin/plugin-name";
 
 	/**
 	 * The WordPress.org Plugin Review URI.
 	 *
-	 * @todo    Replace 'your-plugin-name' with the name of the
-	 *          plugin slug given for your wordpress repository
+	 * @todo    Replace 'plugin-name' with the name of the plugin slug given for your wordpress repository.
 	 * @since   1.0.2
-	 * @example https://wordpress.org/support/view/plugin-reviews/your-plugin-name
+	 * @example https://wordpress.org/support/view/plugin-reviews/plugin-name
 	 * @access  public
 	 * @var     string
 	 */
-	public $wp_plugin_review_url = 'https://wordpress.org/support/view/plugin-reviews/your-plugin-name?filter=5#postform';
+	public $wp_plugin_review_url = 'https://wordpress.org/support/view/plugin-reviews/plugin-name?filter=5#postform';
 
 	/**
 	 * GitHub Repo URI
@@ -230,8 +227,7 @@ final class Plugin_Name {
 	/**
 	 * Manage Plugin.
 	 *
-	 * @todo   Replace the 'manage_plugin_name' with the level of control
-	 *         the user must have to control the plugin.
+	 * @todo   Replace the 'manage_plugin_name' with the level of control the user must have to control the plugin.
 	 * @since  1.0.0
 	 * @access public
 	 * @var    string
@@ -479,7 +475,7 @@ final class Plugin_Name {
 		if ( ! defined( 'PLUGIN_NAME_TRANSIFEX_PROJECT_URI' ) ) define( 'PLUGIN_NAME_TRANSIFEX_PROJECT_URI', $this->transifex_project_url );
 
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		define( 'PLUGIN_NAME_SCRIPT_MODE', $suffix );
+		if ( ! defined( 'PLUGIN_NAME_SCRIPT_MODE' ) )           define( 'PLUGIN_NAME_SCRIPT_MODE', $suffix );
 	} // END define_constants()
 
 	/**
@@ -547,7 +543,7 @@ final class Plugin_Name {
 	 */
 	public function admin_includes() {
 		include_once( 'includes/admin/class-plugin-name-install.php' ); // Install plugin
-		include_once( 'includes/admin/class-plugin-name-admin.php' ); // Admin section
+		include_once( 'includes/admin/class-plugin-name-admin.php' );   // Admin section
 	} // END admin_includes()
 
 	/**
@@ -802,8 +798,8 @@ final class Plugin_Name {
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @param  string  $name	    The ID to register with WordPress.
-	 * @param  string  $file_path	The path to the actual file.
+	 * @param  string  $name      The ID to register with WordPress.
+	 * @param  string  $file_path The path to the actual file.
 	 * @param  bool    $is_script Optional, argument for if the incoming file_path is a JavaScript source file.
 	 * @param  array   $support   Optional, for requiring other javascripts for the source file you are calling.
 	 * @param  string  $version   Optional, can match the version of the plugin or version of the source file.
@@ -827,6 +823,7 @@ final class Plugin_Name {
 		} // end if
 
 		wp_enqueue_style( 'wp-color-picker' );
+
 		if ( is_admin() && $wp_version >= '3.8' ) {
 			wp_enqueue_style( 'dashicons' ); // Loads only in WordPress 3.8 and up.
 		}

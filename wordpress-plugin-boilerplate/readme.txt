@@ -1,6 +1,6 @@
 === WordPress Plugin Boilerplate ===
 Contributors: sebd86
-Donate link: http://www.sebastiendumont.com/donation/
+Donate link: http://boilwp.com/donate-to-support/
 Tags: wordpress, plugin, boilerplate
 Requires at least: 3.9
 Tested up to: 4.0
@@ -8,7 +8,7 @@ Stable tag: Trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is where you craft a short, punchy description of your plugin
+This is where you craft a short, punchy description of your plugin.
 
 == Description ==
 
@@ -34,12 +34,12 @@ This plugin boilerplate is designed to help you get started with any new WordPre
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * 2014-08-28
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 * 2014-08-28
 * Initial release

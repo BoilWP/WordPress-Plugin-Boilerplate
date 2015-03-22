@@ -139,9 +139,9 @@ function plugin_name_get_image_size( $image_size ) {
 	}
 	else {
 		$size = array(
-			'width' 	=> '300',
-			'height' 	=> '300',
-			'crop' 		=> 1
+			'width'  => '300',
+			'height' => '300',
+			'crop'   => 1
 		);
 	}
 	return apply_filters( 'plugin_name_get_image_size_' . $image_size, $size );

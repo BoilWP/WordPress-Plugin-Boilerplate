@@ -1,4 +1,8 @@
 <?php
+/**
+* Admin View: Admin Install Notice
+*/
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 <div id="message" class="updated plugin-name-message">

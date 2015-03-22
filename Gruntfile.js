@@ -18,7 +18,7 @@ grunt.initConfig({
           type: 'wp-plugin',    // Type of project.
           updateTimestamp: true,    // Whether the POT-Creation-Date should be updated without other changes.
           processPot: function( pot, options ) {
-            pot.headers['report-msgid-bugs-to'] = 'https://github.com/seb86/WordPress-Plugin-Boilerplate/issues\n';
+            pot.headers['report-msgid-bugs-to'] = 'https://github.com/BoilWP/WordPress-Plugin-Boilerplate/issues\n';
             pot.headers['plural-forms'] = 'nplurals=2; plural=n != 1;\n';
             pot.headers['last-translator'] = 'WordPress Plugin Boilerplate <mailme@sebastiendumont.com>\n';
             pot.headers['language-team'] = 'WP-Translations <wpt@wp-translations.org>\n';

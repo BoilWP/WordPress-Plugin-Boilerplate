@@ -1,4 +1,8 @@
 <?php
+/**
+* Admin View: Admin Theme Notice
+*/
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 <div id="message" class="updated plugin-name-message">

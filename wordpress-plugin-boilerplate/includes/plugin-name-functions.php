@@ -10,6 +10,8 @@
  * @license  GPL-2.0+
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 /**
  * Output generator to aid debugging.
  *

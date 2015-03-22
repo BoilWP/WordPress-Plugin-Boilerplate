@@ -3,9 +3,7 @@
  * Admin View: Settings
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly.
 ?>
 <div class="wrap plugin_name">
 	<form method="post" id="mainform" action="" enctype="multipart/form-data">

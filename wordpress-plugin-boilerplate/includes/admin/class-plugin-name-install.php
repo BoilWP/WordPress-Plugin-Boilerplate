@@ -238,8 +238,7 @@ class Plugin_Name_Install {
 		if ( is_object( $wp_roles ) ) {
 
 			/**
-			 * Add your custom user roles here and
-			 * set the permissions for that role.
+			 * @todo Add your custom user roles here and set the permissions for that role.
 			 */
 			add_role( 'custom_role', sprintf( __( '%s Manager', PLUGIN_NAME_TEXT_DOMAIN ), Plugin_Name()->version ), array(
 				'level_9'                => true,
@@ -380,8 +379,7 @@ class Plugin_Name_Install {
 	/**
 	 * Delete all plugin options.
 	 *
-	 * @todo   Replace 'plugin_name' with the prefix
-	 *         your plugin options begin with.
+	 * @todo   Replace 'plugin_name' with the prefix your plugin options begin with.
 	 * @since  1.0.0
 	 * @access public
 	 * @global $wpdb
@@ -393,30 +391,6 @@ class Plugin_Name_Install {
 		// Delete options
 		$wpdb->query( "DELETE FROM $wpdb->options WHERE option_name LIKE 'plugin_name_%';" );
 	} // END delete_options()
-
-	/**
-	 * Active plugins pre update option filter
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @param  string $new_value
-	 * @return string
-	 */
-	/*public function pre_update_option_active_plugins( $new_value ) {
-		$old_value = (array) get_option('active_plugins');
-
-		if ( $new_value !== $old_value && in_array( W3TC_FILE, (array) $new_value ) && in_array( W3TC_FILE, (array) $old_value ) ) {
-			$this->_config->set('notes.plugins_updated', true);
-
-			try {
-				$this->_config->save();
-			}
-
-			catch(Exception $ex) {}
-		}
-
-		return $new_value;
-	}*/
 
 	/**
 	 * Create files and directories.

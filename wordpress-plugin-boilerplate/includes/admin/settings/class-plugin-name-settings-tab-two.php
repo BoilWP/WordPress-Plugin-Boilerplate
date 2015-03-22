@@ -309,91 +309,91 @@ class Plugin_Name_Settings_Second_Tab extends Plugin_Name_Settings_Page {
 				),
 
 				array(
-					'title' 	=> __( 'Radio', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 		=> __( 'Radio option', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc_tip' 	=> true,
-					'id' 		=> 'plugin_name_radio',
-					'default'	=> '',
-					'type' 		=> 'radio',
-					'options' => array(
-									'yes' => __( 'Yes', PLUGIN_NAME_TEXT_DOMAIN ),
-									'no' => __( 'No', PLUGIN_NAME_TEXT_DOMAIN ),
+					'title'    => __( 'Radio', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'     => __( 'Radio option', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc_tip' => true,
+					'id'       => 'plugin_name_radio',
+					'default'  => '',
+					'type'     => 'radio',
+					'options'  => array(
+						'yes'    => __( 'Yes', PLUGIN_NAME_TEXT_DOMAIN ),
+						'no'     => __( 'No', PLUGIN_NAME_TEXT_DOMAIN ),
 					),
 				),
 
 				array(
-					'title' 	=> __( 'Number', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 		=> __( 'Use this field for numbered options.', PLUGIN_NAME_TEXT_DOMAIN ),
-					'id' 		=> 'plugin_name_number_option',
-					'type' 		=> 'number',
+					'title'             => __( 'Number', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'              => __( 'Use this field for numbered options.', PLUGIN_NAME_TEXT_DOMAIN ),
+					'id'                => 'plugin_name_number_option',
+					'type'              => 'number',
 					'custom_attributes' => array(
-						'min' 	=> 0,
-						'step' 	=> 1
+						'min'             => 0,
+						'step'            => 1
 					),
-					'css' 		=> 'width:50px;',
-					'default'	=> '05',
-					'autoload' 	=> false
+					'css'               => 'width:50px;',
+					'default'           => '05',
+					'autoload'          => false
 				),
 
 				array(
-					'title' 	=> __( 'Color', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 		=> __( 'Use this field for color picking.', PLUGIN_NAME_TEXT_DOMAIN ),
-					'id' 		=> 'plugin_name_color_option',
-					'type' 		=> 'color',
-					'css' 		=> 'width:70px;',
-					'default'	=> '#ffffff',
-					'autoload' 	=> false
+					'title'    => __( 'Color', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'     => __( 'Use this field for color picking.', PLUGIN_NAME_TEXT_DOMAIN ),
+					'id'       => 'plugin_name_color_option',
+					'type'     => 'color',
+					'css'      => 'width:70px;',
+					'default'  => '#ffffff',
+					'autoload' => false
 				),
 
 				array(
-					'title' 		=> __( 'Group Checkboxes', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 			=> __( 'Checkbox One', PLUGIN_NAME_TEXT_DOMAIN ),
-					'id' 			=> 'plugin_name_group_checkbox_option_one',
-					'default'		=> 'yes',
-					'type' 			=> 'checkbox',
+					'title'         => __( 'Group Checkboxes', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'          => __( 'Checkbox One', PLUGIN_NAME_TEXT_DOMAIN ),
+					'id'            => 'plugin_name_group_checkbox_option_one',
+					'default'       => 'yes',
+					'type'          => 'checkbox',
 					'checkboxgroup' => 'start',
-					'autoload' 		=> false
+					'autoload'      => false
 				),
 
 				array(
-					'desc' 			=> __( 'Checkbox Two', PLUGIN_NAME_TEXT_DOMAIN ),
-					'id' 			=> 'plugin_name_group_checkbox_option_two',
-					'default'		=> 'yes',
-					'type' 			=> 'checkbox',
+					'desc'          => __( 'Checkbox Two', PLUGIN_NAME_TEXT_DOMAIN ),
+					'id'            => 'plugin_name_group_checkbox_option_two',
+					'default'       => 'yes',
+					'type'          => 'checkbox',
 					'checkboxgroup' => 'end',
-					'autoload' 		=> false
+					'autoload'      => false
 				),
 
 				array(
-					'title' 		=> __( 'Email', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 			=> 'Use this field option to be used for entering an email address only. (HTML 5 Field)',
-					'id' 			=> 'plugin_name_email_option',
-					'type' 			=> 'email',
-					'default'		=> get_option( 'admin_email' ),
-					'autoload' 		=> false
+					'title'    => __( 'Email', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'     => 'Use this field option to be used for entering an email address only. (HTML 5 Field)',
+					'id'       => 'plugin_name_email_option',
+					'type'     => 'email',
+					'default'  => get_option( 'admin_email' ),
+					'autoload' => false
 				),
 
 				array(
-					'title' 		=> __( 'Password', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 			=> 'Use this field option to be used for entering a password.',
-					'id' 			=> 'plugin_name_password_option',
-					'type' 			=> 'password',
-					'default'		=> '',
-					'autoload' 		=> false
+					'title'    => __( 'Password', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'     => 'Use this field option to be used for entering a password.',
+					'id'       => 'plugin_name_password_option',
+					'type'     => 'password',
+					'default'  => '',
+					'autoload' => false
 				),
 
 				array(
-					'title' 		=> __( 'Image Size', PLUGIN_NAME_TEXT_DOMAIN ),
-					'desc' 			=> __( 'Use this field option to save multiple settings for an image size', PLUGIN_NAME_TEXT_DOMAIN ),
-					'id' 			=> 'plugin_name_image_size_option',
-					'css' 			=> '',
-					'type' 			=> 'image_width',
-					'default'		=> array(
-						'width' 		=> '150',
-						'height'		=> '150',
-						'crop'			=> false
+					'title'    => __( 'Image Size', PLUGIN_NAME_TEXT_DOMAIN ),
+					'desc'     => __( 'Use this field option to save multiple settings for an image size', PLUGIN_NAME_TEXT_DOMAIN ),
+					'id'       => 'plugin_name_image_size_option',
+					'css'      => '',
+					'type'     => 'image_width',
+					'default'  => array(
+						'width'  => '150',
+						'height' => '150',
+						'crop'   => false
 					),
-					'desc_tip' 		=> true,
+					'desc_tip' => true,
 				),
 
 				array( 'type' => 'sectionend', 'id' => 'section_one_options'),

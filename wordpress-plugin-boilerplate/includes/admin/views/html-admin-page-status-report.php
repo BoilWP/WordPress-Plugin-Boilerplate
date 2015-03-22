@@ -3,9 +3,7 @@
  * Admin View: Page - Status Report
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 <div id="message" class="plugin-name-message">
 	<p><?php _e( 'Please include this information when requesting support:', PLUGIN_NAME_TEXT_DOMAIN ); ?> </p>
